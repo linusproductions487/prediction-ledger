@@ -1,0 +1,22 @@
+{
+  "predictions": [],
+  "resolutions": [],
+  "lessons": [],
+  "scorecard_by_topic": [],
+  "scorecard_by_author": [],
+  "calibration": [],
+  "db_verify": [
+    {
+      "chain": "predictions",
+      "entries": 0,
+      "valid": true,
+      "first_bad_seq": null
+    },
+    {
+      "chain": "resolutions",
+      "entries": 0,
+      "valid": true,
+      "first_bad_seq": null
+    }
+  ]
+}
