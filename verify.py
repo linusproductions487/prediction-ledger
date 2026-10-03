@@ -21,7 +21,8 @@ def check_predictions(preds):
             return f"predictions: broken link at seq {i}"
         expect = h(p["prev_hash"], p["seq"], p["created_at"], p["topic"], p["claim"],
                    p["resolution_criteria"], p["source_of_truth"], p["confidence"],
-                   p["deadline"], p["made_by"])
+                   p["deadline"], p["made_by"], p["rationale"], p["baseline_rule"],
+                   p["baseline_confidence"])
         if p["hash"] != expect:
             return f"predictions: content altered at seq {i}"
         prev = p["hash"]

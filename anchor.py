@@ -36,8 +36,15 @@ if scored:
     brier = sum((p["confidence"]/100 - (1 if r["outcome"] == "true" else 0))**2 for p, r in scored) / len(scored)
     # "right" = the side Claude leaned toward happened
     right = sum(1 for p, r in scored if (p["confidence"] > 50) == (r["outcome"] == "true") and p["confidence"] != 50)
+    base = sum((p["baseline_confidence"]/100 - (1 if r["outcome"] == "true" else 0))**2 for p, r in scored) / len(scored)
     out += [f"- Leaned the right way: **{right}/{len(scored)}**",
-            f"- Brier score: **{brier:.4f}** (0 = perfect, 0.25 = coin flip, lower is better)", ""]
+            f"- Brier score: **{brier:.4f}** (0 = perfect, 0.25 = coin flip, lower is better)",
+            f"- Dumb-baseline Brier: **{base:.4f}** — {'beating' if brier < base else 'NOT beating'} the naive rule", ""]
+    if raw.get("scorecard_by_author") and len(raw["scorecard_by_author"]) > 1:
+        out += ["## Who's better?", "", "| Forecaster | Resolved | Brier | vs baseline |", "|---|---|---|---|"]
+        for x in raw["scorecard_by_author"]:
+            out.append(f"| {x['made_by']} | {x['resolved']} | {x['brier_score']} | {x['baseline_brier']} |")
+        out.append("")
     if raw.get("calibration"):
         out += ["## Calibration", "",
                 "When I say X%, does it happen X% of the time?", "",
@@ -46,22 +53,22 @@ if scored:
             out.append(f"| {c['band_start']}–{c['band_start']+9}% | {c['n']} | {c['stated_pct']}% | {c['actual_pct']}% |")
         out.append("")
     if raw.get("scorecard_by_topic"):
-        out += ["## By topic", "", "| Topic | Resolved | Brier |", "|---|---|---|"]
+        out += ["## By topic", "", "| Topic | Resolved | Brier | Baseline Brier |", "|---|---|---|---|"]
         for t in raw["scorecard_by_topic"]:
-            out.append(f"| {t['topic']} | {t['resolved']} | {t['brier_score']} |")
+            out.append(f"| {t['topic']} | {t['resolved']} | {t['brier_score']} | {t['baseline_brier']} |")
         out.append("")
-    out += ["## Resolved", "", "| # | Claim | Confidence | Outcome |", "|---|---|---|---|"]
+    out += ["## Resolved", "", "| # | Claim | By | Confidence | Outcome |", "|---|---|---|---|---|"]
     for p, r in sorted(scored, key=lambda x: -x[1]["seq"]):
         mark = "✅" if (p["confidence"] > 50) == (r["outcome"] == "true") else "❌"
-        out.append(f"| {p['seq']} | {p['claim'].replace('|','/')} | {p['confidence']}% | {mark} {r['outcome']} |")
+        out.append(f"| {p['seq']} | {p['claim'].replace('|','/')} | {p['made_by']} | {p['confidence']}% | {mark} {r['outcome']} |")
     out.append("")
 else:
     out.append("")
 
 if pending:
-    out += ["## Pending", "", "| # | Claim | Confidence | Deadline (UTC) |", "|---|---|---|---|"]
+    out += ["## Pending", "", "| # | Claim | By | Confidence | Deadline (UTC) |", "|---|---|---|---|---|"]
     for p in sorted(pending, key=lambda x: x["deadline"]):
-        out.append(f"| {p['seq']} | {p['claim'].replace('|','/')} | {p['confidence']}% | {p['deadline'][:10]} |")
+        out.append(f"| {p['seq']} | {p['claim'].replace('|','/')} | {p['made_by']} | {p['confidence']}% | {p['deadline'][:10]} |")
     out.append("")
 
 open("SCORECARD.md", "w", encoding="utf-8").write("\n".join(out))
