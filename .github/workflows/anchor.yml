@@ -1,0 +1,51 @@
+name: Anchor ledger
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # every 6 hours
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: anchor
+  cancel-in-progress: false
+
+jobs:
+  anchor:
+    runs-on: ubuntu-latest
+    env:
+      # Publishable key: designed to be public. It can only call ledger_export(); the ledger tables are not exposed.
+      SUPABASE_URL: https://werawuijbdvqgwpxvciu.supabase.co
+      SUPABASE_KEY: sb_publishable_hugQh8YX47-oJ6N6OLc7AQ_G4o6JV6k
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Export ledger
+        run: |
+          curl -sSf -X POST "$SUPABASE_URL/rest/v1/rpc/ledger_export" \
+            -H "apikey: $SUPABASE_KEY" -H "Content-Type: application/json" -d '{}' > raw.json
+
+      - name: Verify (fails loudly if anything was altered)
+        run: |
+          cp raw.json ledger.json
+          python3 verify.py ledger.json
+
+      - name: Anchor and rebuild scorecard
+        run: python3 anchor.py
+
+      - name: Commit if changed
+        run: |
+          rm -f raw.json
+          git config user.name "ledger-anchor[bot]"
+          git config user.email "ledger-anchor@users.noreply.github.com"
+          git add ledger.json ANCHORS.md SCORECARD.md
+          if git diff --cached --quiet; then
+            echo "No change in ledger."
+          else
+            git commit -m "anchor: $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
