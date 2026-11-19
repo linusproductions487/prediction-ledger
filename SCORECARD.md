@@ -2,8 +2,8 @@
 
 Generated automatically from the ledger. Every miss is included.
 
-- Predictions made: **21**
-- Resolved (scored): **7**  ·  Void: **0**  ·  Pending: **14**
+- Predictions made: **29**
+- Resolved (scored): **7**  ·  Void: **0**  ·  Pending: **22**
 - Leaned the right way: **6/6** (excluding exact 50% calls)
 - Brier score: **0.1457** (0 = perfect, 0.25 = coin flip, lower is better)
 - Dumb-baseline Brier: **0.1675** — beating the naive rule
@@ -32,12 +32,16 @@ When I say X%, does it happen X% of the time?
 
 Simulated $100 trades at the real Kalshi ask price when the prediction was locked, including Kalshi's taker fee. No real money. Rules are in PROTOCOL.md.
 
-- Trades: **1**  ·  Settled: **0**  ·  Open: **1**
+- Trades: **5**  ·  Settled: **0**  ·  Open: **5**
 - Settled P&L: **+$0.00**
 
 | # | Market | Side | Price | Contracts | Fee | Cost | Result | P&L |
 |---|---|---|---|---|---|---|---|---|
 | 18 | [KXCPIYOY-26NOV Above 3.7%](https://kalshi.com/markets/kxcpiyoy/inflation/kxcpiyoy-26nov) | YES | 38¢ | 263 | $4.34 | $104.28 | open | — |
+| 22 | [KXAAAGASD-26NOV20 Above 3.6900](https://kalshi.com/markets/kxaaagasd) | YES | 74¢ | 135 | $1.82 | $101.72 | open | — |
+| 23 | [KXAAAGASW-26NOV23 Above 3.6300](https://kalshi.com/markets/kxaaagasw) | NO | 44¢ | 227 | $3.92 | $103.80 | open | — |
+| 25 | [KXHIGHCHI-26NOV20 68° to 69°](https://kalshi.com/markets/kxhighchi) | NO | 55¢ | 181 | $3.14 | $102.69 | open | — |
+| 26 | [KXHIGHTBOS-26NOV20 68° to 69°](https://kalshi.com/markets/kxhightbos) | NO | 78¢ | 128 | $1.54 | $101.38 | open | — |
 
 ## Resolved
 
@@ -55,8 +59,16 @@ Simulated $100 trades at the real Kalshi ask price when the prediction was locke
 
 | # | Claim | By | Confidence | Deadline (UTC) |
 |---|---|---|---|---|
+| 22 | Kalshi KXAAAGASD-26NOV20-3.6900 "Above 3.6900" settles YES (AAA national average regular gas price on Nov 20, 2026 is strictly above $3.6900). | claude | 81% | 2026-11-22 |
+| 25 | Kalshi KXHIGHCHI-26NOV20-B68.5 "68° to 69°" settles YES (official high for Chicago (Midway) on Nov 20, 2026 is 68 or 69F). | claude | 38% | 2026-11-22 |
+| 26 | Kalshi KXHIGHTBOS-26NOV20-B68.5 "68° to 69°" settles YES (official high for Boston on Nov 20, 2026 is 68 or 69F). | claude | 17% | 2026-11-22 |
+| 27 | Kalshi KXHIGHNY-26NOV20-B66.5 "66° to 67°" settles YES (official high for New York City (Central Park) on Nov 20, 2026 is 66 or 67F). | claude | 38% | 2026-11-22 |
+| 28 | Kalshi KXHIGHDEN-26NOV20-B61.5 "61° to 62°" settles YES (official high for Denver on Nov 20, 2026 is 61 or 62F). | claude | 32% | 2026-11-22 |
+| 29 | Kalshi KXHIGHMIA-26NOV20-B82.5 "82° to 83°" settles YES (official high for Miami on Nov 20, 2026 is 82 or 83F). | claude | 43% | 2026-11-22 |
+| 23 | Kalshi KXAAAGASW-26NOV23-3.6300 "Above 3.6300" settles YES (AAA national average regular gas price on Nov 23, 2026 is strictly above $3.6300). | claude | 47% | 2026-11-25 |
 | 21 | Kalshi KXAAAGASM-26NOV30 "Above 3.50" settles YES (US average regular gas price at end of November 2026 is above $3.50). | claude | 45% | 2026-12-01 |
 | 2 | Apple holds a livestreamed product event (not press-release-only) between Oct 3 and Nov 30, 2026. | claude | 35% | 2026-12-01 |
+| 24 | Kalshi KXAAAGASM-26NOV30-3.45 "Above 3.45" settles YES (AAA national average regular gas price on Nov 30, 2026 is strictly above $3.45). | claude | 80% | 2026-12-02 |
 | 20 | Kalshi KXFEDDECISION-26DEC "Hike 25bps" settles YES (the Fed raises rates by exactly 25bps on Dec 9, 2026). | claude | 88% | 2026-12-10 |
 | 18 | Kalshi KXCPIYOY-26NOV "Above 3.7%" settles YES (US CPI-U 12-month change for November 2026, published Dec 10, is above 3.7%). | claude | 55% | 2026-12-11 |
 | 19 | Kalshi KXCPI-26NOV "Above -0.1%" settles YES (US CPI-U seasonally adjusted month-over-month change for November 2026 is above -0.1%). | claude | 48% | 2026-12-11 |
