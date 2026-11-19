@@ -12,13 +12,13 @@ Runs inside the GitHub Action (open internet). Every run it:
 
 Nothing here places a trade. Prices are public market data; no account or key is used.
 """
-import datetime, json, math, os, re, sys, time, urllib.request
+import datetime, json, math, os, re, sys, time, urllib.error, urllib.request
 
 UA = "prediction-ledger/1.0 (+https://github.com/linusproductions487/prediction-ledger)"
 BROWSER_UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
 KALSHI_BASES = ["https://api.elections.kalshi.com/trade-api/v2", "https://external-api.kalshi.com/trade-api/v2"]
 T0 = time.time()
-BUDGET_S = 330
+BUDGET_S = 480
 LOG, SAMPLES = [], {}
 MONTHS = {m: i + 1 for i, m in enumerate("JAN FEB MAR APR MAY JUN JUL AUG SEP OCT NOV DEC".split())}
 
@@ -59,10 +59,21 @@ def out_of_time():
     return time.time() - T0 > BUDGET_S
 
 
-def get(url, timeout=20, ua=UA, raw=False, sample=None):
+def get(url, timeout=20, ua=UA, raw=False, sample=None, tries=3):
     req = urllib.request.Request(url, headers={"User-Agent": ua, "Accept": "application/json, text/html;q=0.8"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        body = r.read().decode("utf-8", "replace")
+    for attempt in range(tries):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                body = r.read().decode("utf-8", "replace")
+            break
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 500, 502, 503, 504) or attempt == tries - 1:
+                raise
+            time.sleep(1.5 * (attempt + 1))
+        except Exception:
+            if attempt == tries - 1:
+                raise
+            time.sleep(1.0)
     if sample and sample not in SAMPLES:
         SAMPLES[sample] = body[:2500]
     return body if raw else json.loads(body)
@@ -79,7 +90,7 @@ def kalshi(path, sample=None):
         try:
             d = get(b + path, sample=sample)
             _base[0] = b
-            time.sleep(0.12)
+            time.sleep(0.3)
             return d
         except Exception as e:
             err = e
@@ -218,13 +229,13 @@ def lst_day_max(times, values, offset, day):
 def ensemble_members(lat, lon):
     """Hourly 2 m temperature (deg F, GMT) for every member of several global ensembles."""
     members, times, used = [], None, []
-    for model in ("gfs_seamless", "ecmwf_ifs025", "icon_seamless"):
+    for model in ("gfs_seamless", "ecmwf_ifs025"):
         if out_of_time():
             break
         try:
             d = get("https://ensemble-api.open-meteo.com/v1/ensemble?latitude=%s&longitude=%s&hourly=temperature_2m"
                     "&models=%s&temperature_unit=fahrenheit&timezone=GMT&forecast_days=4" % (lat, lon, model),
-                    timeout=25, sample="openmeteo_ensemble")
+                    timeout=12, sample="openmeteo_ensemble", tries=2)
             h = d.get("hourly") or {}
             ks = [k for k in h if k.startswith("temperature_2m")]
             if ks:
@@ -238,15 +249,26 @@ def ensemble_members(lat, lon):
     return times, members, used
 
 
+DET_MODELS = ["best_match", "ncep_nbm_conus", "gfs_hrrr", "ecmwf_ifs025", "gfs_seamless"]
+
+
 def deterministic(lat, lon):
-    try:
-        d = get("https://api.open-meteo.com/v1/forecast?latitude=%s&longitude=%s&hourly=temperature_2m"
-                "&temperature_unit=fahrenheit&timezone=GMT&forecast_days=4" % (lat, lon), timeout=20, sample="openmeteo_det")
-        h = d.get("hourly") or {}
-        return h.get("time"), h.get("temperature_2m")
-    except Exception as e:
-        log(f"deterministic {lat},{lon}: {type(e).__name__} {e}")
-        return None, None
+    """Hourly temperature from several independent forecast models: {model: values}."""
+    for models in (DET_MODELS, ["best_match"]):
+        try:
+            d = get("https://api.open-meteo.com/v1/forecast?latitude=%s&longitude=%s&hourly=temperature_2m&models=%s"
+                    "&temperature_unit=fahrenheit&timezone=GMT&forecast_days=4" % (lat, lon, ",".join(models)),
+                    timeout=12, sample="openmeteo_det", tries=2)
+            h = d.get("hourly") or {}
+            out = {}
+            for k, v in h.items():
+                if k.startswith("temperature_2m"):
+                    out[k[len("temperature_2m"):].lstrip("_") or models[0]] = v
+            if out:
+                return h.get("time"), out
+        except Exception as e:
+            log(f"deterministic {lat},{lon} {len(models)} models: {type(e).__name__} {e}")
+    return None, {}
 
 
 def nws_highs(lat, lon):
@@ -255,6 +277,7 @@ def nws_highs(lat, lon):
     try:
         p = get(f"https://api.weather.gov/points/{lat:.4f},{lon:.4f}", timeout=20, sample="nws_points")
         f = get(p["properties"]["forecast"], timeout=25, sample="nws_forecast")
+        out["_updated"] = f["properties"].get("updateTime") or f["properties"].get("generatedAt")
         for per in f["properties"]["periods"]:
             if per.get("isDaytime") and per.get("temperatureUnit") == "F":
                 out.setdefault(per["startTime"][:10], per["temperature"])
@@ -367,17 +390,23 @@ def weather_model(series, events, now, cal):
         mx = [v for v in (lst_day_max(times, m, off, day) for m in members) if v is not None] if times else []
         ens_mean = sum(mx) / len(mx) if mx else None
         ens_sd = math.sqrt(sum((x - ens_mean) ** 2 for x in mx) / len(mx)) if mx else None
-        det = lst_day_max(dt, dv, off, day) if dt else None
-        if day in nws:
-            center, src = float(nws[day]), "nws"
-        elif det is not None:
-            center, src = det + 0.7, "det+0.7"      # hourly samples miss the true peak by ~0.7F on average
-        elif ens_mean is not None:
-            center, src = ens_mean + 0.7, "ens+0.7"
-        else:
+        dets = {}
+        for name, vals in (dv or {}).items():
+            v = lst_day_max(dt, vals, off, day) if dt else None
+            if v is not None:
+                dets[name] = round(v + 0.7, 1)       # hourly samples miss the true peak by ~0.7F on average
+        sources = ([float(nws[day])] if day in nws else []) + list(dets.values())
+        if not sources and ens_mean is not None:
+            sources = [ens_mean + 0.7]
+        if not sources:
             continue
+        votes = sorted(sources + ([float(nws[day])] if day in nws else []))   # the human NWS forecast counts twice
+        center = (votes[(len(votes) - 1) // 2] + votes[len(votes) // 2]) / 2
+        src = f"median of {len(sources)} sources"
+        smean = sum(sources) / len(sources)
+        spread = math.sqrt(sum((x - smean) ** 2 for x in sources) / len(sources)) if len(sources) > 1 else 1.5
         raw_center = center
-        floor_sd = {0: 1.6, 1: 2.3, 2: 2.8, 3: 3.3}[lead]
+        floor_sd = {0: 2.0, 1: 2.5, 2: 3.0, 3: 3.5}[lead]   # day-ahead highs miss by ~2.5-3.3F RMSE in published backtests
         if c.get("n", 0) >= 8:                      # city-specific correction once 8+ days have settled
             center += c["bias"] * c["n"] / (c["n"] + 8)
             if c.get("sd") and lead == 1:
@@ -398,11 +427,11 @@ def weather_model(series, events, now, cal):
                     center, floor_sd = max(center, obs), 1.2
         if mx and ens_sd is not None:
             pts = [center + (x - ens_mean) for x in mx]
-            k = math.sqrt(max(floor_sd ** 2 - ens_sd ** 2, 1.0))
+            k = math.sqrt(max(max(floor_sd ** 2, ens_sd ** 2 + spread ** 2) - ens_sd ** 2, 1.0))
         else:
-            pts, k = [center], floor_sd
+            pts, k = [center], max(floor_sd, spread)
         info[day] = {"lead": lead, "center": round(center, 2), "center_source": src, "raw_center": round(raw_center, 2),
-                     "nws_high": nws.get(day), "det_max": round(det, 1) if det is not None else None,
+                     "nws_high": nws.get(day), "nws_updated": nws.get("_updated"), "models": dets, "model_spread": round(spread, 2),
                      "ens_mean": round(ens_mean, 2) if ens_mean is not None else None,
                      "ens_sd": round(ens_sd, 2) if ens_sd is not None else None, "ens_members": len(mx), "ens_models": used,
                      "kernel_sd": round(k, 2), "obs_max_so_far": obs, "obs_count": obs_n, "obs_last": obs_last,
@@ -428,7 +457,7 @@ def aaa_prices():
         SAMPLES.setdefault("aaa_text", text[text.find("Current Avg") - 300: text.find("Current Avg") + 900] if "Current Avg" in text else text[:1200])
 
         def first_price(label):
-            m = re.search(re.escape(label) + r"[^$]{0,40}\$\s*([0-9]\.[0-9]{2,3})", text)
+            m = re.search(re.escape(label) + r"[^$]{0,40}\$\s*([0-9]\.[0-9]{2,4})", text)
             return float(m.group(1)) if m else None
         asof = re.search(r"Price as of\s*(\d{1,2})/(\d{1,2})/(\d{2,4})", text)
         date = None
@@ -452,7 +481,9 @@ def gas_model(events, aaa, hist):
     diffs = [series[b] - series[a] for a, b in zip(days, days[1:])
              if (datetime.date.fromisoformat(b) - datetime.date.fromisoformat(a)).days == 1]
     d0 = diffs[-1] if diffs and days[-1] == aaa["date"] else (aaa["today"] - aaa["yesterday"] if aaa.get("yesterday") else 0.0)
-    rho, sigma, n = 0.75, 0.006, len(diffs)
+    if aaa.get("week_ago"):                       # steadier estimate of the trend: half latest move, half weekly pace
+        d0 = 0.5 * d0 + 0.5 * (aaa["today"] - aaa["week_ago"]) / 7
+    rho, sigma, n = 0.95, 0.004, len(diffs)
     if n >= 15:                                   # estimate persistence and noise from our own history
         x, y = diffs[:-1], diffs[1:]
         sxx = sum(a * a for a in x)
@@ -475,11 +506,11 @@ def gas_model(events, aaa, hist):
         for m in ev["markets"]:
             f, c, st = m.get("floor"), m.get("cap"), m.get("strike_type")
             if st in ("greater", "greater_or_equal") and f is not None:
-                p = 1 - ncdf((f + 0.0005 - mean) / sd)       # AAA publishes to 3 decimals
+                p = 1 - ncdf((f - mean) / sd)
             elif st in ("less", "less_or_equal") and c is not None:
-                p = ncdf((c - 0.0005 - mean) / sd)
+                p = ncdf((c - mean) / sd)
             elif st == "between" and f is not None and c is not None:
-                p = ncdf((c + 0.0005 - mean) / sd) - ncdf((f - 0.0005 - mean) / sd)
+                p = ncdf((c - mean) / sd) - ncdf((f - mean) / sd)
             else:
                 continue
             m["model_p"] = round(max(0.0, min(1.0, p)), 4)
@@ -487,21 +518,95 @@ def gas_model(events, aaa, hist):
 
 
 # ----------------------------------------------------------------- main
+def rbob():
+    """Wholesale gasoline futures (front month), the main driver of where pump prices head next."""
+    try:
+        d = get("https://query1.finance.yahoo.com/v8/finance/chart/RB=F?range=1mo&interval=1d", timeout=15, ua=BROWSER_UA, tries=2)
+        r = d["chart"]["result"][0]
+        closes = [round(c, 4) for c in r["indicators"]["quote"][0]["close"] if c is not None]
+        return {"last": closes[-1], "five_days_ago": closes[-6] if len(closes) > 5 else None, "closes": closes[-22:]}
+    except Exception as e:
+        log(f"rbob: {type(e).__name__} {e}")
+        return None
+
+
+def book_fill(ticker, side, usd=100.0):
+    """Walk the real order book: what would buying $100 of this side actually cost?"""
+    try:
+        d = kalshi(f"/markets/{ticker}/orderbook", sample="kalshi_orderbook")
+        ob = d.get("orderbook_fp") or d.get("orderbook") or {}
+        opp = "no" if side == "YES" else "yes"
+        levels = ob.get(opp + "_dollars")
+        if levels is None:
+            levels = [[float(p) / 100, q] for p, q in (ob.get(opp) or [])]
+        asks = sorted((round(1 - float(p), 4), float(q)) for p, q in levels)      # buying = hitting the other side's bids
+        spent = got = 0.0
+        for price, qty in asks:
+            if price <= 0 or price >= 1:
+                continue
+            take = min(qty, (usd - spent) / price)
+            spent += take * price
+            got += take
+            if spent >= usd - 0.005:
+                break
+        if got <= 0:
+            return {"fillable_usd": 0.0}
+        return {"fillable_usd": round(spent, 2), "avg_price": round(spent / got * 100, 2),
+                "fill_price": int(math.ceil(spent / got * 100 - 1e-9)), "top_ask": round(asks[0][0] * 100, 1), "top_size": asks[0][1]}
+    except Exception as e:
+        return {"error": f"{type(e).__name__} {e}"}
+
+
 def add_edges(events):
+    """Blend each model probability with the market's own price, then list gaps of 5 cents or more.
+
+    The market is a strong forecaster. Until a model has a settled track record, its probability is
+    averaged 50/50 with the market mid. A raw gap above 25 points is treated as a likely model or
+    data error: it is blended 25/75 and marked not tradeable."""
     rows = []
     for ev in events:
+        ws = wp = 0.0
         for m in ev["markets"]:
-            p = m.get("model_p")
-            if p is None:
+            p, ya, na = m.get("model_p"), m.get("yes_ask"), m.get("no_ask")
+            if ya is None or na is None:
                 continue
-            ya, na = m.get("yes_ask"), m.get("no_ask")
-            ey = round(p * 100 - ya, 1) if ya and 0 < ya < 100 else None
-            en = round((1 - p) * 100 - na, 1) if na and 0 < na < 100 else None
+            mid = (ya + (100 - na)) / 200
+            m["market_mid"] = round(mid, 4)
+            if m.get("lo") is not None or m.get("hi") is not None:       # market-implied average outcome
+                lo = m["lo"] if m.get("lo") is not None else m["hi"] - 1
+                hi = m["hi"] if m.get("hi") is not None else m["lo"] + 1
+                ws += mid * (lo + hi) / 2
+                wp += mid
+            if p is None or not (0 < ya < 100 and 0 < na < 100):
+                continue
+            raw = abs(p - mid)
+            w = 0.5 if raw <= 0.25 else 0.25
+            b = w * p + (1 - w) * mid
+            m["blend_p"], m["raw_gap"] = round(b, 4), round(raw * 100, 1)
+            ey, en = round(b * 100 - ya, 1), round((1 - b) * 100 - na, 1)
             m["edge_yes"], m["edge_no"] = ey, en
-            best = max([(ey, "YES", ya), (en, "NO", na)], key=lambda t: -1e9 if t[0] is None else t[0])
-            if best[0] is not None and best[0] >= 5:
-                rows.append((best[0], ev, m, best[1], best[2]))
-    rows.sort(key=lambda r: -r[0])
+            side, edge, ask = ("YES", ey, ya) if ey >= en else ("NO", en, na)
+            m["tradeable"] = bool(raw <= 0.25 and edge >= 5)
+            if edge >= 5:
+                rows.append([edge, ev, m, side, ask])
+        if wp > 0.5:
+            ev["market_mean"] = round(ws / wp, 2)
+    rows.sort(key=lambda r: (not r[2]["tradeable"], -r[0]))
+    checked = 0
+    for r in rows:
+        edge, ev, m, side, ask = r
+        if not m["tradeable"] or checked >= 45 or out_of_time():
+            continue
+        checked += 1
+        f = book_fill(m["ticker"], side)
+        m["fill"] = dict(f, side=side)
+        if f.get("fill_price") and f.get("fillable_usd", 0) >= 99.5:
+            r[0] = round((m["blend_p"] if side == "YES" else 1 - m["blend_p"]) * 100 - f["fill_price"], 1)
+            r[4] = f["fill_price"]
+            m["tradeable"] = r[0] >= 5
+        else:
+            m["tradeable"] = False                                         # cannot really buy $100 here
+    rows.sort(key=lambda r: (not r[2]["tradeable"], -r[0]))
     return rows
 
 
@@ -539,15 +644,17 @@ def main():
             weather[s] = {"city": CITIES[s][0], "station": CITIES[s][1], "days": info}
             for day, i in info.items():
                 new_hist.append({"scan": now.strftime("%Y-%m-%dT%H:%MZ"), "series": s, "date": day, "lead": i["lead"],
-                                 "center": i["raw_center"], "src": i["center_source"], "nws": i["nws_high"], "det": i["det_max"],
+                                 "center": i["raw_center"], "nws": i["nws_high"], "models": i["models"],
                                  "ens_mean": i["ens_mean"], "ens_sd": i["ens_sd"], "obs": i["obs_max_so_far"], "lst_hour": i["lst_hour"]})
         except Exception as e:
             log(f"weather model {s}: {type(e).__name__} {e}")
 
     aaa = aaa_prices()
-    gas = None
+    gas, rb = None, rbob()
     try:
         gas = gas_model([e for s in GAS_SERIES for e in by_series.get(s, [])], aaa, gas_hist)
+        if gas is not None:
+            gas["rbob"] = rb
     except Exception as e:
         log(f"gas model: {type(e).__name__} {e}")
 
@@ -566,18 +673,24 @@ def main():
             f.write(json.dumps(h) + "\n")
     if aaa and aaa.get("date") and aaa.get("today") and not any(h.get("date") == aaa["date"] for h in gas_hist):
         with open("data/gas_history.jsonl", "a", encoding="utf-8") as f:
-            f.write(json.dumps({"date": aaa["date"], "price": aaa["today"]}) + "\n")
+            f.write(json.dumps({"date": aaa["date"], "price": aaa["today"], "rbob": (rb or {}).get("last")}) + "\n")
 
-    md = ["# Model vs. market gaps", "",
-          f"Scanned {stamp}. Model probability minus the live Kalshi ask, for gaps of 5 cents or more.",
-          "A gap is a candidate, not a trade: check the inputs in `markets.json` first. See PROTOCOL.md.", "",
-          "| Gap | Market | Outcome | Side | Ask | Model | Volume | Notes |", "|---|---|---|---|---|---|---|---|"]
-    for gap, ev, m, side, ask in edges[:60]:
+    def row(gap, ev, m, side, ask):
         w = (weather.get(ev["series"], {}).get("days") or {}).get(ev["date"] or "", {})
-        note = f"center {w.get('center')} ({w.get('center_source')}), lead {w.get('lead')}d" if w else ""
-        md.append(f"| {gap:+.0f}¢ | {ev['event_ticker']} | {m['label']} | {side} | {ask:.0f}¢ | {m['model_p']*100:.0f}% | {m.get('volume') or 0:.0f} | {note} |")
-    if not edges:
-        md.append("| – | no gaps of 5¢ or more this scan | | | | | | |")
+        note = f"center {w.get('center')}, market mean {ev.get('market_mean')}, lead {w.get('lead')}d" if w else ""
+        fill = m.get("fill") or {}
+        return (f"| {gap:+.0f}¢ | {m['ticker']} | {m['label']} | {side} | {ask:.0f}¢ | {m['model_p']*100:.0f}% | "
+                f"{m['blend_p']*100:.0f}% | ${fill.get('fillable_usd', 0):.0f} | {note} |")
+    head = ["| Edge | Market | Outcome | Side | Fill price | Model | Blend | Fillable | Notes |", "|---|---|---|---|---|---|---|---|---|"]
+    good = [r for r in edges if r[2]["tradeable"]]
+    rest = [r for r in edges if not r[2]["tradeable"]]
+    md = ["# Model vs. market", "", f"Scanned {stamp}.", "",
+          "**Blend** is the model averaged with the market's own price (see `add_edges` in scan.py). **Edge** is blend minus",
+          "the real cost of buying $100 from the order book. Candidates still need the checks in RUNBOOK.md.", "",
+          "## Tradeable candidates", ""] + head + [row(*r) for r in good[:40]]
+    if not good:
+        md.append("| – | none this scan | | | | | | | |")
+    md += ["", "## Not tradeable (gap too large to trust, or the book cannot fill $100)", ""] + head + [row(*r) for r in rest[:40]]
     open("EDGES.md", "w", encoding="utf-8").write("\n".join(md) + "\n")
     log(f"done: {len(all_events)} events, {len(weather)} cities modeled, {len(edges)} gaps")
 

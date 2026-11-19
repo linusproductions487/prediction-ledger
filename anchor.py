@@ -106,7 +106,7 @@ open("SCORECARD.md", "w", encoding="utf-8").write("\n".join(out))
 # --- market scanner + models (never allowed to break anchoring) ---
 try:
     import os, subprocess
-    subprocess.run([sys.executable, "scan.py"], timeout=420, check=False)
+    subprocess.run([sys.executable, "scan.py"], timeout=600, check=False)
     for path in ("markets.json", "EDGES.md", "data"):
         if os.path.exists(path):
             subprocess.run(["git", "add", "-A", "--", path], check=False)
