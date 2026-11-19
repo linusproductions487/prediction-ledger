@@ -1,6 +1,6 @@
 # Model vs. market
 
-Scanned 2026-11-19 15:41 UTC.
+Scanned 2026-11-19 20:29 UTC.
 
 **Blend** is the model averaged with the market's own price (see `add_edges` in scan.py). **Edge** is blend minus
 the real cost of buying $100 from the order book. Candidates still need the checks in RUNBOOK.md.
@@ -9,54 +9,57 @@ the real cost of buying $100 from the order book. Candidates still need the chec
 
 | Edge | Market | Outcome | Side | Fill price | Model | Blend | Fillable | Notes |
 |---|---|---|---|---|---|---|---|---|
-| +11¢ | KXAAAGASW-26NOV23-3.6300 | Above 3.6300 | NO | 42¢ | 37% | 47% | $100 |  |
-| +9¢ | KXAAAGASD-26NOV20-3.6900 | Above 3.6900 | YES | 70¢ | 88% | 79% | $100 |  |
-| +8¢ | KXAAAGASM-26NOV30-3.45 | Above 3.45 | NO | 12¢ | 72% | 80% | $100 |  |
-| +7¢ | KXHIGHCHI-26NOV20-B68.5 | 68° to 69° | NO | 55¢ | 27% | 38% | $100 | center 67.1, market mean 68.0, lead 1d |
-| +6¢ | KXHIGHNY-26NOV20-B68.5 | 68° to 69° | NO | 70¢ | 14% | 24% | $100 | center 65.25, market mean 66.67, lead 1d |
-| +5¢ | KXHIGHTBOS-26NOV20-B68.5 | 68° to 69° | NO | 78¢ | 8% | 17% | $100 | center 64.25, market mean 66.61, lead 1d |
+| +10¢ | KXHIGHNY-26NOV20-B66.5 | 66° to 67° | NO | 52¢ | 29% | 39% | $100 | center 65.45, market mean 67.18, lead 1d |
+| +9¢ | KXAAAGASM-26NOV30-3.45 | Above 3.45 | NO | 9¢ | 72% | 82% | $100 |  |
+| +8¢ | KXHIGHPHIL-26NOV20-B68.5 | 68° to 69° | NO | 52¢ | 28% | 40% | $100 | center 67.6, market mean 68.99, lead 1d |
+| +7¢ | KXAAAGASW-26NOV23-3.6400 | Above 3.6400 | YES | 6¢ | 21% | 13% | $100 |  |
+| +6¢ | KXHIGHTSEA-26NOV20-B48.5 | 48° to 49° | NO | 57¢ | 27% | 37% | $100 | center 47.1, market mean 47.91, lead 1d |
+| +6¢ | KXHIGHNY-26NOV20-B64.5 | 64° to 65° | YES | 12¢ | 29% | 18% | $100 | center 65.45, market mean 67.18, lead 1d |
+| +6¢ | KXHIGHCHI-26NOV20-T66 | 65° or below | YES | 9¢ | 27% | 15% | $100 | center 67.0, market mean 68.17, lead 1d |
+| +5¢ | KXHIGHTSFO-26NOV20-B59.5 | 59° to 60° | NO | 63¢ | 20% | 32% | $100 | center 57.0, market mean 58.49, lead 1d |
+| +5¢ | KXHIGHTDAL-26NOV20-B76.5 | 76° to 77° | NO | 64¢ | 21% | 31% | $100 | center 74.4, market mean 75.38, lead 1d |
 
 ## Not tradeable (gap too large to trust, or the book cannot fill $100)
 
 | Edge | Market | Outcome | Side | Fill price | Model | Blend | Fillable | Notes |
 |---|---|---|---|---|---|---|---|---|
-| +11¢ | KXHIGHTBOS-26NOV19-B65.5 | 65° to 66° | NO | 55¢ | 22% | 34% | $0 | center 63.25, market mean 64.49, lead 0d |
-| +11¢ | KXHIGHPHIL-26NOV19-B67.5 | 67° to 68° | NO | 32¢ | 21% | 57% | $0 | center 65.2, market mean 67.38, lead 0d |
-| +10¢ | KXAAAGASD-26NOV20-3.6950 | Above 3.6950 | YES | 4¢ | 47% | 14% | $0 |  |
-| +10¢ | KXHIGHNY-26NOV19-B61.5 | 61° to 62° | YES | 13¢ | 34% | 23% | $0 | center 62.1, market mean 64.21, lead 0d |
-| +10¢ | KXHIGHCHI-26NOV19-B62.5 | 62° to 63° | YES | 6¢ | 27% | 16% | $0 | center 64.25, market mean 65.78, lead 0d |
-| +10¢ | KXHIGHMIA-26NOV19-B80.5 | 80° to 81° | YES | 26¢ | 49% | 36% | $0 | center 80.7, market mean 82.09, lead 0d |
-| +9¢ | KXHIGHTPHX-26NOV20-T70 | 69° or below | YES | 12¢ | 51% | 21% | $0 | center 69.4, market mean 71.51, lead 1d |
-| +9¢ | KXHIGHCHI-26NOV19-B66.5 | 66° to 67° | NO | 40¢ | 21% | 51% | $0 | center 64.25, market mean 65.78, lead 0d |
-| +9¢ | KXAAAGASW-26NOV23-3.6200 | Above 3.6200 | NO | 7¢ | 56% | 84% | $0 |  |
-| +8¢ | KXHIGHTSFO-26NOV19-T56 | 55° or below | YES | 9¢ | 27% | 18% | $0 | center 56.65, market mean 57.62, lead 0d |
-| +8¢ | KXHIGHTSFO-26NOV19-B58.5 | 58° to 59° | NO | 56¢ | 27% | 36% | $0 | center 56.65, market mean 57.62, lead 0d |
-| +8¢ | KXHIGHTDC-26NOV19-B68.5 | 68° to 69° | NO | 56¢ | 27% | 36% | $0 | center 66.7, market mean 67.41, lead 0d |
-| +8¢ | KXHIGHTMIN-26NOV19-T55 | 54° or below | YES | 5¢ | 22% | 13% | $0 | center 55.85, market mean 55.96, lead 0d |
-| +8¢ | KXHIGHTSEA-26NOV19-B47.5 | 47° to 48° | YES | 6¢ | 23% | 14% | $0 | center 49.5, market mean 50.34, lead 0d |
-| +8¢ | KXHIGHTPHX-26NOV19-B75.5 | 75° to 76° | NO | 28¢ | 38% | 64% | $0 | center 75.45, market mean 75.63, lead 0d |
-| +8¢ | KXHIGHTMIN-26NOV19-B55.5 | 55° to 56° | NO | 26¢ | 39% | 66% | $0 | center 55.85, market mean 55.96, lead 0d |
-| +8¢ | KXHIGHTSATX-26NOV19-B72.5 | 72° to 73° | NO | 39¢ | 28% | 53% | $0 | center 71.25, market mean 72.17, lead 0d |
-| +8¢ | KXHIGHNY-26NOV19-B65.5 | 65° to 66° | NO | 54¢ | 12% | 38% | $0 | center 62.1, market mean 64.21, lead 0d |
-| +8¢ | KXHIGHLAX-26NOV19-B66.5 | 66° to 67° | NO | 45¢ | 39% | 47% | $0 | center 66.0, market mean 66.24, lead 0d |
-| +8¢ | KXHIGHTBOS-26NOV20-B66.5 | 66° to 67° | NO | 45¢ | 21% | 47% | $0 | center 64.25, market mean 66.61, lead 1d |
-| +7¢ | KXHIGHTSATX-26NOV19-T70 | 69° or below | YES | 3¢ | 18% | 10% | $0 | center 71.25, market mean 72.17, lead 0d |
-| +7¢ | KXHIGHMIA-26NOV19-B82.5 | 82° to 83° | NO | 33¢ | 37% | 60% | $0 | center 80.7, market mean 82.09, lead 0d |
-| +7¢ | KXHIGHNY-26NOV19-B63.5 | 63° to 64° | NO | 57¢ | 28% | 36% | $0 | center 62.1, market mean 64.21, lead 0d |
-| +7¢ | KXHIGHLAX-26NOV20-B66.5 | 66° to 67° | NO | 40¢ | 24% | 53% | $0 | center 64.9, market mean 66.45, lead 1d |
-| +7¢ | KXHIGHTPHX-26NOV19-B73.5 | 73° to 74° | YES | 10¢ | 25% | 17% | $0 | center 75.45, market mean 75.63, lead 0d |
-| +7¢ | KXHIGHTOKC-26NOV19-B68.5 | 68° to 69° | NO | 51¢ | 34% | 42% | $0 | center 67.55, market mean 69.16, lead 0d |
-| +7¢ | KXHIGHTDC-26NOV20-B70.5 | 70° to 71° | NO | 45¢ | 25% | 48% | $0 | center 68.85, market mean 70.09, lead 1d |
-| +7¢ | KXHIGHPHIL-26NOV19-B65.5 | 65° to 66° | YES | 19¢ | 34% | 26% | $0 | center 65.2, market mean 67.38, lead 0d |
-| +7¢ | KXHIGHTATL-26NOV19-T69 | 70° or above | NO | 55¢ | 17% | 38% | $0 | center 67.65, market mean 69.18, lead 0d |
-| +6¢ | KXHIGHTDAL-26NOV19-B74.5 | 74° to 75° | NO | 54¢ | 19% | 40% | $0 | center 72.1, market mean 73.42, lead 0d |
-| +6¢ | KXHIGHTOKC-26NOV19-B66.5 | 66° to 67° | YES | 7¢ | 34% | 14% | $0 | center 67.55, market mean 69.16, lead 0d |
-| +6¢ | KXHIGHTOKC-26NOV19-B70.5 | 70° to 71° | NO | 59¢ | 14% | 35% | $0 | center 67.55, market mean 69.16, lead 0d |
-| +6¢ | KXHIGHTBOS-26NOV19-T63 | 62° or below | YES | 10¢ | 37% | 16% | $0 | center 63.25, market mean 64.49, lead 0d |
-| +6¢ | KXHIGHTLV-26NOV19-B61.5 | 61° to 62° | NO | 71¢ | 16% | 23% | $0 | center 59.75, market mean 61.54, lead 0d |
-| +6¢ | KXHIGHTDAL-26NOV19-B70.5 | 70° to 71° | YES | 4¢ | 30% | 10% | $0 | center 72.1, market mean 73.42, lead 0d |
-| +6¢ | KXHIGHTNOLA-26NOV19-B68.5 | 68° to 69° | YES | 8¢ | 21% | 14% | $0 | center 70.7, market mean 71.5, lead 0d |
-| +6¢ | KXHIGHTHOU-26NOV19-B75.5 | 75° to 76° | NO | 34¢ | 39% | 60% | $0 | center 75.4, market mean 75.37, lead 0d |
-| +6¢ | KXHIGHTNOLA-26NOV19-B72.5 | 72° to 73° | NO | 49¢ | 26% | 45% | $0 | center 70.7, market mean 71.5, lead 0d |
-| +6¢ | KXHIGHTSATX-26NOV19-B70.5 | 70° to 71° | YES | 27¢ | 40% | 33% | $0 | center 71.25, market mean 72.17, lead 0d |
-| +6¢ | KXHIGHTATL-26NOV19-B66.5 | 66° to 67° | YES | 6¢ | 31% | 12% | $0 | center 67.65, market mean 69.18, lead 0d |
+| +17¢ | KXAAAGASD-26NOV20-3.6900 | Above 3.6900 | YES | 20¢ | 88% | 37% | $0 |  |
+| +13¢ | KXHIGHTSATX-26NOV19-B70.5 | 70° to 71° | NO | 12¢ | 35% | 75% | $0 | center 71.65, market mean 70.81, lead 0d |
+| +13¢ | KXHIGHTNOLA-26NOV19-B70.5 | 70° to 71° | NO | 17¢ | 23% | 70% | $0 | center 71.6, market mean 70.68, lead 0d |
+| +13¢ | KXHIGHTMIN-26NOV19-B55.5 | 55° to 56° | NO | 3¢ | 45% | 84% | $0 | center 55.9, market mean 55.61, lead 0d |
+| +11¢ | KXHIGHTPHX-26NOV19-B75.5 | 75° to 76° | NO | 16¢ | 38% | 73% | $0 | center 75.25, market mean 75.57, lead 0d |
+| +11¢ | KXHIGHCHI-26NOV19-B66.5 | 66° to 67° | NO | 5¢ | 47% | 84% | $0 | center 66.2, market mean 66.54, lead 0d |
+| +11¢ | KXHIGHTDC-26NOV19-B66.5 | 66° to 67° | NO | 10¢ | 44% | 79% | $0 | center 67.0, market mean 66.75, lead 0d |
+| +11¢ | KXHIGHNY-26NOV19-B63.5 | 63° to 64° | NO | 9¢ | 45% | 80% | $0 | center 63.0, market mean 63.65, lead 0d |
+| +11¢ | KXHIGHTBOS-26NOV19-B63.5 | 63° to 64° | NO | 2¢ | 54% | 87% | $0 | center 62.6, market mean 63.61, lead 0d |
+| +11¢ | KXHIGHTBOS-26NOV20-B66.5 | 66° to 67° | NO | 43¢ | 13% | 46% | $0 | center 63.1, market mean 66.91, lead 1d |
+| +10¢ | KXHIGHPHIL-26NOV19-B67.5 | 67° to 68° | NO | 10¢ | 43% | 80% | $0 | center 68.0, market mean 67.65, lead 0d |
+| +10¢ | KXHIGHTPHX-26NOV19-B73.5 | 73° to 74° | YES | 6¢ | 27% | 16% | $0 | center 75.25, market mean 75.57, lead 0d |
+| +10¢ | KXHIGHTHOU-26NOV19-B75.5 | 75° to 76° | NO | 5¢ | 50% | 85% | $0 | center 75.2, market mean 75.58, lead 0d |
+| +10¢ | KXHIGHTLV-26NOV20-B58.5 | 58° to 59° | NO | 31¢ | 27% | 59% | $0 | center 58.05, market mean 58.52, lead 1d |
+| +10¢ | KXHIGHLAX-26NOV20-B66.5 | 66° to 67° | NO | 34¢ | 25% | 56% | $0 | center 64.9, market mean 66.26, lead 1d |
+| +10¢ | KXHIGHTSATX-26NOV19-B72.5 | 72° to 73° | YES | 11¢ | 32% | 21% | $0 | center 71.65, market mean 70.81, lead 0d |
+| +10¢ | KXHIGHCHI-26NOV19-B68.5 | 68° to 69° | YES | 5¢ | 26% | 15% | $0 | center 66.2, market mean 66.54, lead 0d |
+| +9¢ | KXHIGHTLV-26NOV19-B57.5 | 57° to 58° | NO | 31¢ | 18% | 60% | $0 | center 60.05, market mean 58.02, lead 0d |
+| +9¢ | KXHIGHAUS-26NOV19-B74.5 | 74° to 75° | YES | 16¢ | 34% | 25% | $0 | center 73.5, market mean 72.75, lead 0d |
+| +9¢ | KXHIGHTPHX-26NOV20-T70 | 69° or below | YES | 9¢ | 45% | 18% | $0 | center 69.8, market mean 71.49, lead 1d |
+| +8¢ | KXHIGHLAX-26NOV19-B66.5 | 66° to 67° | NO | 19¢ | 42% | 73% | $0 | center 66.0, market mean 66.87, lead 0d |
+| +8¢ | KXHIGHCHI-26NOV20-B68.5 | 68° to 69° | NO | 39¢ | 26% | 53% | $0 | center 67.0, market mean 68.17, lead 1d |
+| +8¢ | KXHIGHTHOU-26NOV19-B77.5 | 77° to 78° | YES | 4¢ | 21% | 12% | $0 | center 75.2, market mean 75.58, lead 0d |
+| +8¢ | KXHIGHTDC-26NOV20-B70.5 | 70° to 71° | NO | 39¢ | 25% | 53% | $0 | center 68.85, market mean 70.08, lead 1d |
+| +7¢ | KXHIGHTSATX-26NOV20-B73.5 | 73° to 74° | NO | 38¢ | 31% | 55% | $0 | center 73.4, market mean 73.86, lead 1d |
+| +7¢ | KXHIGHTSATX-26NOV19-B74.5 | 74° to 75° | YES | 2¢ | 17% | 9% | $0 | center 71.65, market mean 70.81, lead 0d |
+| +7¢ | KXHIGHTMIN-26NOV19-B57.5 | 57° to 58° | YES | 2¢ | 32% | 9% | $0 | center 55.9, market mean 55.61, lead 0d |
+| +7¢ | KXHIGHTBOS-26NOV20-B68.5 | 68° to 69° | NO | 67¢ | 3% | 26% | $0 | center 63.1, market mean 66.91, lead 1d |
+| +7¢ | KXHIGHAUS-26NOV20-B76.5 | 76° to 77° | NO | 40¢ | 30% | 53% | $0 | center 75.85, market mean 75.98, lead 1d |
+| +7¢ | KXHIGHDEN-26NOV19-B54.5 | 54° to 55° | YES | 34¢ | 52% | 41% | $0 | center 54.6, market mean 55.87, lead 0d |
+| +7¢ | KXHIGHTATL-26NOV20-B69.5 | 69° to 70° | NO | 38¢ | 33% | 55% | $0 | center 69.1, market mean 69.97, lead 1d |
+| +7¢ | KXHIGHTSEA-26NOV19-B49.5 | 49° to 50° | NO | 30¢ | 38% | 63% | $0 | center 49.25, market mean 49.52, lead 0d |
+| +7¢ | KXHIGHTPHX-26NOV20-B72.5 | 72° to 73° | NO | 53¢ | 18% | 40% | $0 | center 69.8, market mean 71.49, lead 1d |
+| +7¢ | KXHIGHTBOS-26NOV20-B62.5 | 62° to 63° | YES | 2¢ | 30% | 9% | $0 | center 63.1, market mean 66.91, lead 1d |
+| +7¢ | KXHIGHNY-26NOV19-B65.5 | 65° to 66° | YES | 11¢ | 25% | 18% | $0 | center 63.0, market mean 63.65, lead 0d |
+| +7¢ | KXHIGHTNOLA-26NOV19-B72.5 | 72° to 73° | YES | 9¢ | 40% | 16% | $0 | center 71.6, market mean 70.68, lead 0d |
+| +6¢ | KXHIGHDEN-26NOV20-B63.5 | 63° to 64° | NO | 51¢ | 22% | 43% | $0 | center 61.25, market mean 62.97, lead 1d |
+| +6¢ | KXHIGHTDAL-26NOV19-B72.5 | 72° to 73° | NO | 38¢ | 46% | 56% | $0 | center 73.4, market mean 73.15, lead 0d |
+| +6¢ | KXHIGHAUS-26NOV19-B72.5 | 72° to 73° | NO | 22¢ | 42% | 72% | $0 | center 73.5, market mean 72.75, lead 0d |
+| +6¢ | KXHIGHTOKC-26NOV20-B69.5 | 69° to 70° | NO | 38¢ | 30% | 56% | $0 | center 69.0, market mean 69.79, lead 1d |
