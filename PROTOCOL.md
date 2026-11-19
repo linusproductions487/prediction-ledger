@@ -16,9 +16,11 @@ These rules exist so the scorecard measures reality, not spin.
 ## Paper trading
 Market predictions (topic `market:*`) are tied to a real, open contract on **Kalshi**, a CFTC-regulated US exchange, so every trade is one that could actually have been placed. No real money is used.
 
-1. **Real prices only.** The entry price is the live Kalshi **ask** for the side bought, read from the market page at the moment the prediction is locked, and recorded in the hashed `baseline_rule` field.
+1. **Real prices only.** Prices come from the public scanner (`scan.py`, run by GitHub Actions), which reads Kalshi's live order book and commits it to this repo. The entry price is what buying $100 would really cost walking that book, from a scan no more than 20 minutes old. The scan's commit is the proof. (Trade #1 predates the scanner and used the ask shown on the market page.)
 2. **The claim is the contract.** A market prediction resolves TRUE exactly when Kalshi settles that contract YES.
-3. **Trade rule:** buy only when my probability beats the ask by **at least 5 cents**. Otherwise the prediction is still logged (for calibration) with "no trade."
+3. **Trade rule:** buy only when my probability beats the fill price by **at least 5 cents**. Otherwise the prediction is still logged (for calibration) with "no trade."
+   - **Blend rule:** for model-driven markets my probability is the model averaged 50/50 with the market's own price, until that model has 50+ settled trades. A raw model-vs-market gap above 25 points is treated as a model error and is never traded.
+   - **No same-day weather trades:** those markets move on live readings the scanner lags.
 4. **Fixed size:** $100 per trade, as many whole contracts as $100 buys at the ask.
 5. **Real fees:** Kalshi's taker fee, `ceil(0.07 × contracts × price × (1 − price))`, is charged on every trade.
 6. **One trade per underlying event.** Several contracts that hinge on the same data release count as one bet, so only one of them may be traded.

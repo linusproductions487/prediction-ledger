@@ -249,12 +249,12 @@ def ensemble_members(lat, lon):
     return times, members, used
 
 
-DET_MODELS = ["best_match", "ncep_nbm_conus", "gfs_hrrr", "ecmwf_ifs025", "gfs_seamless"]
+DET_MODELS = ["ncep_nbm_conus", "gfs_hrrr", "ecmwf_ifs025", "gfs_global", "icon_seamless", "gem_seamless"]
 
 
 def deterministic(lat, lon):
     """Hourly temperature from several independent forecast models: {model: values}."""
-    for models in (DET_MODELS, ["best_match"]):
+    for models in (DET_MODELS, DET_MODELS[:3], ["best_match"]):
         try:
             d = get("https://api.open-meteo.com/v1/forecast?latitude=%s&longitude=%s&hourly=temperature_2m&models=%s"
                     "&temperature_unit=fahrenheit&timezone=GMT&forecast_days=4" % (lat, lon, ",".join(models)),
@@ -264,8 +264,12 @@ def deterministic(lat, lon):
             for k, v in h.items():
                 if k.startswith("temperature_2m"):
                     out[k[len("temperature_2m"):].lstrip("_") or models[0]] = v
-            if out:
-                return h.get("time"), out
+            uniq = {}
+            for name, v in out.items():              # some names are aliases of the same model run
+                if any(x is not None for x in v) and v not in uniq.values():
+                    uniq[name] = v
+            if uniq:
+                return h.get("time"), uniq
         except Exception as e:
             log(f"deterministic {lat},{lon} {len(models)} models: {type(e).__name__} {e}")
     return None, {}
@@ -526,7 +530,13 @@ def rbob():
         closes = [round(c, 4) for c in r["indicators"]["quote"][0]["close"] if c is not None]
         return {"last": closes[-1], "five_days_ago": closes[-6] if len(closes) > 5 else None, "closes": closes[-22:]}
     except Exception as e:
-        log(f"rbob: {type(e).__name__} {e}")
+        log(f"rbob yahoo: {type(e).__name__} {e}")
+    try:
+        txt = get("https://stooq.com/q/d/l/?s=rb.f&i=d", timeout=15, ua=BROWSER_UA, raw=True, tries=2)
+        closes = [round(float(l.split(",")[4]), 4) for l in txt.strip().splitlines()[1:] if l.count(",") >= 4][-22:]
+        return {"last": closes[-1], "five_days_ago": closes[-6] if len(closes) > 5 else None, "closes": closes, "source": "stooq"}
+    except Exception as e:
+        log(f"rbob stooq: {type(e).__name__} {e}")
         return None
 
 
@@ -586,7 +596,7 @@ def add_edges(events):
             ey, en = round(b * 100 - ya, 1), round((1 - b) * 100 - na, 1)
             m["edge_yes"], m["edge_no"] = ey, en
             side, edge, ask = ("YES", ey, ya) if ey >= en else ("NO", en, na)
-            m["tradeable"] = bool(raw <= 0.25 and edge >= 5)
+            m["tradeable"] = bool(raw <= 0.25 and edge >= 5 and ev.get("lead") != 0)   # same-day markets trade on live readings we lag
             if edge >= 5:
                 rows.append([edge, ev, m, side, ask])
         if wp > 0.5:
@@ -595,7 +605,10 @@ def add_edges(events):
     checked = 0
     for r in rows:
         edge, ev, m, side, ask = r
-        if not m["tradeable"] or checked >= 45 or out_of_time():
+        if not m["tradeable"]:
+            continue
+        if checked >= 60 or out_of_time():
+            m["tradeable"] = False                                         # book not checked: never trade blind
             continue
         checked += 1
         f = book_fill(m["ticker"], side)
@@ -642,6 +655,9 @@ def main():
         try:
             info = weather_model(s, by_series[s], now, cal)
             weather[s] = {"city": CITIES[s][0], "station": CITIES[s][1], "days": info}
+            for ev in by_series[s]:
+                if ev["date"] in info:
+                    ev["lead"] = info[ev["date"]]["lead"]
             for day, i in info.items():
                 new_hist.append({"scan": now.strftime("%Y-%m-%dT%H:%MZ"), "series": s, "date": day, "lead": i["lead"],
                                  "center": i["raw_center"], "nws": i["nws_high"], "models": i["models"],
