@@ -2519,6 +2519,1752 @@ null
 "strike_type": "greater",
 "ticker": "KXAAAGASW-26NOV16-4.2000"
 },
+"KXCPI-26OCT-T-0.1": {
+"bracket": [
+0,
+1
+],
+"cap": null,
+"event_ticker": "KXCPI-26OCT",
+"expiration_value": "0.4",
+"floor": -0.1,
+"label": "Above -0.1%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPI-26OCT-T-0.1"
+},
+"KXCPI-26OCT-T0.0": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXCPI-26OCT",
+"expiration_value": "0.4",
+"floor": 0.0,
+"label": "Above 0.0%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPI-26OCT-T0.0"
+},
+"KXCPI-26OCT-T0.1": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXCPI-26OCT",
+"expiration_value": "0.4",
+"floor": 0.1,
+"label": "Above 0.1%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPI-26OCT-T0.1"
+},
+"KXCPI-26OCT-T0.2": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXCPI-26OCT",
+"expiration_value": "0.4",
+"floor": 0.2,
+"label": "Above 0.2%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPI-26OCT-T0.2"
+},
+"KXCPI-26OCT-T0.3": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXCPI-26OCT",
+"expiration_value": "0.4",
+"floor": 0.3,
+"label": "Above 0.3%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPI-26OCT-T0.3"
+},
+"KXCPI-26OCT-T0.4": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXCPI-26OCT",
+"expiration_value": "0.4",
+"floor": 0.4,
+"label": "Above 0.4%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPI-26OCT-T0.4"
+},
+"KXCPI-26OCT-T0.5": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXCPI-26OCT",
+"expiration_value": "0.4",
+"floor": 0.5,
+"label": "Above 0.5%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPI-26OCT-T0.5"
+},
+"KXCPI-26OCT-T0.6": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXCPI-26OCT",
+"expiration_value": "0.4",
+"floor": 0.6,
+"label": "Above 0.6%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPI-26OCT-T0.6"
+},
+"KXCPI-26OCT-T0.7": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXCPI-26OCT",
+"expiration_value": "0.4",
+"floor": 0.7,
+"label": "Above 0.7%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPI-26OCT-T0.7"
+},
+"KXCPI-26OCT-T0.8": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXCPI-26OCT",
+"expiration_value": "0.4",
+"floor": 0.8,
+"label": "Above 0.8%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPI-26OCT-T0.8"
+},
+"KXCPI-26OCT-T0.9": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXCPI-26OCT",
+"expiration_value": "0.4",
+"floor": 0.9,
+"label": "Above 0.9%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPI-26OCT-T0.9"
+},
+"KXCPI-26OCT-T1.0": {
+"bracket": [
+2,
+null
+],
+"cap": null,
+"event_ticker": "KXCPI-26OCT",
+"expiration_value": "0.4",
+"floor": 1.0,
+"label": "Above 1.0%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPI-26OCT-T1.0"
+},
+"KXCPI-26SEP-T-0.1": {
+"bracket": [
+0,
+1
+],
+"cap": null,
+"event_ticker": "KXCPI-26SEP",
+"expiration_value": "0.6",
+"floor": -0.1,
+"label": "Above -0.1%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPI-26SEP-T-0.1"
+},
+"KXCPI-26SEP-T-0.2": {
+"bracket": [
+0,
+2
+],
+"cap": null,
+"event_ticker": "KXCPI-26SEP",
+"expiration_value": "0.6",
+"floor": -0.2,
+"label": "Above -0.2%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPI-26SEP-T-0.2"
+},
+"KXCPI-26SEP-T-0.3": {
+"bracket": [
+0,
+3
+],
+"cap": null,
+"event_ticker": "KXCPI-26SEP",
+"expiration_value": "0.6",
+"floor": -0.3,
+"label": "Above -0.3%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPI-26SEP-T-0.3"
+},
+"KXCPI-26SEP-T-0.4": {
+"bracket": [
+0,
+4
+],
+"cap": null,
+"event_ticker": "KXCPI-26SEP",
+"expiration_value": "0.6",
+"floor": -0.4,
+"label": "Above -0.4%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPI-26SEP-T-0.4"
+},
+"KXCPI-26SEP-T0.0": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXCPI-26SEP",
+"expiration_value": "0.6",
+"floor": 0.0,
+"label": "Above 0.0%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPI-26SEP-T0.0"
+},
+"KXCPI-26SEP-T0.1": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXCPI-26SEP",
+"expiration_value": "0.6",
+"floor": 0.1,
+"label": "Above 0.1%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPI-26SEP-T0.1"
+},
+"KXCPI-26SEP-T0.2": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXCPI-26SEP",
+"expiration_value": "0.6",
+"floor": 0.2,
+"label": "Above 0.2%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPI-26SEP-T0.2"
+},
+"KXCPI-26SEP-T0.3": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXCPI-26SEP",
+"expiration_value": "0.6",
+"floor": 0.3,
+"label": "Above 0.3%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPI-26SEP-T0.3"
+},
+"KXCPI-26SEP-T0.4": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXCPI-26SEP",
+"expiration_value": "0.6",
+"floor": 0.4,
+"label": "Above 0.4%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPI-26SEP-T0.4"
+},
+"KXCPI-26SEP-T0.5": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXCPI-26SEP",
+"expiration_value": "0.6",
+"floor": 0.5,
+"label": "Above 0.5%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPI-26SEP-T0.5"
+},
+"KXCPI-26SEP-T0.6": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXCPI-26SEP",
+"expiration_value": "0.6",
+"floor": 0.6,
+"label": "Above 0.6%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPI-26SEP-T0.6"
+},
+"KXCPI-26SEP-T0.7": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXCPI-26SEP",
+"expiration_value": "0.6",
+"floor": 0.7,
+"label": "Above 0.7%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPI-26SEP-T0.7"
+},
+"KXCPI-26SEP-T0.8": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXCPI-26SEP",
+"expiration_value": "0.6",
+"floor": 0.8,
+"label": "Above 0.8%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPI-26SEP-T0.8"
+},
+"KXCPI-26SEP-T0.9": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXCPI-26SEP",
+"expiration_value": "0.6",
+"floor": 0.9,
+"label": "Above 0.9%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPI-26SEP-T0.9"
+},
+"KXCPIYOY-26SEP-T3.0": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXCPIYOY-26SEP",
+"expiration_value": "3.7",
+"floor": 3.0,
+"label": "Above 3.0%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPIYOY-26SEP-T3.0"
+},
+"KXCPIYOY-26SEP-T3.1": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXCPIYOY-26SEP",
+"expiration_value": "3.7",
+"floor": 3.1,
+"label": "Above 3.1%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPIYOY-26SEP-T3.1"
+},
+"KXCPIYOY-26SEP-T3.2": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXCPIYOY-26SEP",
+"expiration_value": "3.7",
+"floor": 3.2,
+"label": "Above 3.2%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPIYOY-26SEP-T3.2"
+},
+"KXCPIYOY-26SEP-T3.3": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXCPIYOY-26SEP",
+"expiration_value": "3.7",
+"floor": 3.3,
+"label": "Above 3.3%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPIYOY-26SEP-T3.3"
+},
+"KXCPIYOY-26SEP-T3.4": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXCPIYOY-26SEP",
+"expiration_value": "3.7",
+"floor": 3.4,
+"label": "Above 3.4%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPIYOY-26SEP-T3.4"
+},
+"KXCPIYOY-26SEP-T3.5": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXCPIYOY-26SEP",
+"expiration_value": "3.7",
+"floor": 3.5,
+"label": "Above 3.5%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPIYOY-26SEP-T3.5"
+},
+"KXCPIYOY-26SEP-T3.6": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXCPIYOY-26SEP",
+"expiration_value": "3.7",
+"floor": 3.6,
+"label": "Above 3.6%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXCPIYOY-26SEP-T3.6"
+},
+"KXCPIYOY-26SEP-T3.7": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXCPIYOY-26SEP",
+"expiration_value": "3.7",
+"floor": 3.7,
+"label": "Above 3.7%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPIYOY-26SEP-T3.7"
+},
+"KXCPIYOY-26SEP-T3.8": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXCPIYOY-26SEP",
+"expiration_value": "3.7",
+"floor": 3.8,
+"label": "Above 3.8%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPIYOY-26SEP-T3.8"
+},
+"KXCPIYOY-26SEP-T3.9": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXCPIYOY-26SEP",
+"expiration_value": "3.7",
+"floor": 3.9,
+"label": "Above 3.9%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPIYOY-26SEP-T3.9"
+},
+"KXCPIYOY-26SEP-T4.0": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXCPIYOY-26SEP",
+"expiration_value": "3.7",
+"floor": 4.0,
+"label": "Above 4.0%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPIYOY-26SEP-T4.0"
+},
+"KXCPIYOY-26SEP-T4.1": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXCPIYOY-26SEP",
+"expiration_value": "3.7",
+"floor": 4.1,
+"label": "Above 4.1%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPIYOY-26SEP-T4.1"
+},
+"KXCPIYOY-26SEP-T4.2": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXCPIYOY-26SEP",
+"expiration_value": "3.7",
+"floor": 4.2,
+"label": "Above 4.2%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPIYOY-26SEP-T4.2"
+},
+"KXCPIYOY-26SEP-T4.3": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXCPIYOY-26SEP",
+"expiration_value": "3.7",
+"floor": 4.3,
+"label": "Above 4.3%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPIYOY-26SEP-T4.3"
+},
+"KXCPIYOY-26SEP-T4.4": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXCPIYOY-26SEP",
+"expiration_value": "3.7",
+"floor": 4.4,
+"label": "Above 4.4%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPIYOY-26SEP-T4.4"
+},
+"KXCPIYOY-26SEP-T4.5": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXCPIYOY-26SEP",
+"expiration_value": "3.7",
+"floor": 4.5,
+"label": "Above 4.5%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPIYOY-26SEP-T4.5"
+},
+"KXCPIYOY-26SEP-T4.6": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXCPIYOY-26SEP",
+"expiration_value": "3.7",
+"floor": 4.6,
+"label": "Above 4.6%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPIYOY-26SEP-T4.6"
+},
+"KXCPIYOY-26SEP-T4.7": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXCPIYOY-26SEP",
+"expiration_value": "3.7",
+"floor": 4.7,
+"label": "Above 4.7%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPIYOY-26SEP-T4.7"
+},
+"KXCPIYOY-26SEP-T4.8": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXCPIYOY-26SEP",
+"expiration_value": "3.7",
+"floor": 4.8,
+"label": "Above 4.8%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPIYOY-26SEP-T4.8"
+},
+"KXCPIYOY-26SEP-T4.9": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXCPIYOY-26SEP",
+"expiration_value": "3.7",
+"floor": 4.9,
+"label": "Above 4.9%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPIYOY-26SEP-T4.9"
+},
+"KXCPIYOY-26SEP-T5.0": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXCPIYOY-26SEP",
+"expiration_value": "3.7",
+"floor": 5.0,
+"label": "Above 5.0%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXCPIYOY-26SEP-T5.0"
+},
+"KXDIESELD-26NOV17-T5.965": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV17",
+"expiration_value": "5.9848",
+"floor": 5.965,
+"label": "Above $5.965",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV17-T5.965"
+},
+"KXDIESELD-26NOV17-T5.970": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV17",
+"expiration_value": "5.9848",
+"floor": 5.97,
+"label": "Above $5.970",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV17-T5.970"
+},
+"KXDIESELD-26NOV17-T5.975": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV17",
+"expiration_value": "5.9848",
+"floor": 5.975,
+"label": "Above $5.975",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV17-T5.975"
+},
+"KXDIESELD-26NOV17-T5.980": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV17",
+"expiration_value": "5.9848",
+"floor": 5.98,
+"label": "Above $5.980",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV17-T5.980"
+},
+"KXDIESELD-26NOV17-T5.985": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV17",
+"expiration_value": "5.9848",
+"floor": 5.985,
+"label": "Above $5.985",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV17-T5.985"
+},
+"KXDIESELD-26NOV17-T5.990": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV17",
+"expiration_value": "5.9848",
+"floor": 5.99,
+"label": "Above $5.990",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV17-T5.990"
+},
+"KXDIESELD-26NOV17-T5.995": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV17",
+"expiration_value": "5.9848",
+"floor": 5.995,
+"label": "Above $5.995",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV17-T5.995"
+},
+"KXDIESELD-26NOV17-T6.000": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV17",
+"expiration_value": "5.9848",
+"floor": 6.0,
+"label": "Above $6.000",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV17-T6.000"
+},
+"KXDIESELD-26NOV17-T6.005": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV17",
+"expiration_value": "5.9848",
+"floor": 6.005,
+"label": "Above $6.005",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV17-T6.005"
+},
+"KXDIESELD-26NOV17-T6.010": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV17",
+"expiration_value": "5.9848",
+"floor": 6.01,
+"label": "Above $6.010",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV17-T6.010"
+},
+"KXDIESELD-26NOV17-T6.015": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV17",
+"expiration_value": "5.9848",
+"floor": 6.015,
+"label": "Above $6.015",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV17-T6.015"
+},
+"KXDIESELD-26NOV17-T6.020": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV17",
+"expiration_value": "5.9848",
+"floor": 6.02,
+"label": "Above $6.020",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV17-T6.020"
+},
+"KXDIESELD-26NOV17-T6.025": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV17",
+"expiration_value": "5.9848",
+"floor": 6.025,
+"label": "Above $6.025",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV17-T6.025"
+},
+"KXDIESELD-26NOV17-T6.030": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV17",
+"expiration_value": "5.9848",
+"floor": 6.03,
+"label": "Above $6.030",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV17-T6.030"
+},
+"KXDIESELD-26NOV17-T6.035": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV17",
+"expiration_value": "5.9848",
+"floor": 6.035,
+"label": "Above $6.035",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV17-T6.035"
+},
+"KXDIESELD-26NOV17-T6.040": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV17",
+"expiration_value": "5.9848",
+"floor": 6.04,
+"label": "Above $6.040",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV17-T6.040"
+},
+"KXDIESELD-26NOV17-T6.045": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV17",
+"expiration_value": "5.9848",
+"floor": 6.045,
+"label": "Above $6.045",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV17-T6.045"
+},
+"KXDIESELD-26NOV17-T6.050": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV17",
+"expiration_value": "5.9848",
+"floor": 6.05,
+"label": "Above $6.050",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV17-T6.050"
+},
+"KXDIESELD-26NOV18-T5.935": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV18",
+"expiration_value": "5.9594",
+"floor": 5.935,
+"label": "Above $5.935",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV18-T5.935"
+},
+"KXDIESELD-26NOV18-T5.940": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV18",
+"expiration_value": "5.9594",
+"floor": 5.94,
+"label": "Above $5.940",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV18-T5.940"
+},
+"KXDIESELD-26NOV18-T5.945": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV18",
+"expiration_value": "5.9594",
+"floor": 5.945,
+"label": "Above $5.945",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV18-T5.945"
+},
+"KXDIESELD-26NOV18-T5.950": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV18",
+"expiration_value": "5.9594",
+"floor": 5.95,
+"label": "Above $5.950",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV18-T5.950"
+},
+"KXDIESELD-26NOV18-T5.955": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV18",
+"expiration_value": "5.9594",
+"floor": 5.955,
+"label": "Above $5.955",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV18-T5.955"
+},
+"KXDIESELD-26NOV18-T5.960": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV18",
+"expiration_value": "5.9594",
+"floor": 5.96,
+"label": "Above $5.960",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV18-T5.960"
+},
+"KXDIESELD-26NOV18-T5.965": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV18",
+"expiration_value": "5.9594",
+"floor": 5.965,
+"label": "Above $5.965",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV18-T5.965"
+},
+"KXDIESELD-26NOV18-T5.970": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV18",
+"expiration_value": "5.9594",
+"floor": 5.97,
+"label": "Above $5.970",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV18-T5.970"
+},
+"KXDIESELD-26NOV18-T5.975": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV18",
+"expiration_value": "5.9594",
+"floor": 5.975,
+"label": "Above $5.975",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV18-T5.975"
+},
+"KXDIESELD-26NOV18-T5.980": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV18",
+"expiration_value": "5.9594",
+"floor": 5.98,
+"label": "Above $5.980",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV18-T5.980"
+},
+"KXDIESELD-26NOV18-T5.985": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV18",
+"expiration_value": "5.9594",
+"floor": 5.985,
+"label": "Above $5.985",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV18-T5.985"
+},
+"KXDIESELD-26NOV18-T5.990": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV18",
+"expiration_value": "5.9594",
+"floor": 5.99,
+"label": "Above $5.990",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV18-T5.990"
+},
+"KXDIESELD-26NOV18-T5.995": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV18",
+"expiration_value": "5.9594",
+"floor": 5.995,
+"label": "Above $5.995",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV18-T5.995"
+},
+"KXDIESELD-26NOV18-T6.000": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV18",
+"expiration_value": "5.9594",
+"floor": 6.0,
+"label": "Above $6.000",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV18-T6.000"
+},
+"KXDIESELD-26NOV18-T6.005": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV18",
+"expiration_value": "5.9594",
+"floor": 6.005,
+"label": "Above $6.005",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV18-T6.005"
+},
+"KXDIESELD-26NOV18-T6.010": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV18",
+"expiration_value": "5.9594",
+"floor": 6.01,
+"label": "Above $6.010",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV18-T6.010"
+},
+"KXDIESELD-26NOV18-T6.015": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV18",
+"expiration_value": "5.9594",
+"floor": 6.015,
+"label": "Above $6.015",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV18-T6.015"
+},
+"KXDIESELD-26NOV18-T6.020": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV18",
+"expiration_value": "5.9594",
+"floor": 6.02,
+"label": "Above $6.020",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV18-T6.020"
+},
+"KXDIESELD-26NOV18-T6.025": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV18",
+"expiration_value": "5.9594",
+"floor": 6.025,
+"label": "Above $6.025",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV18-T6.025"
+},
+"KXDIESELD-26NOV18-T6.030": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV18",
+"expiration_value": "5.9594",
+"floor": 6.03,
+"label": "Above $6.030",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV18-T6.030"
+},
+"KXDIESELD-26NOV18-T6.035": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV18",
+"expiration_value": "5.9594",
+"floor": 6.035,
+"label": "Above $6.035",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV18-T6.035"
+},
+"KXDIESELD-26NOV19-T5.910": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV19",
+"expiration_value": "5.9298",
+"floor": 5.91,
+"label": "Above $5.910",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV19-T5.910"
+},
+"KXDIESELD-26NOV19-T5.915": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV19",
+"expiration_value": "5.9298",
+"floor": 5.915,
+"label": "Above $5.915",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV19-T5.915"
+},
+"KXDIESELD-26NOV19-T5.920": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV19",
+"expiration_value": "5.9298",
+"floor": 5.92,
+"label": "Above $5.920",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV19-T5.920"
+},
+"KXDIESELD-26NOV19-T5.925": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV19",
+"expiration_value": "5.9298",
+"floor": 5.925,
+"label": "Above $5.925",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV19-T5.925"
+},
+"KXDIESELD-26NOV19-T5.930": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV19",
+"expiration_value": "5.9298",
+"floor": 5.93,
+"label": "Above $5.930",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV19-T5.930"
+},
+"KXDIESELD-26NOV19-T5.935": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV19",
+"expiration_value": "5.9298",
+"floor": 5.935,
+"label": "Above $5.935",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV19-T5.935"
+},
+"KXDIESELD-26NOV19-T5.940": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV19",
+"expiration_value": "5.9298",
+"floor": 5.94,
+"label": "Above $5.940",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV19-T5.940"
+},
+"KXDIESELD-26NOV19-T5.945": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV19",
+"expiration_value": "5.9298",
+"floor": 5.945,
+"label": "Above $5.945",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV19-T5.945"
+},
+"KXDIESELD-26NOV19-T5.950": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV19",
+"expiration_value": "5.9298",
+"floor": 5.95,
+"label": "Above $5.950",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV19-T5.950"
+},
+"KXDIESELD-26NOV19-T5.955": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV19",
+"expiration_value": "5.9298",
+"floor": 5.955,
+"label": "Above $5.955",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV19-T5.955"
+},
+"KXDIESELD-26NOV19-T5.960": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV19",
+"expiration_value": "5.9298",
+"floor": 5.96,
+"label": "Above $5.960",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV19-T5.960"
+},
+"KXDIESELD-26NOV19-T5.965": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV19",
+"expiration_value": "5.9298",
+"floor": 5.965,
+"label": "Above $5.965",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV19-T5.965"
+},
+"KXDIESELD-26NOV19-T5.970": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV19",
+"expiration_value": "5.9298",
+"floor": 5.97,
+"label": "Above $5.970",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV19-T5.970"
+},
+"KXDIESELD-26NOV19-T5.975": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV19",
+"expiration_value": "5.9298",
+"floor": 5.975,
+"label": "Above $5.975",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV19-T5.975"
+},
+"KXDIESELD-26NOV19-T5.980": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV19",
+"expiration_value": "5.9298",
+"floor": 5.98,
+"label": "Above $5.980",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV19-T5.980"
+},
+"KXDIESELD-26NOV19-T5.985": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV19",
+"expiration_value": "5.9298",
+"floor": 5.985,
+"label": "Above $5.985",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV19-T5.985"
+},
+"KXDIESELD-26NOV19-T5.990": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV19",
+"expiration_value": "5.9298",
+"floor": 5.99,
+"label": "Above $5.990",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV19-T5.990"
+},
+"KXDIESELD-26NOV19-T5.995": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV19",
+"expiration_value": "5.9298",
+"floor": 5.995,
+"label": "Above $5.995",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV19-T5.995"
+},
+"KXDIESELD-26NOV19-T6.000": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV19",
+"expiration_value": "5.9298",
+"floor": 6.0,
+"label": "Above $6.000",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV19-T6.000"
+},
+"KXDIESELD-26NOV19-T6.005": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV19",
+"expiration_value": "5.9298",
+"floor": 6.005,
+"label": "Above $6.005",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV19-T6.005"
+},
+"KXDIESELD-26NOV19-T6.010": {
+"bracket": [
+7,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV19",
+"expiration_value": "5.9298",
+"floor": 6.01,
+"label": "Above $6.010",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV19-T6.010"
+},
+"KXFEDDECISION-26OCT-C25": {
+"bracket": null,
+"cap": null,
+"event_ticker": "KXFEDDECISION-26OCT",
+"expiration_value": "Fed maintains rate",
+"floor": null,
+"label": "Cut 25bps",
+"result": "no",
+"strike_type": "custom",
+"ticker": "KXFEDDECISION-26OCT-C25"
+},
+"KXFEDDECISION-26OCT-C26": {
+"bracket": [
+25,
+null
+],
+"cap": null,
+"event_ticker": "KXFEDDECISION-26OCT",
+"expiration_value": "Fed maintains rate",
+"floor": null,
+"label": "Cut >25bps",
+"result": "no",
+"strike_type": "custom",
+"ticker": "KXFEDDECISION-26OCT-C26"
+},
+"KXFEDDECISION-26OCT-H0": {
+"bracket": null,
+"cap": null,
+"event_ticker": "KXFEDDECISION-26OCT",
+"expiration_value": "Fed maintains rate",
+"floor": null,
+"label": "Fed maintains rate",
+"result": "yes",
+"strike_type": "custom",
+"ticker": "KXFEDDECISION-26OCT-H0"
+},
+"KXFEDDECISION-26OCT-H25": {
+"bracket": null,
+"cap": null,
+"event_ticker": "KXFEDDECISION-26OCT",
+"expiration_value": "Fed maintains rate",
+"floor": null,
+"label": "Hike 25bps",
+"result": "no",
+"strike_type": "custom",
+"ticker": "KXFEDDECISION-26OCT-H25"
+},
+"KXFEDDECISION-26OCT-H26": {
+"bracket": [
+25,
+null
+],
+"cap": null,
+"event_ticker": "KXFEDDECISION-26OCT",
+"expiration_value": "Fed maintains rate",
+"floor": null,
+"label": "Hike >25bps",
+"result": "no",
+"strike_type": "custom",
+"ticker": "KXFEDDECISION-26OCT-H26"
+},
+"KXFEDDECISION-26SEP-C25": {
+"bracket": null,
+"cap": null,
+"event_ticker": "KXFEDDECISION-26SEP",
+"expiration_value": "Hike 25bps",
+"floor": null,
+"label": "Cut 25bps",
+"result": "no",
+"strike_type": "custom",
+"ticker": "KXFEDDECISION-26SEP-C25"
+},
+"KXFEDDECISION-26SEP-C26": {
+"bracket": [
+25,
+null
+],
+"cap": null,
+"event_ticker": "KXFEDDECISION-26SEP",
+"expiration_value": "Hike 25bps",
+"floor": null,
+"label": "Cut >25bps",
+"result": "no",
+"strike_type": "custom",
+"ticker": "KXFEDDECISION-26SEP-C26"
+},
+"KXFEDDECISION-26SEP-H0": {
+"bracket": null,
+"cap": null,
+"event_ticker": "KXFEDDECISION-26SEP",
+"expiration_value": "Hike 25bps",
+"floor": null,
+"label": "Fed maintains rate",
+"result": "no",
+"strike_type": "custom",
+"ticker": "KXFEDDECISION-26SEP-H0"
+},
+"KXFEDDECISION-26SEP-H25": {
+"bracket": null,
+"cap": null,
+"event_ticker": "KXFEDDECISION-26SEP",
+"expiration_value": "Hike 25bps",
+"floor": null,
+"label": "Hike 25bps",
+"result": "yes",
+"strike_type": "custom",
+"ticker": "KXFEDDECISION-26SEP-H25"
+},
+"KXFEDDECISION-26SEP-H26": {
+"bracket": [
+25,
+null
+],
+"cap": null,
+"event_ticker": "KXFEDDECISION-26SEP",
+"expiration_value": "Hike 25bps",
+"floor": null,
+"label": "Hike >25bps",
+"result": "no",
+"strike_type": "custom",
+"ticker": "KXFEDDECISION-26SEP-H26"
+},
+"KXGDP-26OCT30-T0.0": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXGDP-26OCT30",
+"expiration_value": "3.4%",
+"floor": 0.0,
+"label": "Above 0.0%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXGDP-26OCT30-T0.0"
+},
+"KXGDP-26OCT30-T0.5": {
+"bracket": [
+1,
+null
+],
+"cap": null,
+"event_ticker": "KXGDP-26OCT30",
+"expiration_value": "3.4%",
+"floor": 0.5,
+"label": "Above 0.5%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXGDP-26OCT30-T0.5"
+},
+"KXGDP-26OCT30-T1.0": {
+"bracket": [
+2,
+null
+],
+"cap": null,
+"event_ticker": "KXGDP-26OCT30",
+"expiration_value": "3.4%",
+"floor": 1.0,
+"label": "Above 1.0%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXGDP-26OCT30-T1.0"
+},
+"KXGDP-26OCT30-T1.5": {
+"bracket": [
+2,
+null
+],
+"cap": null,
+"event_ticker": "KXGDP-26OCT30",
+"expiration_value": "3.4%",
+"floor": 1.5,
+"label": "Above 1.5%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXGDP-26OCT30-T1.5"
+},
+"KXGDP-26OCT30-T2.0": {
+"bracket": [
+3,
+null
+],
+"cap": null,
+"event_ticker": "KXGDP-26OCT30",
+"expiration_value": "3.4%",
+"floor": 2.0,
+"label": "Above 2.0%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXGDP-26OCT30-T2.0"
+},
+"KXGDP-26OCT30-T2.5": {
+"bracket": [
+3,
+null
+],
+"cap": null,
+"event_ticker": "KXGDP-26OCT30",
+"expiration_value": "3.4%",
+"floor": 2.5,
+"label": "Above 2.5%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXGDP-26OCT30-T2.5"
+},
+"KXGDP-26OCT30-T3.0": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXGDP-26OCT30",
+"expiration_value": "3.4%",
+"floor": 3.0,
+"label": "Above 3.0%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXGDP-26OCT30-T3.0"
+},
+"KXGDP-26OCT30-T3.5": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXGDP-26OCT30",
+"expiration_value": "3.4%",
+"floor": 3.5,
+"label": "Above 3.5%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXGDP-26OCT30-T3.5"
+},
+"KXGDP-26OCT30-T4.0": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXGDP-26OCT30",
+"expiration_value": "3.4%",
+"floor": 4.0,
+"label": "Above 4.0%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXGDP-26OCT30-T4.0"
+},
 "KXHIGHAUS-26NOV09-B64.5": {
 "bracket": [
 64,
@@ -20522,5 +22268,397 @@ null
 "result": "no",
 "strike_type": "greater",
 "ticker": "KXPAYROLLS-26SEP-T90000"
+},
+"KXU3-26OCT-T3.7": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26OCT",
+"expiration_value": "4.1%",
+"floor": 3.7,
+"label": "Above 3.7%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXU3-26OCT-T3.7"
+},
+"KXU3-26OCT-T3.8": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26OCT",
+"expiration_value": "4.1%",
+"floor": 3.8,
+"label": "Above 3.8%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXU3-26OCT-T3.8"
+},
+"KXU3-26OCT-T3.9": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26OCT",
+"expiration_value": "4.1%",
+"floor": 3.9,
+"label": "Above 3.9%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXU3-26OCT-T3.9"
+},
+"KXU3-26OCT-T4.0": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26OCT",
+"expiration_value": "4.1%",
+"floor": 4.0,
+"label": "Above 4.0%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXU3-26OCT-T4.0"
+},
+"KXU3-26OCT-T4.1": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26OCT",
+"expiration_value": "4.1%",
+"floor": 4.1,
+"label": "Above 4.1%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXU3-26OCT-T4.1"
+},
+"KXU3-26OCT-T4.2": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26OCT",
+"expiration_value": "4.1%",
+"floor": 4.2,
+"label": "Above 4.2%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXU3-26OCT-T4.2"
+},
+"KXU3-26OCT-T4.3": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26OCT",
+"expiration_value": "4.1%",
+"floor": 4.3,
+"label": "Above 4.3%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXU3-26OCT-T4.3"
+},
+"KXU3-26OCT-T4.4": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26OCT",
+"expiration_value": "4.1%",
+"floor": 4.4,
+"label": "Above 4.4%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXU3-26OCT-T4.4"
+},
+"KXU3-26OCT-T4.5": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26OCT",
+"expiration_value": "4.1%",
+"floor": 4.5,
+"label": "Above 4.5%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXU3-26OCT-T4.5"
+},
+"KXU3-26OCT-T4.6": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26OCT",
+"expiration_value": "4.1%",
+"floor": 4.6,
+"label": "Above 4.6%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXU3-26OCT-T4.6"
+},
+"KXU3-26OCT-T4.7": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26OCT",
+"expiration_value": "4.1%",
+"floor": 4.7,
+"label": "Above 4.7%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXU3-26OCT-T4.7"
+},
+"KXU3-26OCT-T4.8": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26OCT",
+"expiration_value": "4.1%",
+"floor": 4.8,
+"label": "Above 4.8%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXU3-26OCT-T4.8"
+},
+"KXU3-26OCT-T4.9": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26OCT",
+"expiration_value": "4.1%",
+"floor": 4.9,
+"label": "Above 4.9%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXU3-26OCT-T4.9"
+},
+"KXU3-26OCT-T5.0": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26OCT",
+"expiration_value": "4.1%",
+"floor": 5.0,
+"label": "Above 5.0%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXU3-26OCT-T5.0"
+},
+"KXU3-26SEP-T3.7": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26SEP",
+"expiration_value": "4.2%",
+"floor": 3.7,
+"label": "Above 3.7%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXU3-26SEP-T3.7"
+},
+"KXU3-26SEP-T3.8": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26SEP",
+"expiration_value": "4.2%",
+"floor": 3.8,
+"label": "Above 3.8%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXU3-26SEP-T3.8"
+},
+"KXU3-26SEP-T3.9": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26SEP",
+"expiration_value": "4.2%",
+"floor": 3.9,
+"label": "Above 3.9%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXU3-26SEP-T3.9"
+},
+"KXU3-26SEP-T4.0": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26SEP",
+"expiration_value": "4.2%",
+"floor": 4.0,
+"label": "Above 4.0%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXU3-26SEP-T4.0"
+},
+"KXU3-26SEP-T4.1": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26SEP",
+"expiration_value": "4.2%",
+"floor": 4.1,
+"label": "Above 4.1%",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXU3-26SEP-T4.1"
+},
+"KXU3-26SEP-T4.2": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26SEP",
+"expiration_value": "4.2%",
+"floor": 4.2,
+"label": "Above 4.2%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXU3-26SEP-T4.2"
+},
+"KXU3-26SEP-T4.3": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26SEP",
+"expiration_value": "4.2%",
+"floor": 4.3,
+"label": "Above 4.3%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXU3-26SEP-T4.3"
+},
+"KXU3-26SEP-T4.4": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26SEP",
+"expiration_value": "4.2%",
+"floor": 4.4,
+"label": "Above 4.4%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXU3-26SEP-T4.4"
+},
+"KXU3-26SEP-T4.5": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26SEP",
+"expiration_value": "4.2%",
+"floor": 4.5,
+"label": "Above 4.5%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXU3-26SEP-T4.5"
+},
+"KXU3-26SEP-T4.6": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26SEP",
+"expiration_value": "4.2%",
+"floor": 4.6,
+"label": "Above 4.6%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXU3-26SEP-T4.6"
+},
+"KXU3-26SEP-T4.7": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26SEP",
+"expiration_value": "4.2%",
+"floor": 4.7,
+"label": "Above 4.7%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXU3-26SEP-T4.7"
+},
+"KXU3-26SEP-T4.8": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26SEP",
+"expiration_value": "4.2%",
+"floor": 4.8,
+"label": "Above 4.8%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXU3-26SEP-T4.8"
+},
+"KXU3-26SEP-T4.9": {
+"bracket": [
+5,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26SEP",
+"expiration_value": "4.2%",
+"floor": 4.9,
+"label": "Above 4.9%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXU3-26SEP-T4.9"
+},
+"KXU3-26SEP-T5.0": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXU3-26SEP",
+"expiration_value": "4.2%",
+"floor": 5.0,
+"label": "Above 5.0%",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXU3-26SEP-T5.0"
 }
 }
