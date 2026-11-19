@@ -65,6 +65,10 @@ select ledger.log_market_call(
   p_rationale => 'Model 28% (center 65.3: NWS 64, NBM 65.3, HRRR 67.8, ECMWF 63.1; 82 ensemble members, sd 0.5), market mid 48%, blend 38%. ...',
   p_price_source => 'scan 2026-11-19T15:33Z, $100 order-book fill');
 ```
+The two asks must add up to at least 100 or the function rejects them. If the fill price and the other
+side's quote add up to less (the market moved between the quote and the book snapshot), use both
+quoted asks instead, which is the more conservative price.
+
 The function applies the 5-cent rule, the one-trade-per-event rule, sizing and fees, and returns the
 decision. Put all of a day's calls in one SQL statement. Rationales must name the model inputs.
 
