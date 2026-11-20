@@ -492,6 +492,57 @@
       "baseline_confidence": 55,
       "prev_hash": "c918e32c6965909630a71dfb5fc4140b71e7141308e2bdd665cdd927bda75015",
       "hash": "d012cb8905dc41fb1d104b5ce60636bfda493a5239763a8b3c587b38389597ed"
+    },
+    {
+      "id": 42,
+      "seq": 30,
+      "created_at": "2026-11-19T21:43:04.337629Z",
+      "topic": "market:weather",
+      "claim": "Kalshi KXHIGHTNOLA-26NOV20-B70.5 \"70° to 71°\" settles YES (official high for New Orleans on Nov 20, 2026 is 70 or 71F).",
+      "resolution_criteria": "TRUE if Kalshi settles market KXHIGHTNOLA-26NOV20-B70.5 as YES; FALSE if it settles NO.",
+      "source_of_truth": "Kalshi market KXHIGHTNOLA-26NOV20-B70.5 (event KXHIGHTNOLA-26NOV20): https://kalshi.com/markets/kxhightnola",
+      "confidence": 26,
+      "deadline": "2026-11-22T17:00:00.000000Z",
+      "made_by": "claude",
+      "rationale": "No-edge calibration call, not a trade. Model 25% (center 70.75: NWS 70, NBM 71.5, HRRR 73.8, ECMWF 68.4, GFS 72.9, ICON 68.7, GEM 71.6; 82 ensemble members, mean 70.2, sd 2.5), market mid 26.5%, blend 26%. Model and market agree within 1 point. Scan log showed the RBOB gasoline-futures feed missing, so no trades were placed this session; weather inputs were complete.",
+      "baseline_rule": "Kalshi ask at entry: YES 27c, NO 74c (scan 2026-11-19T21:38Z, top-of-book asks). No trade (logged for calibration only).",
+      "baseline_confidence": 27,
+      "prev_hash": "d012cb8905dc41fb1d104b5ce60636bfda493a5239763a8b3c587b38389597ed",
+      "hash": "4855d1c97b2d1525f73a81b26079875d86410399c4c0a88735e5405f96d6948a"
+    },
+    {
+      "id": 43,
+      "seq": 31,
+      "created_at": "2026-11-19T21:43:04.353930Z",
+      "topic": "market:weather",
+      "claim": "Kalshi KXHIGHAUS-26NOV20-B74.5 \"74° to 75°\" settles YES (official high for Austin on Nov 20, 2026 is 74 or 75F).",
+      "resolution_criteria": "TRUE if Kalshi settles market KXHIGHAUS-26NOV20-B74.5 as YES; FALSE if it settles NO.",
+      "source_of_truth": "Kalshi market KXHIGHAUS-26NOV20-B74.5 (event KXHIGHAUS-26NOV20): https://kalshi.com/markets/kxhighaus",
+      "confidence": 28,
+      "deadline": "2026-11-22T17:00:00.000000Z",
+      "made_by": "claude",
+      "rationale": "No-edge calibration call, not a trade. Model 29% (center 75.85: NWS 76, NBM 76.2, HRRR 74.8, ECMWF 74.1, GFS 75.7, ICON 74.2, GEM 76.8; 82 ensemble members, mean 73.9, sd 1.6), market mid 27%, blend 28%. Model and market agree within 3 points. Scan log showed the RBOB gasoline-futures feed missing, so no trades were placed this session; weather inputs were complete.",
+      "baseline_rule": "Kalshi ask at entry: YES 28c, NO 74c (scan 2026-11-19T21:38Z, top-of-book asks). No trade (logged for calibration only).",
+      "baseline_confidence": 27,
+      "prev_hash": "4855d1c97b2d1525f73a81b26079875d86410399c4c0a88735e5405f96d6948a",
+      "hash": "8af1ed3bdc10dce35d4e968e4f1e10a2c8f4b6f53aa8b9d2e19b3e27574affc7"
+    },
+    {
+      "id": 44,
+      "seq": 32,
+      "created_at": "2026-11-19T21:43:04.354148Z",
+      "topic": "market:weather",
+      "claim": "Kalshi KXHIGHLAX-26NOV20-B68.5 \"68° to 69°\" settles YES (official high for Los Angeles (LAX) on Nov 20, 2026 is 68 or 69F).",
+      "resolution_criteria": "TRUE if Kalshi settles market KXHIGHLAX-26NOV20-B68.5 as YES; FALSE if it settles NO.",
+      "source_of_truth": "Kalshi market KXHIGHLAX-26NOV20-B68.5 (event KXHIGHLAX-26NOV20): https://kalshi.com/markets/kxhighlax",
+      "confidence": 13,
+      "deadline": "2026-11-22T17:00:00.000000Z",
+      "made_by": "claude",
+      "rationale": "No-edge calibration call, not a trade. Model 12% (center 64.9: NWS 65, NBM 64.7, HRRR 65.6, ECMWF 63.9, GFS 64.8, ICON 67.0, GEM 58.3 which is an outlier; 82 ensemble members, mean 63.5, sd 0.55), market mid 13.5%, blend 13%. Model and market agree within 2 points. Scan log showed the RBOB gasoline-futures feed missing, so no trades were placed this session; weather inputs were complete.",
+      "baseline_rule": "Kalshi ask at entry: YES 14c, NO 87c (scan 2026-11-19T21:38Z, top-of-book asks). No trade (logged for calibration only).",
+      "baseline_confidence": 14,
+      "prev_hash": "8af1ed3bdc10dce35d4e968e4f1e10a2c8f4b6f53aa8b9d2e19b3e27574affc7",
+      "hash": "31c0367646951aaefba87215b68f87925cec0f2cb4fb3e066770ab2a88e3f58b"
     }
   ],
   "resolutions": [
@@ -578,6 +629,42 @@
       "resolved_at": "2026-11-19T05:13:25.834116Z",
       "prev_hash": "921a97331d9feb400f347aac32975a4274577f408cf2598a42e113afb3c5b213",
       "hash": "00cfed90602ff680408a30192784dc9508ffa542e67624abf897050d1555faed"
+    },
+    {
+      "id": 12,
+      "seq": 8,
+      "prediction_id": 16,
+      "prediction_hash": "4ade7127be63784f2332445daa27a93dda9734b3ce0c3804cfb6e7fe50ce876f",
+      "outcome": "true",
+      "evidence_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "notes": "Anthropic announced Claude Fable 5.2 and Claude Mythos 5.2 on Nov 9, 2026 (page header date). New version numbers not available on Oct 3, 2026; Fable 5.2 is available to all users. Resolved early because the outcome is already known.",
+      "resolved_at": "2026-11-19T21:44:30.834180Z",
+      "prev_hash": "00cfed90602ff680408a30192784dc9508ffa542e67624abf897050d1555faed",
+      "hash": "9f0a2f71534a5be754607662cb25c1894ecd07c75c2a1d6b260f1d40445d7b68"
+    },
+    {
+      "id": 13,
+      "seq": 9,
+      "prediction_id": 23,
+      "prediction_hash": "59a312c09f8fe312504eb20951f5e2d6b22de033bf2f12f08a1af34c100d2ba0",
+      "outcome": "true",
+      "evidence_url": "https://onclive.com/view/fda-approves-neladalkib-for-locally-advanced-or-metastatic-alk-nsclc",
+      "notes": "FDA granted accelerated approval to neladalkib (Nelkarmi) for previously treated ALK-positive NSCLC, per FDA news release of Nov 17, 2026, ahead of the Nov 27 target date. Resolved early because the outcome is already known.",
+      "resolved_at": "2026-11-19T21:44:30.843795Z",
+      "prev_hash": "9f0a2f71534a5be754607662cb25c1894ecd07c75c2a1d6b260f1d40445d7b68",
+      "hash": "ea02d2dad8e3e566fd3355dfd1e454f721426327ab3ec1ddfcc6fa25af622722"
+    },
+    {
+      "id": 14,
+      "seq": 10,
+      "prediction_id": 24,
+      "prediction_hash": "a45a8829d3d6cf77053e832367b4757c2f272385e78f213e8f1a12279b856d73",
+      "outcome": "true",
+      "evidence_url": "https://pharmaphorum.com/news/fda-clears-sanofis-type-3-gaucher-therapy-infilbray",
+      "notes": "FDA approved Infilbray (venglustat) for adults and children 15 kg+ with type 3 Gaucher disease, reported Nov 19, 2026, ahead of the Nov 25 action date. Resolved early because the outcome is already known.",
+      "resolved_at": "2026-11-19T21:44:30.844038Z",
+      "prev_hash": "ea02d2dad8e3e566fd3355dfd1e454f721426327ab3ec1ddfcc6fa25af622722",
+      "hash": "12591424cbef0e0b619eab52432abcc1d23838574b411035fc278db328018b87"
     }
   ],
   "lessons": [
@@ -588,6 +675,17 @@
       "lesson": "Verify any formula against a hand-calculated example before the first real write to an append-only table. The first paper trade recorded a fee 10x too low ($0.44 vs $4.34); it is permanent, and P&L now recomputes the fee in a view.",
       "evidence_prediction_ids": [
         26
+      ],
+      "supersedes": null
+    },
+    {
+      "id": 3,
+      "created_at": "2026-11-19T21:44:51.510332Z",
+      "topic": "process",
+      "lesson": "The RBOB gasoline-futures input has failed in every scan on 2026-11-19 (15:37, 15:41, 20:29, 21:38 UTC): Yahoo returns HTTP 429 to the GitHub runner and Stooq returns a JavaScript challenge page instead of CSV. gas.rbob is null in markets.json. The gas model does not use RBOB in its maths (it is attached for reference and written to gas_history), but the scan log shows a missing input, so the 21:38 session placed no trades. Gas trades 22 and 23 were locked earlier the same day on scans with the same gap. Check markets.json log before picking trades, and fix or replace the RBOB source in scan.py.",
+      "evidence_prediction_ids": [
+        34,
+        35
       ],
       "supersedes": null
     }
@@ -705,6 +803,22 @@
       "baseline_brier": 0.36
     },
     {
+      "topic": "health",
+      "resolved": 2,
+      "pct_true": 100.0,
+      "avg_confidence": 67.5,
+      "brier_score": 0.1213,
+      "baseline_brier": 0.0625
+    },
+    {
+      "topic": "anthropic",
+      "resolved": 1,
+      "pct_true": 100.0,
+      "avg_confidence": 70.0,
+      "brier_score": 0.09,
+      "baseline_brier": 0.09
+    },
+    {
       "topic": "apple",
       "resolved": 2,
       "pct_true": 100.0,
@@ -716,9 +830,9 @@
   "scorecard_by_author": [
     {
       "made_by": "claude",
-      "resolved": 7,
-      "brier_score": 0.1457,
-      "baseline_brier": 0.1675
+      "resolved": 10,
+      "brier_score": 0.1353,
+      "baseline_brier": 0.1388
     }
   ],
   "calibration": [
@@ -730,8 +844,8 @@
     },
     {
       "band_start": 50,
-      "n": 3,
-      "stated_pct": 53.3,
+      "n": 4,
+      "stated_pct": 53.8,
       "actual_pct": 100.0
     },
     {
@@ -741,22 +855,28 @@
       "actual_pct": 100.0
     },
     {
+      "band_start": 70,
+      "n": 1,
+      "stated_pct": 70.0,
+      "actual_pct": 100.0
+    },
+    {
       "band_start": 80,
-      "n": 2,
-      "stated_pct": 85.0,
+      "n": 3,
+      "stated_pct": 83.3,
       "actual_pct": 100.0
     }
   ],
   "db_verify": [
     {
       "chain": "predictions",
-      "entries": 29,
+      "entries": 32,
       "valid": true,
       "first_bad_seq": null
     },
     {
       "chain": "resolutions",
-      "entries": 7,
+      "entries": 10,
       "valid": true,
       "first_bad_seq": null
     }

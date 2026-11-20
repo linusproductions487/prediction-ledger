@@ -2,11 +2,11 @@
 
 Generated automatically from the ledger. Every miss is included.
 
-- Predictions made: **29**
-- Resolved (scored): **7**  ·  Void: **0**  ·  Pending: **22**
-- Leaned the right way: **6/6** (excluding exact 50% calls)
-- Brier score: **0.1457** (0 = perfect, 0.25 = coin flip, lower is better)
-- Dumb-baseline Brier: **0.1675** — beating the naive rule
+- Predictions made: **32**
+- Resolved (scored): **10**  ·  Void: **0**  ·  Pending: **22**
+- Leaned the right way: **9/9** (excluding exact 50% calls)
+- Brier score: **0.1353** (0 = perfect, 0.25 = coin flip, lower is better)
+- Dumb-baseline Brier: **0.1388** — beating the naive rule
 
 ## Calibration
 
@@ -15,9 +15,10 @@ When I say X%, does it happen X% of the time?
 | Confidence band | Predictions | Stated | Actually true |
 |---|---|---|---|
 | 40–49% | 1 | 40.0% | 0.0% |
-| 50–59% | 3 | 53.3% | 100.0% |
+| 50–59% | 4 | 53.8% | 100.0% |
 | 60–69% | 1 | 60.0% | 100.0% |
-| 80–89% | 2 | 85.0% | 100.0% |
+| 70–79% | 1 | 70.0% | 100.0% |
+| 80–89% | 3 | 83.3% | 100.0% |
 
 ## By topic
 
@@ -26,6 +27,8 @@ When I say X%, does it happen X% of the time?
 | economy | 3 | 0.1283 | 0.1842 |
 | policy | 1 | 0.16 | 0.09 |
 | google | 1 | 0.2025 | 0.36 |
+| health | 2 | 0.1213 | 0.0625 |
+| anthropic | 1 | 0.09 | 0.09 |
 | apple | 2 | 0.1363 | 0.085 |
 
 ## Paper trading (Kalshi)
@@ -47,6 +50,9 @@ Simulated $100 trades at the real Kalshi ask price when the prediction was locke
 
 | # | Claim | By | Confidence | Outcome |
 |---|---|---|---|---|
+| 16 | The FDA approves Sanofi's venglustat (type 3 Gaucher disease) by Dec 15, 2026. | claude | 55% | ✅ true |
+| 15 | The FDA approves Nuvalent's neladalkib (ALK-positive NSCLC) by Dec 15, 2026. | claude | 80% | ✅ true |
+| 8 | Anthropic announces a new Claude model that is not available as of Oct 3, 2026, by Dec 15, 2026. | claude | 70% | ✅ true |
 | 14 | The US unemployment rate for October 2026 is 4.3% or higher. | claude | 40% | ✅ false |
 | 10 | Chegg or Penske Media files a notice of appeal of Judge Mehta's dismissal of their AI Overviews antitrust suits by Nov 15, 2026. | claude | 60% | ✅ true |
 | 11 | The Fed holds the federal funds target range at 3.75%-4.00% at its Oct 27-28, 2026 meeting. | claude | 85% | ✅ true |
@@ -65,6 +71,9 @@ Simulated $100 trades at the real Kalshi ask price when the prediction was locke
 | 27 | Kalshi KXHIGHNY-26NOV20-B66.5 "66° to 67°" settles YES (official high for New York City (Central Park) on Nov 20, 2026 is 66 or 67F). | claude | 38% | 2026-11-22 |
 | 28 | Kalshi KXHIGHDEN-26NOV20-B61.5 "61° to 62°" settles YES (official high for Denver on Nov 20, 2026 is 61 or 62F). | claude | 32% | 2026-11-22 |
 | 29 | Kalshi KXHIGHMIA-26NOV20-B82.5 "82° to 83°" settles YES (official high for Miami on Nov 20, 2026 is 82 or 83F). | claude | 43% | 2026-11-22 |
+| 30 | Kalshi KXHIGHTNOLA-26NOV20-B70.5 "70° to 71°" settles YES (official high for New Orleans on Nov 20, 2026 is 70 or 71F). | claude | 26% | 2026-11-22 |
+| 31 | Kalshi KXHIGHAUS-26NOV20-B74.5 "74° to 75°" settles YES (official high for Austin on Nov 20, 2026 is 74 or 75F). | claude | 28% | 2026-11-22 |
+| 32 | Kalshi KXHIGHLAX-26NOV20-B68.5 "68° to 69°" settles YES (official high for Los Angeles (LAX) on Nov 20, 2026 is 68 or 69F). | claude | 13% | 2026-11-22 |
 | 23 | Kalshi KXAAAGASW-26NOV23-3.6300 "Above 3.6300" settles YES (AAA national average regular gas price on Nov 23, 2026 is strictly above $3.6300). | claude | 47% | 2026-11-25 |
 | 21 | Kalshi KXAAAGASM-26NOV30 "Above 3.50" settles YES (US average regular gas price at end of November 2026 is above $3.50). | claude | 45% | 2026-12-01 |
 | 2 | Apple holds a livestreamed product event (not press-release-only) between Oct 3 and Nov 30, 2026. | claude | 35% | 2026-12-01 |
@@ -72,9 +81,6 @@ Simulated $100 trades at the real Kalshi ask price when the prediction was locke
 | 20 | Kalshi KXFEDDECISION-26DEC "Hike 25bps" settles YES (the Fed raises rates by exactly 25bps on Dec 9, 2026). | claude | 88% | 2026-12-10 |
 | 18 | Kalshi KXCPIYOY-26NOV "Above 3.7%" settles YES (US CPI-U 12-month change for November 2026, published Dec 10, is above 3.7%). | claude | 55% | 2026-12-11 |
 | 19 | Kalshi KXCPI-26NOV "Above -0.1%" settles YES (US CPI-U seasonally adjusted month-over-month change for November 2026 is above -0.1%). | claude | 48% | 2026-12-11 |
-| 15 | The FDA approves Nuvalent's neladalkib (ALK-positive NSCLC) by Dec 15, 2026. | claude | 80% | 2026-12-16 |
-| 16 | The FDA approves Sanofi's venglustat (type 3 Gaucher disease) by Dec 15, 2026. | claude | 55% | 2026-12-16 |
-| 8 | Anthropic announces a new Claude model that is not available as of Oct 3, 2026, by Dec 15, 2026. | claude | 70% | 2026-12-16 |
 | 12 | The Fed raises the federal funds target range at its December 2026 meeting. | claude | 70% | 2027-01-01 |
 | 17 | SpaceX launches a Starship from Florida by Dec 31, 2026. | claude | 25% | 2027-01-01 |
 | 5 | OpenAI publicly releases a model with "Astra" in its name by Dec 31, 2026. | claude | 10% | 2027-01-01 |
