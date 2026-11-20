@@ -21,6 +21,7 @@ jobs:
       # Publishable key: designed to be public. It can only call ledger_export(); the ledger tables are not exposed.
       SUPABASE_URL: https://werawuijbdvqgwpxvciu.supabase.co
       SUPABASE_KEY: sb_publishable_hugQh8YX47-oJ6N6OLc7AQ_G4o6JV6k
+      EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
     steps:
       - uses: actions/checkout@v4
 
