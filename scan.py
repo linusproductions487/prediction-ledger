@@ -666,7 +666,9 @@ def main():
             log(f"weather model {s}: {type(e).__name__} {e}")
 
     aaa = aaa_prices()
-    gas, rb = None, rbob()
+    # RBOB is switched off for now (owner decision, 2026-11-21): Yahoo returns 429 and Stooq a JS challenge
+    # to the GitHub runner, and the gas model never used it in its maths. Re-enable by calling rbob() here.
+    gas, rb = None, None
     try:
         gas = gas_model([e for s in GAS_SERIES for e in by_series.get(s, [])], aaa, gas_hist)
         if gas is not None:
