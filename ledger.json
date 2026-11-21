@@ -543,6 +543,57 @@
       "baseline_confidence": 14,
       "prev_hash": "8af1ed3bdc10dce35d4e968e4f1e10a2c8f4b6f53aa8b9d2e19b3e27574affc7",
       "hash": "31c0367646951aaefba87215b68f87925cec0f2cb4fb3e066770ab2a88e3f58b"
+    },
+    {
+      "id": 45,
+      "seq": 33,
+      "created_at": "2026-11-20T21:42:20.967564Z",
+      "topic": "market:weather",
+      "claim": "Kalshi KXHIGHTBOS-26NOV21-B60.5 \"60° to 61°\" settles YES (official high for Boston on Nov 21, 2026 is 60 or 61F).",
+      "resolution_criteria": "TRUE if Kalshi settles market KXHIGHTBOS-26NOV21-B60.5 as YES; FALSE if it settles NO.",
+      "source_of_truth": "Kalshi market KXHIGHTBOS-26NOV21-B60.5 (event KXHIGHTBOS-26NOV21): https://kalshi.com/markets/kxhightbos",
+      "confidence": 36,
+      "deadline": "2026-11-23T17:00:00.000000Z",
+      "made_by": "claude",
+      "rationale": "Calibration log, no trade. Model 28% (center 59.15, median of 7 sources: NWS 60, NBM 59.0, HRRR 59.4, ECMWF 59.2, GFS 56.9, ICON 59.1, GEM 57.8; 82 ensemble members, mean 59.21, sd 1.26; kernel sd 2.16), market mid 44.5%, blend 36%. Inputs pass the hand checks (prob_sum 1.0, NWS updated 21:14Z). Not traded: edge on NO is 3 cents at the $100 fill (61c), under the 5-cent rule, and this scan log shows a missing input (RBOB futures fetch failed), so the session places no trades.",
+      "baseline_rule": "Kalshi ask at entry: YES 45c, NO 61c (scan 2026-11-20T21:38Z, $100 order-book fill). No trade (logged for calibration only).",
+      "baseline_confidence": 42,
+      "prev_hash": "31c0367646951aaefba87215b68f87925cec0f2cb4fb3e066770ab2a88e3f58b",
+      "hash": "3af41317792a28672d1fa707c0849fba910aea07cdc9ae6dc76d3270eff576d7"
+    },
+    {
+      "id": 46,
+      "seq": 34,
+      "created_at": "2026-11-20T21:42:20.973960Z",
+      "topic": "market:weather",
+      "claim": "Kalshi KXHIGHTSFO-26NOV21-B57.5 \"57° to 58°\" settles YES (official high for San Francisco (SFO) on Nov 21, 2026 is 57 or 58F).",
+      "resolution_criteria": "TRUE if Kalshi settles market KXHIGHTSFO-26NOV21-B57.5 as YES; FALSE if it settles NO.",
+      "source_of_truth": "Kalshi market KXHIGHTSFO-26NOV21-B57.5 (event KXHIGHTSFO-26NOV21): https://kalshi.com/markets/kxhightsfo",
+      "confidence": 41,
+      "deadline": "2026-11-23T17:00:00.000000Z",
+      "made_by": "claude",
+      "rationale": "Calibration log, no trade. Model 31% (center 57.8, median of 7 sources: NWS 58, NBM 54.4, HRRR 59.3, ECMWF 57.6, GFS 58.4, ICON 56.5, GEM 54.6; 82 ensemble members, mean 57.04, sd 1.07; kernel sd 2.26), market mid 51.5%, blend 41%. Inputs pass the hand checks (prob_sum 1.0, NWS updated 21:36Z). Not traded: edge on NO is 4 cents at the $100 fill (55c), under the 5-cent rule, and this scan log shows a missing input (RBOB futures fetch failed), so the session places no trades.",
+      "baseline_rule": "Kalshi ask at entry: YES 52c, NO 55c (scan 2026-11-20T21:38Z, $100 order-book fill). No trade (logged for calibration only).",
+      "baseline_confidence": 49,
+      "prev_hash": "3af41317792a28672d1fa707c0849fba910aea07cdc9ae6dc76d3270eff576d7",
+      "hash": "7a368006a87548b8ce1214f07a377c0475a0e1481600e70b2d9bdaf9cd8da745"
+    },
+    {
+      "id": 47,
+      "seq": 35,
+      "created_at": "2026-11-20T21:42:20.974162Z",
+      "topic": "market:weather",
+      "claim": "Kalshi KXHIGHTSEA-26NOV21-B48.5 \"48° to 49°\" settles YES (official high for Seattle (Sea-Tac) on Nov 21, 2026 is 48 or 49F).",
+      "resolution_criteria": "TRUE if Kalshi settles market KXHIGHTSEA-26NOV21-B48.5 as YES; FALSE if it settles NO.",
+      "source_of_truth": "Kalshi market KXHIGHTSEA-26NOV21-B48.5 (event KXHIGHTSEA-26NOV21): https://kalshi.com/markets/kxhightsea",
+      "confidence": 33,
+      "deadline": "2026-11-23T17:00:00.000000Z",
+      "made_by": "claude",
+      "rationale": "Calibration log, no trade. Model 26% (center 49.85, median of 7 sources: NWS 50, NBM 49.0, HRRR 49.5, ECMWF 52.1, GFS 49.7, ICON 50.1, GEM 45.4; 82 ensemble members, mean 49.02, sd 1.35; kernel sd 2.1), market mid 40.5%, blend 33%. prob_sum 1.0, NWS updated 20:31Z; GEM is 4F below the other models. Not traded: edge on NO is 4 cents at the $100 fill (63c), under the 5-cent rule, and this scan log shows a missing input (RBOB futures fetch failed), so the session places no trades.",
+      "baseline_rule": "Kalshi ask at entry: YES 41c, NO 63c (scan 2026-11-20T21:38Z, $100 order-book fill). No trade (logged for calibration only).",
+      "baseline_confidence": 39,
+      "prev_hash": "7a368006a87548b8ce1214f07a377c0475a0e1481600e70b2d9bdaf9cd8da745",
+      "hash": "8334a0058e1ae679e1faff75c879c961ef9340fc3d32332e0f8315a2f196b43b"
     }
   ],
   "resolutions": [
@@ -665,6 +716,18 @@
       "resolved_at": "2026-11-19T21:44:30.844038Z",
       "prev_hash": "ea02d2dad8e3e566fd3355dfd1e454f721426327ab3ec1ddfcc6fa25af622722",
       "hash": "12591424cbef0e0b619eab52432abcc1d23838574b411035fc278db328018b87"
+    },
+    {
+      "id": 15,
+      "seq": 11,
+      "prediction_id": 34,
+      "prediction_hash": "f1290007aa1aa4aefdeca80fa1291116081ce376c211c808a924a2022434a65c",
+      "outcome": "false",
+      "evidence_url": "https://kalshi.com/markets/kxaaagasd",
+      "notes": "Kalshi settled no; reported value 3.6898",
+      "resolved_at": "2026-11-20T21:41:51.447998Z",
+      "prev_hash": "12591424cbef0e0b619eab52432abcc1d23838574b411035fc278db328018b87",
+      "hash": "7bccfa080519317876a3bf979352877aa4fd4d2da7b9de7e51f216f1efc2c064"
     }
   ],
   "lessons": [
@@ -683,6 +746,27 @@
       "created_at": "2026-11-19T21:44:51.510332Z",
       "topic": "process",
       "lesson": "The RBOB gasoline-futures input has failed in every scan on 2026-11-19 (15:37, 15:41, 20:29, 21:38 UTC): Yahoo returns HTTP 429 to the GitHub runner and Stooq returns a JavaScript challenge page instead of CSV. gas.rbob is null in markets.json. The gas model does not use RBOB in its maths (it is attached for reference and written to gas_history), but the scan log shows a missing input, so the 21:38 session placed no trades. Gas trades 22 and 23 were locked earlier the same day on scans with the same gap. Check markets.json log before picking trades, and fix or replace the RBOB source in scan.py.",
+      "evidence_prediction_ids": [
+        34,
+        35
+      ],
+      "supersedes": null
+    },
+    {
+      "id": 4,
+      "created_at": "2026-11-20T21:42:49.824995Z",
+      "topic": "market:gas",
+      "lesson": "First settled paper trade lost: KXAAAGASD-26NOV20 \"Above 3.6900\" (bought YES at 74c, confidence 81) settled NO with AAA at 3.6898, a miss of 0.02 cents. AAA fell 3.14 cents in one day (3.7212 to 3.6898). The gas model in scan.py still runs on gas.history_days = 1 with sigma 0.004, so its day-ahead spread (0.4 cents) is small next to the daily moves actually being observed (about 3 cents); with a spread that tight the model cannot justify 81% on a strike this near the price. Treat gas model probabilities near the strike as overconfident until gas_history has enough days to estimate sigma. One result proves nothing about edge, but the spread input is visibly too tight.",
+      "evidence_prediction_ids": [
+        34
+      ],
+      "supersedes": null
+    },
+    {
+      "id": 5,
+      "created_at": "2026-11-20T21:42:49.824995Z",
+      "topic": "process",
+      "lesson": "Second day in a row (2026-11-20, scans 07:06, 15:37, 20:07, 21:38 UTC) the RBOB input failed: Yahoo HTTP 429, Stooq returns a JavaScript challenge. gas.rbob is null. Under the missing-input rule the 21:38 session again placed no trades, although EDGES.md listed 11 candidates (10 weather, 1 gas) and the weather inputs were complete. Until the RBOB source in scan.py is fixed or removed, or the rule is scoped per model, every daily session will be blocked. This needs the owner's decision; the session did not change the rule or the scanner.",
       "evidence_prediction_ids": [
         34,
         35
@@ -722,8 +806,8 @@
       "fee_cents": 182,
       "cost_cents": 10172,
       "created_at": "2026-11-19T15:41:13.135184Z",
-      "outcome": null,
-      "pnl_cents": null
+      "outcome": "false",
+      "pnl_cents": -10172
     },
     {
       "prediction_id": 35,
@@ -819,6 +903,14 @@
       "baseline_brier": 0.09
     },
     {
+      "topic": "market:gas",
+      "resolved": 1,
+      "pct_true": 0.0,
+      "avg_confidence": 81.0,
+      "brier_score": 0.6561,
+      "baseline_brier": 0.5476
+    },
+    {
       "topic": "apple",
       "resolved": 2,
       "pct_true": 100.0,
@@ -830,9 +922,9 @@
   "scorecard_by_author": [
     {
       "made_by": "claude",
-      "resolved": 10,
-      "brier_score": 0.1353,
-      "baseline_brier": 0.1388
+      "resolved": 11,
+      "brier_score": 0.1826,
+      "baseline_brier": 0.1759
     }
   ],
   "calibration": [
@@ -862,21 +954,21 @@
     },
     {
       "band_start": 80,
-      "n": 3,
-      "stated_pct": 83.3,
-      "actual_pct": 100.0
+      "n": 4,
+      "stated_pct": 82.8,
+      "actual_pct": 75.0
     }
   ],
   "db_verify": [
     {
       "chain": "predictions",
-      "entries": 32,
+      "entries": 35,
       "valid": true,
       "first_bad_seq": null
     },
     {
       "chain": "resolutions",
-      "entries": 10,
+      "entries": 11,
       "valid": true,
       "first_bad_seq": null
     }
