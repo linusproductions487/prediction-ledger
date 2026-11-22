@@ -1315,6 +1315,244 @@ null
 "strike_type": "greater",
 "ticker": "KXAAAGASD-26NOV21-3.7300"
 },
+"KXAAAGASD-26NOV22-3.6200": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXAAAGASD-26NOV22",
+"expiration_value": "3.6448",
+"floor": 3.62,
+"label": "Above 3.6200",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXAAAGASD-26NOV22-3.6200"
+},
+"KXAAAGASD-26NOV22-3.6250": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXAAAGASD-26NOV22",
+"expiration_value": "3.6448",
+"floor": 3.625,
+"label": "Above 3.6250",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXAAAGASD-26NOV22-3.6250"
+},
+"KXAAAGASD-26NOV22-3.6300": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXAAAGASD-26NOV22",
+"expiration_value": "3.6448",
+"floor": 3.63,
+"label": "Above 3.6300",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXAAAGASD-26NOV22-3.6300"
+},
+"KXAAAGASD-26NOV22-3.6350": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXAAAGASD-26NOV22",
+"expiration_value": "3.6448",
+"floor": 3.635,
+"label": "Above 3.6350",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXAAAGASD-26NOV22-3.6350"
+},
+"KXAAAGASD-26NOV22-3.6400": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXAAAGASD-26NOV22",
+"expiration_value": "3.6448",
+"floor": 3.64,
+"label": "Above 3.6400",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXAAAGASD-26NOV22-3.6400"
+},
+"KXAAAGASD-26NOV22-3.6450": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXAAAGASD-26NOV22",
+"expiration_value": "3.6448",
+"floor": 3.645,
+"label": "Above 3.6450",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXAAAGASD-26NOV22-3.6450"
+},
+"KXAAAGASD-26NOV22-3.6500": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXAAAGASD-26NOV22",
+"expiration_value": "3.6448",
+"floor": 3.65,
+"label": "Above 3.6500",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXAAAGASD-26NOV22-3.6500"
+},
+"KXAAAGASD-26NOV22-3.6550": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXAAAGASD-26NOV22",
+"expiration_value": "3.6448",
+"floor": 3.655,
+"label": "Above 3.6550",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXAAAGASD-26NOV22-3.6550"
+},
+"KXAAAGASD-26NOV22-3.6600": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXAAAGASD-26NOV22",
+"expiration_value": "3.6448",
+"floor": 3.66,
+"label": "Above 3.6600",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXAAAGASD-26NOV22-3.6600"
+},
+"KXAAAGASD-26NOV22-3.6650": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXAAAGASD-26NOV22",
+"expiration_value": "3.6448",
+"floor": 3.665,
+"label": "Above 3.6650",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXAAAGASD-26NOV22-3.6650"
+},
+"KXAAAGASD-26NOV22-3.6700": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXAAAGASD-26NOV22",
+"expiration_value": "3.6448",
+"floor": 3.67,
+"label": "Above 3.6700",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXAAAGASD-26NOV22-3.6700"
+},
+"KXAAAGASD-26NOV22-3.6750": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXAAAGASD-26NOV22",
+"expiration_value": "3.6448",
+"floor": 3.675,
+"label": "Above 3.6750",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXAAAGASD-26NOV22-3.6750"
+},
+"KXAAAGASD-26NOV22-3.6800": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXAAAGASD-26NOV22",
+"expiration_value": "3.6448",
+"floor": 3.68,
+"label": "Above 3.6800",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXAAAGASD-26NOV22-3.6800"
+},
+"KXAAAGASD-26NOV22-3.6850": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXAAAGASD-26NOV22",
+"expiration_value": "3.6448",
+"floor": 3.685,
+"label": "Above 3.6850",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXAAAGASD-26NOV22-3.6850"
+},
+"KXAAAGASD-26NOV22-3.6900": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXAAAGASD-26NOV22",
+"expiration_value": "3.6448",
+"floor": 3.69,
+"label": "Above 3.6900",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXAAAGASD-26NOV22-3.6900"
+},
+"KXAAAGASD-26NOV22-3.6950": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXAAAGASD-26NOV22",
+"expiration_value": "3.6448",
+"floor": 3.695,
+"label": "Above 3.6950",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXAAAGASD-26NOV22-3.6950"
+},
+"KXAAAGASD-26NOV22-3.7000": {
+"bracket": [
+4,
+null
+],
+"cap": null,
+"event_ticker": "KXAAAGASD-26NOV22",
+"expiration_value": "3.6448",
+"floor": 3.7,
+"label": "Above 3.7000",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXAAAGASD-26NOV22-3.7000"
+},
 "KXAAAGASM-26OCT31-2.60": {
 "bracket": [
 3,
@@ -5081,6 +5319,300 @@ null
 "strike_type": "greater",
 "ticker": "KXDIESELD-26NOV21-T5.950"
 },
+"KXDIESELD-26NOV22-T5.815": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV22",
+"expiration_value": "5.8445",
+"floor": 5.815,
+"label": "Above $5.815",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV22-T5.815"
+},
+"KXDIESELD-26NOV22-T5.820": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV22",
+"expiration_value": "5.8445",
+"floor": 5.82,
+"label": "Above $5.820",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV22-T5.820"
+},
+"KXDIESELD-26NOV22-T5.825": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV22",
+"expiration_value": "5.8445",
+"floor": 5.825,
+"label": "Above $5.825",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV22-T5.825"
+},
+"KXDIESELD-26NOV22-T5.830": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV22",
+"expiration_value": "5.8445",
+"floor": 5.83,
+"label": "Above $5.830",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV22-T5.830"
+},
+"KXDIESELD-26NOV22-T5.835": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV22",
+"expiration_value": "5.8445",
+"floor": 5.835,
+"label": "Above $5.835",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV22-T5.835"
+},
+"KXDIESELD-26NOV22-T5.840": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV22",
+"expiration_value": "5.8445",
+"floor": 5.84,
+"label": "Above $5.840",
+"result": "yes",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV22-T5.840"
+},
+"KXDIESELD-26NOV22-T5.845": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV22",
+"expiration_value": "5.8445",
+"floor": 5.845,
+"label": "Above $5.845",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV22-T5.845"
+},
+"KXDIESELD-26NOV22-T5.850": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV22",
+"expiration_value": "5.8445",
+"floor": 5.85,
+"label": "Above $5.850",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV22-T5.850"
+},
+"KXDIESELD-26NOV22-T5.855": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV22",
+"expiration_value": "5.8445",
+"floor": 5.855,
+"label": "Above $5.855",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV22-T5.855"
+},
+"KXDIESELD-26NOV22-T5.860": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV22",
+"expiration_value": "5.8445",
+"floor": 5.86,
+"label": "Above $5.860",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV22-T5.860"
+},
+"KXDIESELD-26NOV22-T5.865": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV22",
+"expiration_value": "5.8445",
+"floor": 5.865,
+"label": "Above $5.865",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV22-T5.865"
+},
+"KXDIESELD-26NOV22-T5.870": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV22",
+"expiration_value": "5.8445",
+"floor": 5.87,
+"label": "Above $5.870",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV22-T5.870"
+},
+"KXDIESELD-26NOV22-T5.875": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV22",
+"expiration_value": "5.8445",
+"floor": 5.875,
+"label": "Above $5.875",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV22-T5.875"
+},
+"KXDIESELD-26NOV22-T5.880": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV22",
+"expiration_value": "5.8445",
+"floor": 5.88,
+"label": "Above $5.880",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV22-T5.880"
+},
+"KXDIESELD-26NOV22-T5.885": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV22",
+"expiration_value": "5.8445",
+"floor": 5.885,
+"label": "Above $5.885",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV22-T5.885"
+},
+"KXDIESELD-26NOV22-T5.890": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV22",
+"expiration_value": "5.8445",
+"floor": 5.89,
+"label": "Above $5.890",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV22-T5.890"
+},
+"KXDIESELD-26NOV22-T5.895": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV22",
+"expiration_value": "5.8445",
+"floor": 5.895,
+"label": "Above $5.895",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV22-T5.895"
+},
+"KXDIESELD-26NOV22-T5.900": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV22",
+"expiration_value": "5.8445",
+"floor": 5.9,
+"label": "Above $5.900",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV22-T5.900"
+},
+"KXDIESELD-26NOV22-T5.905": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV22",
+"expiration_value": "5.8445",
+"floor": 5.905,
+"label": "Above $5.905",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV22-T5.905"
+},
+"KXDIESELD-26NOV22-T5.910": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV22",
+"expiration_value": "5.8445",
+"floor": 5.91,
+"label": "Above $5.910",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV22-T5.910"
+},
+"KXDIESELD-26NOV22-T5.915": {
+"bracket": [
+6,
+null
+],
+"cap": null,
+"event_ticker": "KXDIESELD-26NOV22",
+"expiration_value": "5.8445",
+"floor": 5.915,
+"label": "Above $5.915",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXDIESELD-26NOV22-T5.915"
+},
 "KXFEDDECISION-26OCT-C25": {
 "bracket": null,
 "cap": null,
@@ -6337,6 +6869,90 @@ null
 "strike_type": "greater",
 "ticker": "KXHIGHAUS-26NOV20-T81"
 },
+"KXHIGHAUS-26NOV21-B74.5": {
+"bracket": [
+74,
+75
+],
+"cap": 75.0,
+"event_ticker": "KXHIGHAUS-26NOV21",
+"expiration_value": "74.00",
+"floor": 74.0,
+"label": "74° to 75°",
+"result": "yes",
+"strike_type": "between",
+"ticker": "KXHIGHAUS-26NOV21-B74.5"
+},
+"KXHIGHAUS-26NOV21-B76.5": {
+"bracket": [
+76,
+77
+],
+"cap": 77.0,
+"event_ticker": "KXHIGHAUS-26NOV21",
+"expiration_value": "74.00",
+"floor": 76.0,
+"label": "76° to 77°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHAUS-26NOV21-B76.5"
+},
+"KXHIGHAUS-26NOV21-B78.5": {
+"bracket": [
+78,
+79
+],
+"cap": 79.0,
+"event_ticker": "KXHIGHAUS-26NOV21",
+"expiration_value": "74.00",
+"floor": 78.0,
+"label": "78° to 79°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHAUS-26NOV21-B78.5"
+},
+"KXHIGHAUS-26NOV21-B80.5": {
+"bracket": [
+80,
+81
+],
+"cap": 81.0,
+"event_ticker": "KXHIGHAUS-26NOV21",
+"expiration_value": "74.00",
+"floor": 80.0,
+"label": "80° to 81°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHAUS-26NOV21-B80.5"
+},
+"KXHIGHAUS-26NOV21-T74": {
+"bracket": [
+null,
+73
+],
+"cap": 74.0,
+"event_ticker": "KXHIGHAUS-26NOV21",
+"expiration_value": "74.00",
+"floor": null,
+"label": "73° or below",
+"result": "no",
+"strike_type": "less",
+"ticker": "KXHIGHAUS-26NOV21-T74"
+},
+"KXHIGHAUS-26NOV21-T81": {
+"bracket": [
+82,
+null
+],
+"cap": null,
+"event_ticker": "KXHIGHAUS-26NOV21",
+"expiration_value": "74.00",
+"floor": 81.0,
+"label": "82° or above",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXHIGHAUS-26NOV21-T81"
+},
 "KXHIGHCHI-26NOV09-B55.5": {
 "bracket": [
 55,
@@ -7344,6 +7960,90 @@ null
 "result": "no",
 "strike_type": "greater",
 "ticker": "KXHIGHCHI-26NOV20-T73"
+},
+"KXHIGHCHI-26NOV21-B66.5": {
+"bracket": [
+66,
+67
+],
+"cap": 67.0,
+"event_ticker": "KXHIGHCHI-26NOV21",
+"expiration_value": "69.00",
+"floor": 66.0,
+"label": "66° to 67°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHCHI-26NOV21-B66.5"
+},
+"KXHIGHCHI-26NOV21-B68.5": {
+"bracket": [
+68,
+69
+],
+"cap": 69.0,
+"event_ticker": "KXHIGHCHI-26NOV21",
+"expiration_value": "69.00",
+"floor": 68.0,
+"label": "68° to 69°",
+"result": "yes",
+"strike_type": "between",
+"ticker": "KXHIGHCHI-26NOV21-B68.5"
+},
+"KXHIGHCHI-26NOV21-B70.5": {
+"bracket": [
+70,
+71
+],
+"cap": 71.0,
+"event_ticker": "KXHIGHCHI-26NOV21",
+"expiration_value": "69.00",
+"floor": 70.0,
+"label": "70° to 71°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHCHI-26NOV21-B70.5"
+},
+"KXHIGHCHI-26NOV21-B72.5": {
+"bracket": [
+72,
+73
+],
+"cap": 73.0,
+"event_ticker": "KXHIGHCHI-26NOV21",
+"expiration_value": "69.00",
+"floor": 72.0,
+"label": "72° to 73°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHCHI-26NOV21-B72.5"
+},
+"KXHIGHCHI-26NOV21-T66": {
+"bracket": [
+null,
+65
+],
+"cap": 66.0,
+"event_ticker": "KXHIGHCHI-26NOV21",
+"expiration_value": "69.00",
+"floor": null,
+"label": "65° or below",
+"result": "no",
+"strike_type": "less",
+"ticker": "KXHIGHCHI-26NOV21-T66"
+},
+"KXHIGHCHI-26NOV21-T73": {
+"bracket": [
+74,
+null
+],
+"cap": null,
+"event_ticker": "KXHIGHCHI-26NOV21",
+"expiration_value": "69.00",
+"floor": 73.0,
+"label": "74° or above",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXHIGHCHI-26NOV21-T73"
 },
 "KXHIGHDEN-26NOV09-B66.5": {
 "bracket": [
@@ -8353,6 +9053,90 @@ null
 "strike_type": "greater",
 "ticker": "KXHIGHDEN-26NOV20-T64"
 },
+"KXHIGHDEN-26NOV21-B42.5": {
+"bracket": [
+42,
+43
+],
+"cap": 43.0,
+"event_ticker": "KXHIGHDEN-26NOV21",
+"expiration_value": "46.00",
+"floor": 42.0,
+"label": "42° to 43°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHDEN-26NOV21-B42.5"
+},
+"KXHIGHDEN-26NOV21-B44.5": {
+"bracket": [
+44,
+45
+],
+"cap": 45.0,
+"event_ticker": "KXHIGHDEN-26NOV21",
+"expiration_value": "46.00",
+"floor": 44.0,
+"label": "44° to 45°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHDEN-26NOV21-B44.5"
+},
+"KXHIGHDEN-26NOV21-B46.5": {
+"bracket": [
+46,
+47
+],
+"cap": 47.0,
+"event_ticker": "KXHIGHDEN-26NOV21",
+"expiration_value": "46.00",
+"floor": 46.0,
+"label": "46° to 47°",
+"result": "yes",
+"strike_type": "between",
+"ticker": "KXHIGHDEN-26NOV21-B46.5"
+},
+"KXHIGHDEN-26NOV21-B48.5": {
+"bracket": [
+48,
+49
+],
+"cap": 49.0,
+"event_ticker": "KXHIGHDEN-26NOV21",
+"expiration_value": "46.00",
+"floor": 48.0,
+"label": "48° to 49°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHDEN-26NOV21-B48.5"
+},
+"KXHIGHDEN-26NOV21-T42": {
+"bracket": [
+null,
+41
+],
+"cap": 42.0,
+"event_ticker": "KXHIGHDEN-26NOV21",
+"expiration_value": "46.00",
+"floor": null,
+"label": "41° or below",
+"result": "no",
+"strike_type": "less",
+"ticker": "KXHIGHDEN-26NOV21-T42"
+},
+"KXHIGHDEN-26NOV21-T49": {
+"bracket": [
+50,
+null
+],
+"cap": null,
+"event_ticker": "KXHIGHDEN-26NOV21",
+"expiration_value": "46.00",
+"floor": 49.0,
+"label": "50° or above",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXHIGHDEN-26NOV21-T49"
+},
 "KXHIGHLAX-26NOV09-B80.5": {
 "bracket": [
 80,
@@ -9361,6 +10145,90 @@ null
 "strike_type": "greater",
 "ticker": "KXHIGHLAX-26NOV20-T69"
 },
+"KXHIGHLAX-26NOV21-B63.5": {
+"bracket": [
+63,
+64
+],
+"cap": 64.0,
+"event_ticker": "KXHIGHLAX-26NOV21",
+"expiration_value": "68.00",
+"floor": 63.0,
+"label": "63° to 64°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHLAX-26NOV21-B63.5"
+},
+"KXHIGHLAX-26NOV21-B65.5": {
+"bracket": [
+65,
+66
+],
+"cap": 66.0,
+"event_ticker": "KXHIGHLAX-26NOV21",
+"expiration_value": "68.00",
+"floor": 65.0,
+"label": "65° to 66°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHLAX-26NOV21-B65.5"
+},
+"KXHIGHLAX-26NOV21-B67.5": {
+"bracket": [
+67,
+68
+],
+"cap": 68.0,
+"event_ticker": "KXHIGHLAX-26NOV21",
+"expiration_value": "68.00",
+"floor": 67.0,
+"label": "67° to 68°",
+"result": "yes",
+"strike_type": "between",
+"ticker": "KXHIGHLAX-26NOV21-B67.5"
+},
+"KXHIGHLAX-26NOV21-B69.5": {
+"bracket": [
+69,
+70
+],
+"cap": 70.0,
+"event_ticker": "KXHIGHLAX-26NOV21",
+"expiration_value": "68.00",
+"floor": 69.0,
+"label": "69° to 70°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHLAX-26NOV21-B69.5"
+},
+"KXHIGHLAX-26NOV21-T63": {
+"bracket": [
+null,
+62
+],
+"cap": 63.0,
+"event_ticker": "KXHIGHLAX-26NOV21",
+"expiration_value": "68.00",
+"floor": null,
+"label": "62° or below",
+"result": "no",
+"strike_type": "less",
+"ticker": "KXHIGHLAX-26NOV21-T63"
+},
+"KXHIGHLAX-26NOV21-T70": {
+"bracket": [
+71,
+null
+],
+"cap": null,
+"event_ticker": "KXHIGHLAX-26NOV21",
+"expiration_value": "68.00",
+"floor": 70.0,
+"label": "71° or above",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXHIGHLAX-26NOV21-T70"
+},
 "KXHIGHMIA-26NOV09-B81.5": {
 "bracket": [
 81,
@@ -10368,6 +11236,90 @@ null
 "result": "no",
 "strike_type": "greater",
 "ticker": "KXHIGHMIA-26NOV20-T87"
+},
+"KXHIGHMIA-26NOV21-B80.5": {
+"bracket": [
+80,
+81
+],
+"cap": 81.0,
+"event_ticker": "KXHIGHMIA-26NOV21",
+"expiration_value": "82.00",
+"floor": 80.0,
+"label": "80° to 81°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHMIA-26NOV21-B80.5"
+},
+"KXHIGHMIA-26NOV21-B82.5": {
+"bracket": [
+82,
+83
+],
+"cap": 83.0,
+"event_ticker": "KXHIGHMIA-26NOV21",
+"expiration_value": "82.00",
+"floor": 82.0,
+"label": "82° to 83°",
+"result": "yes",
+"strike_type": "between",
+"ticker": "KXHIGHMIA-26NOV21-B82.5"
+},
+"KXHIGHMIA-26NOV21-B84.5": {
+"bracket": [
+84,
+85
+],
+"cap": 85.0,
+"event_ticker": "KXHIGHMIA-26NOV21",
+"expiration_value": "82.00",
+"floor": 84.0,
+"label": "84° to 85°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHMIA-26NOV21-B84.5"
+},
+"KXHIGHMIA-26NOV21-B86.5": {
+"bracket": [
+86,
+87
+],
+"cap": 87.0,
+"event_ticker": "KXHIGHMIA-26NOV21",
+"expiration_value": "82.00",
+"floor": 86.0,
+"label": "86° to 87°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHMIA-26NOV21-B86.5"
+},
+"KXHIGHMIA-26NOV21-T80": {
+"bracket": [
+null,
+79
+],
+"cap": 80.0,
+"event_ticker": "KXHIGHMIA-26NOV21",
+"expiration_value": "82.00",
+"floor": null,
+"label": "79° or below",
+"result": "no",
+"strike_type": "less",
+"ticker": "KXHIGHMIA-26NOV21-T80"
+},
+"KXHIGHMIA-26NOV21-T87": {
+"bracket": [
+88,
+null
+],
+"cap": null,
+"event_ticker": "KXHIGHMIA-26NOV21",
+"expiration_value": "82.00",
+"floor": 87.0,
+"label": "88° or above",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXHIGHMIA-26NOV21-T87"
 },
 "KXHIGHNY-26NOV08-B61.5": {
 "bracket": [
@@ -11461,6 +12413,90 @@ null
 "strike_type": "greater",
 "ticker": "KXHIGHNY-26NOV20-T69"
 },
+"KXHIGHNY-26NOV21-B58.5": {
+"bracket": [
+58,
+59
+],
+"cap": 59.0,
+"event_ticker": "KXHIGHNY-26NOV21",
+"expiration_value": "65.00",
+"floor": 58.0,
+"label": "58° to 59°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHNY-26NOV21-B58.5"
+},
+"KXHIGHNY-26NOV21-B60.5": {
+"bracket": [
+60,
+61
+],
+"cap": 61.0,
+"event_ticker": "KXHIGHNY-26NOV21",
+"expiration_value": "65.00",
+"floor": 60.0,
+"label": "60° to 61°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHNY-26NOV21-B60.5"
+},
+"KXHIGHNY-26NOV21-B62.5": {
+"bracket": [
+62,
+63
+],
+"cap": 63.0,
+"event_ticker": "KXHIGHNY-26NOV21",
+"expiration_value": "65.00",
+"floor": 62.0,
+"label": "62° to 63°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHNY-26NOV21-B62.5"
+},
+"KXHIGHNY-26NOV21-B64.5": {
+"bracket": [
+64,
+65
+],
+"cap": 65.0,
+"event_ticker": "KXHIGHNY-26NOV21",
+"expiration_value": "65.00",
+"floor": 64.0,
+"label": "64° to 65°",
+"result": "yes",
+"strike_type": "between",
+"ticker": "KXHIGHNY-26NOV21-B64.5"
+},
+"KXHIGHNY-26NOV21-T58": {
+"bracket": [
+null,
+57
+],
+"cap": 58.0,
+"event_ticker": "KXHIGHNY-26NOV21",
+"expiration_value": "65.00",
+"floor": null,
+"label": "57° or below",
+"result": "no",
+"strike_type": "less",
+"ticker": "KXHIGHNY-26NOV21-T58"
+},
+"KXHIGHNY-26NOV21-T65": {
+"bracket": [
+66,
+null
+],
+"cap": null,
+"event_ticker": "KXHIGHNY-26NOV21",
+"expiration_value": "65.00",
+"floor": 65.0,
+"label": "66° or above",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXHIGHNY-26NOV21-T65"
+},
 "KXHIGHPHIL-26NOV09-B59.5": {
 "bracket": [
 59,
@@ -12468,6 +13504,90 @@ null
 "result": "no",
 "strike_type": "greater",
 "ticker": "KXHIGHPHIL-26NOV20-T71"
+},
+"KXHIGHPHIL-26NOV21-B63.5": {
+"bracket": [
+63,
+64
+],
+"cap": 64.0,
+"event_ticker": "KXHIGHPHIL-26NOV21",
+"expiration_value": "66.00",
+"floor": 63.0,
+"label": "63° to 64°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHPHIL-26NOV21-B63.5"
+},
+"KXHIGHPHIL-26NOV21-B65.5": {
+"bracket": [
+65,
+66
+],
+"cap": 66.0,
+"event_ticker": "KXHIGHPHIL-26NOV21",
+"expiration_value": "66.00",
+"floor": 65.0,
+"label": "65° to 66°",
+"result": "yes",
+"strike_type": "between",
+"ticker": "KXHIGHPHIL-26NOV21-B65.5"
+},
+"KXHIGHPHIL-26NOV21-B67.5": {
+"bracket": [
+67,
+68
+],
+"cap": 68.0,
+"event_ticker": "KXHIGHPHIL-26NOV21",
+"expiration_value": "66.00",
+"floor": 67.0,
+"label": "67° to 68°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHPHIL-26NOV21-B67.5"
+},
+"KXHIGHPHIL-26NOV21-B69.5": {
+"bracket": [
+69,
+70
+],
+"cap": 70.0,
+"event_ticker": "KXHIGHPHIL-26NOV21",
+"expiration_value": "66.00",
+"floor": 69.0,
+"label": "69° to 70°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHPHIL-26NOV21-B69.5"
+},
+"KXHIGHPHIL-26NOV21-T63": {
+"bracket": [
+null,
+62
+],
+"cap": 63.0,
+"event_ticker": "KXHIGHPHIL-26NOV21",
+"expiration_value": "66.00",
+"floor": null,
+"label": "62° or below",
+"result": "no",
+"strike_type": "less",
+"ticker": "KXHIGHPHIL-26NOV21-T63"
+},
+"KXHIGHPHIL-26NOV21-T70": {
+"bracket": [
+71,
+null
+],
+"cap": null,
+"event_ticker": "KXHIGHPHIL-26NOV21",
+"expiration_value": "66.00",
+"floor": 70.0,
+"label": "71° or above",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXHIGHPHIL-26NOV21-T70"
 },
 "KXHIGHTATL-26NOV09-B67.5": {
 "bracket": [
@@ -13477,6 +14597,90 @@ null
 "strike_type": "greater",
 "ticker": "KXHIGHTATL-26NOV20-T74"
 },
+"KXHIGHTATL-26NOV21-B65.5": {
+"bracket": [
+65,
+66
+],
+"cap": 66.0,
+"event_ticker": "KXHIGHTATL-26NOV21",
+"expiration_value": "62.00",
+"floor": 65.0,
+"label": "65° to 66°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTATL-26NOV21-B65.5"
+},
+"KXHIGHTATL-26NOV21-B67.5": {
+"bracket": [
+67,
+68
+],
+"cap": 68.0,
+"event_ticker": "KXHIGHTATL-26NOV21",
+"expiration_value": "62.00",
+"floor": 67.0,
+"label": "67° to 68°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTATL-26NOV21-B67.5"
+},
+"KXHIGHTATL-26NOV21-B69.5": {
+"bracket": [
+69,
+70
+],
+"cap": 70.0,
+"event_ticker": "KXHIGHTATL-26NOV21",
+"expiration_value": "62.00",
+"floor": 69.0,
+"label": "69° to 70°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTATL-26NOV21-B69.5"
+},
+"KXHIGHTATL-26NOV21-B71.5": {
+"bracket": [
+71,
+72
+],
+"cap": 72.0,
+"event_ticker": "KXHIGHTATL-26NOV21",
+"expiration_value": "62.00",
+"floor": 71.0,
+"label": "71° to 72°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTATL-26NOV21-B71.5"
+},
+"KXHIGHTATL-26NOV21-T65": {
+"bracket": [
+null,
+64
+],
+"cap": 65.0,
+"event_ticker": "KXHIGHTATL-26NOV21",
+"expiration_value": "62.00",
+"floor": null,
+"label": "64° or below",
+"result": "yes",
+"strike_type": "less",
+"ticker": "KXHIGHTATL-26NOV21-T65"
+},
+"KXHIGHTATL-26NOV21-T72": {
+"bracket": [
+73,
+null
+],
+"cap": null,
+"event_ticker": "KXHIGHTATL-26NOV21",
+"expiration_value": "62.00",
+"floor": 72.0,
+"label": "73° or above",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXHIGHTATL-26NOV21-T72"
+},
 "KXHIGHTBOS-26NOV09-B55.5": {
 "bracket": [
 55,
@@ -14484,6 +15688,90 @@ null
 "result": "no",
 "strike_type": "greater",
 "ticker": "KXHIGHTBOS-26NOV20-T69"
+},
+"KXHIGHTBOS-26NOV21-B58.5": {
+"bracket": [
+58,
+59
+],
+"cap": 59.0,
+"event_ticker": "KXHIGHTBOS-26NOV21",
+"expiration_value": "59.00",
+"floor": 58.0,
+"label": "58° to 59°",
+"result": "yes",
+"strike_type": "between",
+"ticker": "KXHIGHTBOS-26NOV21-B58.5"
+},
+"KXHIGHTBOS-26NOV21-B60.5": {
+"bracket": [
+60,
+61
+],
+"cap": 61.0,
+"event_ticker": "KXHIGHTBOS-26NOV21",
+"expiration_value": "59.00",
+"floor": 60.0,
+"label": "60° to 61°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTBOS-26NOV21-B60.5"
+},
+"KXHIGHTBOS-26NOV21-B62.5": {
+"bracket": [
+62,
+63
+],
+"cap": 63.0,
+"event_ticker": "KXHIGHTBOS-26NOV21",
+"expiration_value": "59.00",
+"floor": 62.0,
+"label": "62° to 63°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTBOS-26NOV21-B62.5"
+},
+"KXHIGHTBOS-26NOV21-B64.5": {
+"bracket": [
+64,
+65
+],
+"cap": 65.0,
+"event_ticker": "KXHIGHTBOS-26NOV21",
+"expiration_value": "59.00",
+"floor": 64.0,
+"label": "64° to 65°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTBOS-26NOV21-B64.5"
+},
+"KXHIGHTBOS-26NOV21-T58": {
+"bracket": [
+null,
+57
+],
+"cap": 58.0,
+"event_ticker": "KXHIGHTBOS-26NOV21",
+"expiration_value": "59.00",
+"floor": null,
+"label": "57° or below",
+"result": "no",
+"strike_type": "less",
+"ticker": "KXHIGHTBOS-26NOV21-T58"
+},
+"KXHIGHTBOS-26NOV21-T65": {
+"bracket": [
+66,
+null
+],
+"cap": null,
+"event_ticker": "KXHIGHTBOS-26NOV21",
+"expiration_value": "59.00",
+"floor": 65.0,
+"label": "66° or above",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXHIGHTBOS-26NOV21-T65"
 },
 "KXHIGHTDAL-26NOV09-B71.5": {
 "bracket": [
@@ -15493,6 +16781,90 @@ null
 "strike_type": "greater",
 "ticker": "KXHIGHTDAL-26NOV20-T79"
 },
+"KXHIGHTDAL-26NOV21-B73.5": {
+"bracket": [
+73,
+74
+],
+"cap": 74.0,
+"event_ticker": "KXHIGHTDAL-26NOV21",
+"expiration_value": "73.00",
+"floor": 73.0,
+"label": "73° to 74°",
+"result": "yes",
+"strike_type": "between",
+"ticker": "KXHIGHTDAL-26NOV21-B73.5"
+},
+"KXHIGHTDAL-26NOV21-B75.5": {
+"bracket": [
+75,
+76
+],
+"cap": 76.0,
+"event_ticker": "KXHIGHTDAL-26NOV21",
+"expiration_value": "73.00",
+"floor": 75.0,
+"label": "75° to 76°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTDAL-26NOV21-B75.5"
+},
+"KXHIGHTDAL-26NOV21-B77.5": {
+"bracket": [
+77,
+78
+],
+"cap": 78.0,
+"event_ticker": "KXHIGHTDAL-26NOV21",
+"expiration_value": "73.00",
+"floor": 77.0,
+"label": "77° to 78°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTDAL-26NOV21-B77.5"
+},
+"KXHIGHTDAL-26NOV21-B79.5": {
+"bracket": [
+79,
+80
+],
+"cap": 80.0,
+"event_ticker": "KXHIGHTDAL-26NOV21",
+"expiration_value": "73.00",
+"floor": 79.0,
+"label": "79° to 80°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTDAL-26NOV21-B79.5"
+},
+"KXHIGHTDAL-26NOV21-T73": {
+"bracket": [
+null,
+72
+],
+"cap": 73.0,
+"event_ticker": "KXHIGHTDAL-26NOV21",
+"expiration_value": "73.00",
+"floor": null,
+"label": "72° or below",
+"result": "no",
+"strike_type": "less",
+"ticker": "KXHIGHTDAL-26NOV21-T73"
+},
+"KXHIGHTDAL-26NOV21-T80": {
+"bracket": [
+81,
+null
+],
+"cap": null,
+"event_ticker": "KXHIGHTDAL-26NOV21",
+"expiration_value": "73.00",
+"floor": 80.0,
+"label": "81° or above",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXHIGHTDAL-26NOV21-T80"
+},
 "KXHIGHTDC-26NOV09-B61.5": {
 "bracket": [
 61,
@@ -16500,6 +17872,90 @@ null
 "result": "no",
 "strike_type": "greater",
 "ticker": "KXHIGHTDC-26NOV20-T73"
+},
+"KXHIGHTDC-26NOV21-B63.5": {
+"bracket": [
+63,
+64
+],
+"cap": 64.0,
+"event_ticker": "KXHIGHTDC-26NOV21",
+"expiration_value": "67.00",
+"floor": 63.0,
+"label": "63° to 64°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTDC-26NOV21-B63.5"
+},
+"KXHIGHTDC-26NOV21-B65.5": {
+"bracket": [
+65,
+66
+],
+"cap": 66.0,
+"event_ticker": "KXHIGHTDC-26NOV21",
+"expiration_value": "67.00",
+"floor": 65.0,
+"label": "65° to 66°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTDC-26NOV21-B65.5"
+},
+"KXHIGHTDC-26NOV21-B67.5": {
+"bracket": [
+67,
+68
+],
+"cap": 68.0,
+"event_ticker": "KXHIGHTDC-26NOV21",
+"expiration_value": "67.00",
+"floor": 67.0,
+"label": "67° to 68°",
+"result": "yes",
+"strike_type": "between",
+"ticker": "KXHIGHTDC-26NOV21-B67.5"
+},
+"KXHIGHTDC-26NOV21-B69.5": {
+"bracket": [
+69,
+70
+],
+"cap": 70.0,
+"event_ticker": "KXHIGHTDC-26NOV21",
+"expiration_value": "67.00",
+"floor": 69.0,
+"label": "69° to 70°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTDC-26NOV21-B69.5"
+},
+"KXHIGHTDC-26NOV21-T63": {
+"bracket": [
+null,
+62
+],
+"cap": 63.0,
+"event_ticker": "KXHIGHTDC-26NOV21",
+"expiration_value": "67.00",
+"floor": null,
+"label": "62° or below",
+"result": "no",
+"strike_type": "less",
+"ticker": "KXHIGHTDC-26NOV21-T63"
+},
+"KXHIGHTDC-26NOV21-T70": {
+"bracket": [
+71,
+null
+],
+"cap": null,
+"event_ticker": "KXHIGHTDC-26NOV21",
+"expiration_value": "67.00",
+"floor": 70.0,
+"label": "71° or above",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXHIGHTDC-26NOV21-T70"
 },
 "KXHIGHTHOU-26NOV09-B66.5": {
 "bracket": [
@@ -17509,6 +18965,90 @@ null
 "strike_type": "greater",
 "ticker": "KXHIGHTHOU-26NOV20-T80"
 },
+"KXHIGHTHOU-26NOV21-B75.5": {
+"bracket": [
+75,
+76
+],
+"cap": 76.0,
+"event_ticker": "KXHIGHTHOU-26NOV21",
+"expiration_value": "78.00",
+"floor": 75.0,
+"label": "75° to 76°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTHOU-26NOV21-B75.5"
+},
+"KXHIGHTHOU-26NOV21-B77.5": {
+"bracket": [
+77,
+78
+],
+"cap": 78.0,
+"event_ticker": "KXHIGHTHOU-26NOV21",
+"expiration_value": "78.00",
+"floor": 77.0,
+"label": "77° to 78°",
+"result": "yes",
+"strike_type": "between",
+"ticker": "KXHIGHTHOU-26NOV21-B77.5"
+},
+"KXHIGHTHOU-26NOV21-B79.5": {
+"bracket": [
+79,
+80
+],
+"cap": 80.0,
+"event_ticker": "KXHIGHTHOU-26NOV21",
+"expiration_value": "78.00",
+"floor": 79.0,
+"label": "79° to 80°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTHOU-26NOV21-B79.5"
+},
+"KXHIGHTHOU-26NOV21-B81.5": {
+"bracket": [
+81,
+82
+],
+"cap": 82.0,
+"event_ticker": "KXHIGHTHOU-26NOV21",
+"expiration_value": "78.00",
+"floor": 81.0,
+"label": "81° to 82°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTHOU-26NOV21-B81.5"
+},
+"KXHIGHTHOU-26NOV21-T75": {
+"bracket": [
+null,
+74
+],
+"cap": 75.0,
+"event_ticker": "KXHIGHTHOU-26NOV21",
+"expiration_value": "78.00",
+"floor": null,
+"label": "74° or below",
+"result": "no",
+"strike_type": "less",
+"ticker": "KXHIGHTHOU-26NOV21-T75"
+},
+"KXHIGHTHOU-26NOV21-T82": {
+"bracket": [
+83,
+null
+],
+"cap": null,
+"event_ticker": "KXHIGHTHOU-26NOV21",
+"expiration_value": "78.00",
+"floor": 82.0,
+"label": "83° or above",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXHIGHTHOU-26NOV21-T82"
+},
 "KXHIGHTLV-26NOV09-B72.5": {
 "bracket": [
 72,
@@ -18516,6 +20056,90 @@ null
 "result": "no",
 "strike_type": "greater",
 "ticker": "KXHIGHTLV-26NOV20-T63"
+},
+"KXHIGHTLV-26NOV21-B54.5": {
+"bracket": [
+54,
+55
+],
+"cap": 55.0,
+"event_ticker": "KXHIGHTLV-26NOV21",
+"expiration_value": "57.00",
+"floor": 54.0,
+"label": "54° to 55°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTLV-26NOV21-B54.5"
+},
+"KXHIGHTLV-26NOV21-B56.5": {
+"bracket": [
+56,
+57
+],
+"cap": 57.0,
+"event_ticker": "KXHIGHTLV-26NOV21",
+"expiration_value": "57.00",
+"floor": 56.0,
+"label": "56° to 57°",
+"result": "yes",
+"strike_type": "between",
+"ticker": "KXHIGHTLV-26NOV21-B56.5"
+},
+"KXHIGHTLV-26NOV21-B58.5": {
+"bracket": [
+58,
+59
+],
+"cap": 59.0,
+"event_ticker": "KXHIGHTLV-26NOV21",
+"expiration_value": "57.00",
+"floor": 58.0,
+"label": "58° to 59°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTLV-26NOV21-B58.5"
+},
+"KXHIGHTLV-26NOV21-B60.5": {
+"bracket": [
+60,
+61
+],
+"cap": 61.0,
+"event_ticker": "KXHIGHTLV-26NOV21",
+"expiration_value": "57.00",
+"floor": 60.0,
+"label": "60° to 61°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTLV-26NOV21-B60.5"
+},
+"KXHIGHTLV-26NOV21-T54": {
+"bracket": [
+null,
+53
+],
+"cap": 54.0,
+"event_ticker": "KXHIGHTLV-26NOV21",
+"expiration_value": "57.00",
+"floor": null,
+"label": "53° or below",
+"result": "no",
+"strike_type": "less",
+"ticker": "KXHIGHTLV-26NOV21-T54"
+},
+"KXHIGHTLV-26NOV21-T61": {
+"bracket": [
+62,
+null
+],
+"cap": null,
+"event_ticker": "KXHIGHTLV-26NOV21",
+"expiration_value": "57.00",
+"floor": 61.0,
+"label": "62° or above",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXHIGHTLV-26NOV21-T61"
 },
 "KXHIGHTMIN-26NOV09-B55.5": {
 "bracket": [
@@ -19525,6 +21149,90 @@ null
 "strike_type": "greater",
 "ticker": "KXHIGHTMIN-26NOV20-T69"
 },
+"KXHIGHTMIN-26NOV21-B60.5": {
+"bracket": [
+60,
+61
+],
+"cap": 61.0,
+"event_ticker": "KXHIGHTMIN-26NOV21",
+"expiration_value": "63.00",
+"floor": 60.0,
+"label": "60° to 61°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTMIN-26NOV21-B60.5"
+},
+"KXHIGHTMIN-26NOV21-B62.5": {
+"bracket": [
+62,
+63
+],
+"cap": 63.0,
+"event_ticker": "KXHIGHTMIN-26NOV21",
+"expiration_value": "63.00",
+"floor": 62.0,
+"label": "62° to 63°",
+"result": "yes",
+"strike_type": "between",
+"ticker": "KXHIGHTMIN-26NOV21-B62.5"
+},
+"KXHIGHTMIN-26NOV21-B64.5": {
+"bracket": [
+64,
+65
+],
+"cap": 65.0,
+"event_ticker": "KXHIGHTMIN-26NOV21",
+"expiration_value": "63.00",
+"floor": 64.0,
+"label": "64° to 65°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTMIN-26NOV21-B64.5"
+},
+"KXHIGHTMIN-26NOV21-B66.5": {
+"bracket": [
+66,
+67
+],
+"cap": 67.0,
+"event_ticker": "KXHIGHTMIN-26NOV21",
+"expiration_value": "63.00",
+"floor": 66.0,
+"label": "66° to 67°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTMIN-26NOV21-B66.5"
+},
+"KXHIGHTMIN-26NOV21-T60": {
+"bracket": [
+null,
+59
+],
+"cap": 60.0,
+"event_ticker": "KXHIGHTMIN-26NOV21",
+"expiration_value": "63.00",
+"floor": null,
+"label": "59° or below",
+"result": "no",
+"strike_type": "less",
+"ticker": "KXHIGHTMIN-26NOV21-T60"
+},
+"KXHIGHTMIN-26NOV21-T67": {
+"bracket": [
+68,
+null
+],
+"cap": null,
+"event_ticker": "KXHIGHTMIN-26NOV21",
+"expiration_value": "63.00",
+"floor": 67.0,
+"label": "68° or above",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXHIGHTMIN-26NOV21-T67"
+},
 "KXHIGHTNOLA-26NOV09-B70.5": {
 "bracket": [
 70,
@@ -20532,6 +22240,90 @@ null
 "result": "no",
 "strike_type": "greater",
 "ticker": "KXHIGHTNOLA-26NOV20-T75"
+},
+"KXHIGHTNOLA-26NOV21-B71.5": {
+"bracket": [
+71,
+72
+],
+"cap": 72.0,
+"event_ticker": "KXHIGHTNOLA-26NOV21",
+"expiration_value": "74.00",
+"floor": 71.0,
+"label": "71° to 72°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTNOLA-26NOV21-B71.5"
+},
+"KXHIGHTNOLA-26NOV21-B73.5": {
+"bracket": [
+73,
+74
+],
+"cap": 74.0,
+"event_ticker": "KXHIGHTNOLA-26NOV21",
+"expiration_value": "74.00",
+"floor": 73.0,
+"label": "73° to 74°",
+"result": "yes",
+"strike_type": "between",
+"ticker": "KXHIGHTNOLA-26NOV21-B73.5"
+},
+"KXHIGHTNOLA-26NOV21-B75.5": {
+"bracket": [
+75,
+76
+],
+"cap": 76.0,
+"event_ticker": "KXHIGHTNOLA-26NOV21",
+"expiration_value": "74.00",
+"floor": 75.0,
+"label": "75° to 76°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTNOLA-26NOV21-B75.5"
+},
+"KXHIGHTNOLA-26NOV21-B77.5": {
+"bracket": [
+77,
+78
+],
+"cap": 78.0,
+"event_ticker": "KXHIGHTNOLA-26NOV21",
+"expiration_value": "74.00",
+"floor": 77.0,
+"label": "77° to 78°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTNOLA-26NOV21-B77.5"
+},
+"KXHIGHTNOLA-26NOV21-T71": {
+"bracket": [
+null,
+70
+],
+"cap": 71.0,
+"event_ticker": "KXHIGHTNOLA-26NOV21",
+"expiration_value": "74.00",
+"floor": null,
+"label": "70° or below",
+"result": "no",
+"strike_type": "less",
+"ticker": "KXHIGHTNOLA-26NOV21-T71"
+},
+"KXHIGHTNOLA-26NOV21-T78": {
+"bracket": [
+79,
+null
+],
+"cap": null,
+"event_ticker": "KXHIGHTNOLA-26NOV21",
+"expiration_value": "74.00",
+"floor": 78.0,
+"label": "79° or above",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXHIGHTNOLA-26NOV21-T78"
 },
 "KXHIGHTOKC-26NOV09-B69.5": {
 "bracket": [
@@ -21541,6 +23333,90 @@ null
 "strike_type": "greater",
 "ticker": "KXHIGHTOKC-26NOV20-T74"
 },
+"KXHIGHTOKC-26NOV21-B68.5": {
+"bracket": [
+68,
+69
+],
+"cap": 69.0,
+"event_ticker": "KXHIGHTOKC-26NOV21",
+"expiration_value": "67.00",
+"floor": 68.0,
+"label": "68° to 69°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTOKC-26NOV21-B68.5"
+},
+"KXHIGHTOKC-26NOV21-B70.5": {
+"bracket": [
+70,
+71
+],
+"cap": 71.0,
+"event_ticker": "KXHIGHTOKC-26NOV21",
+"expiration_value": "67.00",
+"floor": 70.0,
+"label": "70° to 71°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTOKC-26NOV21-B70.5"
+},
+"KXHIGHTOKC-26NOV21-B72.5": {
+"bracket": [
+72,
+73
+],
+"cap": 73.0,
+"event_ticker": "KXHIGHTOKC-26NOV21",
+"expiration_value": "67.00",
+"floor": 72.0,
+"label": "72° to 73°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTOKC-26NOV21-B72.5"
+},
+"KXHIGHTOKC-26NOV21-B74.5": {
+"bracket": [
+74,
+75
+],
+"cap": 75.0,
+"event_ticker": "KXHIGHTOKC-26NOV21",
+"expiration_value": "67.00",
+"floor": 74.0,
+"label": "74° to 75°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTOKC-26NOV21-B74.5"
+},
+"KXHIGHTOKC-26NOV21-T68": {
+"bracket": [
+null,
+67
+],
+"cap": 68.0,
+"event_ticker": "KXHIGHTOKC-26NOV21",
+"expiration_value": "67.00",
+"floor": null,
+"label": "67° or below",
+"result": "yes",
+"strike_type": "less",
+"ticker": "KXHIGHTOKC-26NOV21-T68"
+},
+"KXHIGHTOKC-26NOV21-T75": {
+"bracket": [
+76,
+null
+],
+"cap": null,
+"event_ticker": "KXHIGHTOKC-26NOV21",
+"expiration_value": "67.00",
+"floor": 75.0,
+"label": "76° or above",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXHIGHTOKC-26NOV21-T75"
+},
 "KXHIGHTPHX-26NOV09-B81.5": {
 "bracket": [
 81,
@@ -22548,6 +24424,90 @@ null
 "result": "no",
 "strike_type": "greater",
 "ticker": "KXHIGHTPHX-26NOV20-T77"
+},
+"KXHIGHTPHX-26NOV21-B67.5": {
+"bracket": [
+67,
+68
+],
+"cap": 68.0,
+"event_ticker": "KXHIGHTPHX-26NOV21",
+"expiration_value": "69.00",
+"floor": 67.0,
+"label": "67° to 68°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTPHX-26NOV21-B67.5"
+},
+"KXHIGHTPHX-26NOV21-B69.5": {
+"bracket": [
+69,
+70
+],
+"cap": 70.0,
+"event_ticker": "KXHIGHTPHX-26NOV21",
+"expiration_value": "69.00",
+"floor": 69.0,
+"label": "69° to 70°",
+"result": "yes",
+"strike_type": "between",
+"ticker": "KXHIGHTPHX-26NOV21-B69.5"
+},
+"KXHIGHTPHX-26NOV21-B71.5": {
+"bracket": [
+71,
+72
+],
+"cap": 72.0,
+"event_ticker": "KXHIGHTPHX-26NOV21",
+"expiration_value": "69.00",
+"floor": 71.0,
+"label": "71° to 72°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTPHX-26NOV21-B71.5"
+},
+"KXHIGHTPHX-26NOV21-B73.5": {
+"bracket": [
+73,
+74
+],
+"cap": 74.0,
+"event_ticker": "KXHIGHTPHX-26NOV21",
+"expiration_value": "69.00",
+"floor": 73.0,
+"label": "73° to 74°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTPHX-26NOV21-B73.5"
+},
+"KXHIGHTPHX-26NOV21-T67": {
+"bracket": [
+null,
+66
+],
+"cap": 67.0,
+"event_ticker": "KXHIGHTPHX-26NOV21",
+"expiration_value": "69.00",
+"floor": null,
+"label": "66° or below",
+"result": "no",
+"strike_type": "less",
+"ticker": "KXHIGHTPHX-26NOV21-T67"
+},
+"KXHIGHTPHX-26NOV21-T74": {
+"bracket": [
+75,
+null
+],
+"cap": null,
+"event_ticker": "KXHIGHTPHX-26NOV21",
+"expiration_value": "69.00",
+"floor": 74.0,
+"label": "75° or above",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXHIGHTPHX-26NOV21-T74"
 },
 "KXHIGHTSATX-26NOV09-B63.5": {
 "bracket": [
@@ -23557,6 +25517,90 @@ null
 "strike_type": "greater",
 "ticker": "KXHIGHTSATX-26NOV20-T80"
 },
+"KXHIGHTSATX-26NOV21-B72.5": {
+"bracket": [
+72,
+73
+],
+"cap": 73.0,
+"event_ticker": "KXHIGHTSATX-26NOV21",
+"expiration_value": "71.00",
+"floor": 72.0,
+"label": "72° to 73°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTSATX-26NOV21-B72.5"
+},
+"KXHIGHTSATX-26NOV21-B74.5": {
+"bracket": [
+74,
+75
+],
+"cap": 75.0,
+"event_ticker": "KXHIGHTSATX-26NOV21",
+"expiration_value": "71.00",
+"floor": 74.0,
+"label": "74° to 75°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTSATX-26NOV21-B74.5"
+},
+"KXHIGHTSATX-26NOV21-B76.5": {
+"bracket": [
+76,
+77
+],
+"cap": 77.0,
+"event_ticker": "KXHIGHTSATX-26NOV21",
+"expiration_value": "71.00",
+"floor": 76.0,
+"label": "76° to 77°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTSATX-26NOV21-B76.5"
+},
+"KXHIGHTSATX-26NOV21-B78.5": {
+"bracket": [
+78,
+79
+],
+"cap": 79.0,
+"event_ticker": "KXHIGHTSATX-26NOV21",
+"expiration_value": "71.00",
+"floor": 78.0,
+"label": "78° to 79°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTSATX-26NOV21-B78.5"
+},
+"KXHIGHTSATX-26NOV21-T72": {
+"bracket": [
+null,
+71
+],
+"cap": 72.0,
+"event_ticker": "KXHIGHTSATX-26NOV21",
+"expiration_value": "71.00",
+"floor": null,
+"label": "71° or below",
+"result": "yes",
+"strike_type": "less",
+"ticker": "KXHIGHTSATX-26NOV21-T72"
+},
+"KXHIGHTSATX-26NOV21-T79": {
+"bracket": [
+80,
+null
+],
+"cap": null,
+"event_ticker": "KXHIGHTSATX-26NOV21",
+"expiration_value": "71.00",
+"floor": 79.0,
+"label": "80° or above",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXHIGHTSATX-26NOV21-T79"
+},
 "KXHIGHTSEA-26NOV09-B52.5": {
 "bracket": [
 52,
@@ -24565,6 +26609,90 @@ null
 "strike_type": "greater",
 "ticker": "KXHIGHTSEA-26NOV20-T53"
 },
+"KXHIGHTSEA-26NOV21-B46.5": {
+"bracket": [
+46,
+47
+],
+"cap": 47.0,
+"event_ticker": "KXHIGHTSEA-26NOV21",
+"expiration_value": "46.00",
+"floor": 46.0,
+"label": "46° to 47°",
+"result": "yes",
+"strike_type": "between",
+"ticker": "KXHIGHTSEA-26NOV21-B46.5"
+},
+"KXHIGHTSEA-26NOV21-B48.5": {
+"bracket": [
+48,
+49
+],
+"cap": 49.0,
+"event_ticker": "KXHIGHTSEA-26NOV21",
+"expiration_value": "46.00",
+"floor": 48.0,
+"label": "48° to 49°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTSEA-26NOV21-B48.5"
+},
+"KXHIGHTSEA-26NOV21-B50.5": {
+"bracket": [
+50,
+51
+],
+"cap": 51.0,
+"event_ticker": "KXHIGHTSEA-26NOV21",
+"expiration_value": "46.00",
+"floor": 50.0,
+"label": "50° to 51°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTSEA-26NOV21-B50.5"
+},
+"KXHIGHTSEA-26NOV21-B52.5": {
+"bracket": [
+52,
+53
+],
+"cap": 53.0,
+"event_ticker": "KXHIGHTSEA-26NOV21",
+"expiration_value": "46.00",
+"floor": 52.0,
+"label": "52° to 53°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTSEA-26NOV21-B52.5"
+},
+"KXHIGHTSEA-26NOV21-T46": {
+"bracket": [
+null,
+45
+],
+"cap": 46.0,
+"event_ticker": "KXHIGHTSEA-26NOV21",
+"expiration_value": "46.00",
+"floor": null,
+"label": "45° or below",
+"result": "no",
+"strike_type": "less",
+"ticker": "KXHIGHTSEA-26NOV21-T46"
+},
+"KXHIGHTSEA-26NOV21-T53": {
+"bracket": [
+54,
+null
+],
+"cap": null,
+"event_ticker": "KXHIGHTSEA-26NOV21",
+"expiration_value": "46.00",
+"floor": 53.0,
+"label": "54° or above",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXHIGHTSEA-26NOV21-T53"
+},
 "KXHIGHTSFO-26NOV09-B68.5": {
 "bracket": [
 68,
@@ -25572,6 +27700,90 @@ null
 "result": "no",
 "strike_type": "greater",
 "ticker": "KXHIGHTSFO-26NOV20-T62"
+},
+"KXHIGHTSFO-26NOV21-B55.5": {
+"bracket": [
+55,
+56
+],
+"cap": 56.0,
+"event_ticker": "KXHIGHTSFO-26NOV21",
+"expiration_value": "58.00",
+"floor": 55.0,
+"label": "55° to 56°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTSFO-26NOV21-B55.5"
+},
+"KXHIGHTSFO-26NOV21-B57.5": {
+"bracket": [
+57,
+58
+],
+"cap": 58.0,
+"event_ticker": "KXHIGHTSFO-26NOV21",
+"expiration_value": "58.00",
+"floor": 57.0,
+"label": "57° to 58°",
+"result": "yes",
+"strike_type": "between",
+"ticker": "KXHIGHTSFO-26NOV21-B57.5"
+},
+"KXHIGHTSFO-26NOV21-B59.5": {
+"bracket": [
+59,
+60
+],
+"cap": 60.0,
+"event_ticker": "KXHIGHTSFO-26NOV21",
+"expiration_value": "58.00",
+"floor": 59.0,
+"label": "59° to 60°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTSFO-26NOV21-B59.5"
+},
+"KXHIGHTSFO-26NOV21-B61.5": {
+"bracket": [
+61,
+62
+],
+"cap": 62.0,
+"event_ticker": "KXHIGHTSFO-26NOV21",
+"expiration_value": "58.00",
+"floor": 61.0,
+"label": "61° to 62°",
+"result": "no",
+"strike_type": "between",
+"ticker": "KXHIGHTSFO-26NOV21-B61.5"
+},
+"KXHIGHTSFO-26NOV21-T55": {
+"bracket": [
+null,
+54
+],
+"cap": 55.0,
+"event_ticker": "KXHIGHTSFO-26NOV21",
+"expiration_value": "58.00",
+"floor": null,
+"label": "54° or below",
+"result": "no",
+"strike_type": "less",
+"ticker": "KXHIGHTSFO-26NOV21-T55"
+},
+"KXHIGHTSFO-26NOV21-T62": {
+"bracket": [
+63,
+null
+],
+"cap": null,
+"event_ticker": "KXHIGHTSFO-26NOV21",
+"expiration_value": "58.00",
+"floor": 62.0,
+"label": "63° or above",
+"result": "no",
+"strike_type": "greater",
+"ticker": "KXHIGHTSFO-26NOV21-T62"
 },
 "KXJOBLESSCLAIMS-26NOV05-170000": {
 "bracket": [
