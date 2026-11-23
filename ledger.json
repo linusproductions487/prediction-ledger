@@ -798,6 +798,125 @@
       "baseline_confidence": 25,
       "prev_hash": "b1b46603606c918b838635b60d65490acab6274b5737210c95c5dca9e8f9bc89",
       "hash": "b91fa2762f1e16c2f7d50f9d462222c4b7febc34143774ca2bc806b9d205e272"
+    },
+    {
+      "id": 60,
+      "seq": 48,
+      "created_at": "2026-11-23T21:42:00.153139Z",
+      "topic": "market:weather",
+      "claim": "Kalshi KXHIGHTATL-26NOV24-T61 \"60° or below\" settles YES (official high for Atlanta on Nov 24, 2026 is 60F or below).",
+      "resolution_criteria": "TRUE if Kalshi settles market KXHIGHTATL-26NOV24-T61 as YES; FALSE if it settles NO.",
+      "source_of_truth": "Kalshi market KXHIGHTATL-26NOV24-T61 (event KXHIGHTATL-26NOV24): https://kalshi.com/markets/kxhightatl",
+      "confidence": 40,
+      "deadline": "2026-11-26T17:00:00.000000Z",
+      "made_by": "claude",
+      "rationale": "Model 52% (center 60.68, median of 7 sources: NWS 62 updated 18:26Z, NBM 60.5, HRRR 59.0, ECMWF 60.6, GFS 61.7, ICON 59.7, GEM 60.0; 82 ensemble members, mean 60.03, sd 2.4; kernel sd 1.0; prob_sum 1.0), market mid 27.5% (market mean 61.59), blend 40% (39.73 rounded). Buying YES: $100 walks the book to 31c (top ask 28c for 55), so blend 40% vs 31c is a 9c edge. Hand checks pass: bracket hi=60 matches the label, six models within 59.0-61.7, no outlier. Known risk: the NWS point forecast (62) sits above every model but GFS and agrees with the market, and lesson 8 says the market has beaten the model so far.",
+      "baseline_rule": "Kalshi ask at entry: YES 31c, NO 73c (scan 2026-11-23T21:37Z, $100 order-book fill). PAPER TRADE: BUY YES, $100 at 31c (edge 9c).",
+      "baseline_confidence": 29,
+      "prev_hash": "b91fa2762f1e16c2f7d50f9d462222c4b7febc34143774ca2bc806b9d205e272",
+      "hash": "92bcbbdce9f94e77ae9806047c0c20753ed70cc35e53423d4eaacd9c9a518fff"
+    },
+    {
+      "id": 61,
+      "seq": 49,
+      "created_at": "2026-11-23T21:42:00.177434Z",
+      "topic": "market:weather",
+      "claim": "Kalshi KXHIGHNY-26NOV24-B51.5 \"51° to 52°\" settles YES (official high for New York City (Central Park) on Nov 24, 2026 is 51 or 52F).",
+      "resolution_criteria": "TRUE if Kalshi settles market KXHIGHNY-26NOV24-B51.5 as YES; FALSE if it settles NO.",
+      "source_of_truth": "Kalshi market KXHIGHNY-26NOV24-B51.5 (event KXHIGHNY-26NOV24): https://kalshi.com/markets/kxhighny",
+      "confidence": 32,
+      "deadline": "2026-11-26T17:00:00.000000Z",
+      "made_by": "claude",
+      "rationale": "Model 24% (center 49.73, median of 7 sources: NWS 49 updated 18:46Z, NBM 50.7, HRRR 49.3, ECMWF 49.1, GFS 49.9, ICON 50.0, GEM 50.1; 82 ensemble members, mean 47.78, sd 1.73; kernel sd 1.17; prob_sum 1.0), market mid 40.5% (market mean 50.34), blend 32% (32.14 rounded). Buying NO: $100 walks the book to 62c (top ask 60c for 83), so blend NO 68% vs 62c is a 6c edge. Hand checks pass: lo/hi 51-52 match the label, all seven sources within 49.0-50.7 (spread 0.57), no outlier. Known risk: NY day-ahead bias so far is +1.12F on only 3 days (not yet applied by the scanner), which would favour this bracket.",
+      "baseline_rule": "Kalshi ask at entry: YES 41c, NO 62c (scan 2026-11-23T21:37Z, $100 order-book fill). PAPER TRADE: BUY NO, $100 at 62c (edge 6c).",
+      "baseline_confidence": 40,
+      "prev_hash": "92bcbbdce9f94e77ae9806047c0c20753ed70cc35e53423d4eaacd9c9a518fff",
+      "hash": "9b30a95680c7fb6334794d2a8ffa9c91a487580d227c707bd6456c849bafb079"
+    },
+    {
+      "id": 62,
+      "seq": 50,
+      "created_at": "2026-11-23T21:42:00.181914Z",
+      "topic": "market:weather",
+      "claim": "Kalshi KXHIGHLAX-26NOV24-B70.5 \"70° to 71°\" settles YES (official high for Los Angeles (LAX) on Nov 24, 2026 is 70 or 71F).",
+      "resolution_criteria": "TRUE if Kalshi settles market KXHIGHLAX-26NOV24-B70.5 as YES; FALSE if it settles NO.",
+      "source_of_truth": "Kalshi market KXHIGHLAX-26NOV24-B70.5 (event KXHIGHLAX-26NOV24): https://kalshi.com/markets/kxhighlax",
+      "confidence": 15,
+      "deadline": "2026-11-26T17:00:00.000000Z",
+      "made_by": "claude",
+      "rationale": "Candidate skipped by hand, logged for calibration only. Model 25% (center 72.38, median of 7 sources: NWS 71 updated 21:31Z, NBM 72.2, HRRR 73.2, ECMWF 72.3, GFS 70.5, ICON 75.1, GEM 73.2; 82 ensemble members, mean 70.66, sd 1.02; kernel sd 1.82; prob_sum 1.0), market mid 5.5%, blend 15% (15.34 rounded); $100 YES fill 10c, a 5c edge at the minimum. Not traded: ICON at 75.1 is 2.8F above the median and the sources span 70.5-75.1, which the runbook treats as an odd input.",
+      "baseline_rule": "Kalshi ask at entry: YES 10c, NO 95c (scan 2026-11-23T21:37Z, $100 order-book fill (YES), quoted ask (NO)). No trade (logged for calibration only).",
+      "baseline_confidence": 8,
+      "prev_hash": "9b30a95680c7fb6334794d2a8ffa9c91a487580d227c707bd6456c849bafb079",
+      "hash": "c53f9d4cc69c1b87bfdaa0e1655a9a17b75ff9189ac2590cfc52e026cd6abf44"
+    },
+    {
+      "id": 63,
+      "seq": 51,
+      "created_at": "2026-11-23T21:42:00.182129Z",
+      "topic": "market:gas",
+      "claim": "Kalshi KXAAAGASW-26NOV30-3.5600 \"Above 3.5600\" settles YES (AAA national average regular gas price on Nov 30, 2026 is strictly above $3.5600).",
+      "resolution_criteria": "TRUE if Kalshi settles market KXAAAGASW-26NOV30-3.5600 as YES; FALSE if it settles NO.",
+      "source_of_truth": "Kalshi market KXAAAGASW-26NOV30-3.5600 (event KXAAAGASW-26NOV30): https://kalshi.com/markets/kxaaagasw",
+      "confidence": 21,
+      "deadline": "2026-12-02T17:00:00.000000Z",
+      "made_by": "claude",
+      "rationale": "Candidate skipped by hand, logged for calibration only. Gas model 33% (AAA today 3.6366, last change -0.0166, rho 0.95, 7-day mean 3.5414, sd 0.0423, history_days 4), market mid 8.5%, blend 21% (20.74 rounded); $100 YES fill 9c, a 12c edge on paper. Not traded for two reasons: (1) it hinges on the same AAA Nov 30 price as open trade 44 (KXAAAGASM-26NOV30 above 3.55), so it is the same underlying bet under the one-trade-per-event rule even though the event ticker differs; (2) neighbouring strikes 3.52 and 3.54 show model-vs-market gaps of 27 and 31 points, which lesson 10 reads as a model error for the whole event.",
+      "baseline_rule": "Kalshi ask at entry: YES 9c, NO 92c (scan 2026-11-23T21:37Z, $100 order-book fill (YES), quoted ask (NO)). No trade (logged for calibration only).",
+      "baseline_confidence": 9,
+      "prev_hash": "c53f9d4cc69c1b87bfdaa0e1655a9a17b75ff9189ac2590cfc52e026cd6abf44",
+      "hash": "1f2b1b1f43c6b02122ebfba862f853ff22a3783866fa43c53923a8e434681a26"
+    },
+    {
+      "id": 64,
+      "seq": 52,
+      "created_at": "2026-11-23T21:42:00.182307Z",
+      "topic": "market:weather",
+      "claim": "Kalshi KXHIGHAUS-26NOV24-B55.5 \"55° to 56°\" settles YES (official high for Austin on Nov 24, 2026 is 55 or 56F).",
+      "resolution_criteria": "TRUE if Kalshi settles market KXHIGHAUS-26NOV24-B55.5 as YES; FALSE if it settles NO.",
+      "source_of_truth": "Kalshi market KXHIGHAUS-26NOV24-B55.5 (event KXHIGHAUS-26NOV24): https://kalshi.com/markets/kxhighaus",
+      "confidence": 20,
+      "deadline": "2026-11-26T17:00:00.000000Z",
+      "made_by": "claude",
+      "rationale": "No-edge calibration log. Model 19% (center 52.98, median of 7 sources: NWS 53 updated 21:18Z, NBM 52.4, HRRR 54.4, ECMWF 52.4, GFS 54.5, ICON 52.6, GEM 52.7; 82 ensemble members, sd 1.7), market mid 21.5%, blend 20%. Model and market agree; no trade.",
+      "baseline_rule": "Kalshi ask at entry: YES 22c, NO 79c (scan 2026-11-23T21:37Z, quoted asks). No trade (logged for calibration only).",
+      "baseline_confidence": 22,
+      "prev_hash": "1f2b1b1f43c6b02122ebfba862f853ff22a3783866fa43c53923a8e434681a26",
+      "hash": "e7b8b17bf9744e92afe514589f4cda9643188daa343cdc78e6eede7be4c910a4"
+    },
+    {
+      "id": 65,
+      "seq": 53,
+      "created_at": "2026-11-23T21:42:00.182514Z",
+      "topic": "market:weather",
+      "claim": "Kalshi KXHIGHDEN-26NOV24-B52.5 \"52° to 53°\" settles YES (official high for Denver on Nov 24, 2026 is 52 or 53F).",
+      "resolution_criteria": "TRUE if Kalshi settles market KXHIGHDEN-26NOV24-B52.5 as YES; FALSE if it settles NO.",
+      "source_of_truth": "Kalshi market KXHIGHDEN-26NOV24-B52.5 (event KXHIGHDEN-26NOV24): https://kalshi.com/markets/kxhighden",
+      "confidence": 22,
+      "deadline": "2026-11-26T17:00:00.000000Z",
+      "made_by": "claude",
+      "rationale": "No-edge calibration log. Model 20% (center 50.13, median of 7 sources: NWS 50 updated 18:46Z, NBM 49.1, HRRR 48.2, ECMWF 51.4, GFS 49.5, ICON 51.6, GEM 51.1; 82 ensemble members, sd 1.18), market mid 24%, blend 22%. Model and market agree; no trade.",
+      "baseline_rule": "Kalshi ask at entry: YES 25c, NO 77c (scan 2026-11-23T21:37Z, quoted asks). No trade (logged for calibration only).",
+      "baseline_confidence": 24,
+      "prev_hash": "e7b8b17bf9744e92afe514589f4cda9643188daa343cdc78e6eede7be4c910a4",
+      "hash": "17423b9d3f47fe11a8929103f438b3aaeaf61325444ccd7a5468f4bd9c7d1ccd"
+    },
+    {
+      "id": 66,
+      "seq": 54,
+      "created_at": "2026-11-23T21:42:00.182695Z",
+      "topic": "market:weather",
+      "claim": "Kalshi KXHIGHTLV-26NOV24-B63.5 \"63° to 64°\" settles YES (official high for Las Vegas on Nov 24, 2026 is 63 or 64F).",
+      "resolution_criteria": "TRUE if Kalshi settles market KXHIGHTLV-26NOV24-B63.5 as YES; FALSE if it settles NO.",
+      "source_of_truth": "Kalshi market KXHIGHTLV-26NOV24-B63.5 (event KXHIGHTLV-26NOV24): https://kalshi.com/markets/kxhightlv",
+      "confidence": 21,
+      "deadline": "2026-11-26T17:00:00.000000Z",
+      "made_by": "claude",
+      "rationale": "No-edge calibration log. Model 20% (center 61.13, median of 7 sources: NWS 61 updated 20:22Z, NBM 61.1, HRRR 64.4, ECMWF 60.8, GFS 60.5, ICON 61.5, GEM 58.1; 82 ensemble members, sd 0.78), market mid 22.5%, blend 21%. Model and market agree; no trade.",
+      "baseline_rule": "Kalshi ask at entry: YES 23c, NO 78c (scan 2026-11-23T21:37Z, quoted asks). No trade (logged for calibration only).",
+      "baseline_confidence": 23,
+      "prev_hash": "17423b9d3f47fe11a8929103f438b3aaeaf61325444ccd7a5468f4bd9c7d1ccd",
+      "hash": "c4fdb0f3de2b7cf4027d616922be76311cde12d186044d3785c45772f5ed1e69"
     }
   ],
   "resolutions": [
@@ -1064,6 +1183,90 @@
       "resolved_at": "2026-11-22T21:39:46.539273Z",
       "prev_hash": "7a1be1cb01053201a8f20af76cede66b55754171de51b5369bd9d5a8a18b0274",
       "hash": "74a20bd6b06d2e89b6080bcdf2010c3c278a4dcb9f2e886a5ce683fc07543e76"
+    },
+    {
+      "id": 27,
+      "seq": 23,
+      "prediction_id": 48,
+      "prediction_hash": "93061c763009e94c48cf15cb07b2b4912bf938da67aa5254bec966ad73a7c1d8",
+      "outcome": "true",
+      "evidence_url": "https://kalshi.com/markets/kxhighchi",
+      "notes": "Kalshi settled yes; reported value 60.00",
+      "resolved_at": "2026-11-23T21:42:12.503195Z",
+      "prev_hash": "74a20bd6b06d2e89b6080bcdf2010c3c278a4dcb9f2e886a5ce683fc07543e76",
+      "hash": "5024a49229daf8daaad075a755a0943b53f75c5cec20a0ce45bf25fe0acdc03c"
+    },
+    {
+      "id": 28,
+      "seq": 24,
+      "prediction_id": 52,
+      "prediction_hash": "fe26f26376ca0224290a88c6ade47ac39ed6360c8bbabe2199bec75cee698de4",
+      "outcome": "false",
+      "evidence_url": "https://kalshi.com/markets/kxhighphil",
+      "notes": "Kalshi settled no; reported value 67.00",
+      "resolved_at": "2026-11-23T21:42:12.510337Z",
+      "prev_hash": "5024a49229daf8daaad075a755a0943b53f75c5cec20a0ce45bf25fe0acdc03c",
+      "hash": "f1621201156207bf8327193fe96385e13453856f725ef4d185e4372c752bf2c9"
+    },
+    {
+      "id": 29,
+      "seq": 25,
+      "prediction_id": 51,
+      "prediction_hash": "70e639c9caa46c7d9147694569de515adf1815d08308300d1098ece231bb1fbf",
+      "outcome": "true",
+      "evidence_url": "https://kalshi.com/markets/kxhighmia",
+      "notes": "Kalshi settled yes; reported value 85.00",
+      "resolved_at": "2026-11-23T21:42:12.510911Z",
+      "prev_hash": "f1621201156207bf8327193fe96385e13453856f725ef4d185e4372c752bf2c9",
+      "hash": "2001033e76258c6853f82531534b6129eeeb83a7d1307b36804b8e5b80f3f540"
+    },
+    {
+      "id": 30,
+      "seq": 26,
+      "prediction_id": 50,
+      "prediction_hash": "a0c9cc8268d9a625ca13610ce23acd0ba8841e1db363686e058a080d5006f816",
+      "outcome": "false",
+      "evidence_url": "https://kalshi.com/markets/kxhightnola",
+      "notes": "Kalshi settled no; reported value 78.00",
+      "resolved_at": "2026-11-23T21:42:12.511338Z",
+      "prev_hash": "2001033e76258c6853f82531534b6129eeeb83a7d1307b36804b8e5b80f3f540",
+      "hash": "5218372725e2f242488a5ffb6d47cf31c6bd5026cd402a9c91622802c8b9465d"
+    },
+    {
+      "id": 31,
+      "seq": 27,
+      "prediction_id": 49,
+      "prediction_hash": "386326c8d988115062737a544818f80fdb5db15fa93afc44636226f23bfc0998",
+      "outcome": "true",
+      "evidence_url": "https://kalshi.com/markets/kxhighaus",
+      "notes": "Kalshi settled yes; reported value 73.00",
+      "resolved_at": "2026-11-23T21:42:12.511769Z",
+      "prev_hash": "5218372725e2f242488a5ffb6d47cf31c6bd5026cd402a9c91622802c8b9465d",
+      "hash": "2c721ca753bcfe4f4bbda2145a8be18b597955bc1fa992cda4b49bed7149b479"
+    },
+    {
+      "id": 32,
+      "seq": 28,
+      "prediction_id": 35,
+      "prediction_hash": "4e67c8ebb70331e74ed72a0eddc8e032d52e91021c5acef3b18bbe513d279c51",
+      "outcome": "true",
+      "evidence_url": "https://kalshi.com/markets/kxaaagasw",
+      "notes": "Kalshi settled yes; reported value 3.6366",
+      "resolved_at": "2026-11-23T21:42:12.512174Z",
+      "prev_hash": "2c721ca753bcfe4f4bbda2145a8be18b597955bc1fa992cda4b49bed7149b479",
+      "hash": "9afe8fdd2568c2af6c6f1c7998283a8d16a585face69bbf157969b90c026c6d9"
+    },
+    {
+      "id": 33,
+      "seq": 29,
+      "prediction_id": 13,
+      "prediction_hash": "0b23a54637c228629b7f5fd5ceaca816c8bff22879f62524258345fb28ca7569",
+      "outcome": "true",
+      "evidence_url": "https://thenextweb.com/news/gpt-6-2-astra-sol-openai-launch-price-epoch-testers",
+      "notes": "OpenAI released GPT-6.2 Astra (API id gpt-6.2-astra) on 2026-11-17 alongside GPT-6.2 Sol; live in ChatGPT (Plus, Pro, Enterprise, Edu), Codex and the API per The Next Web (18 Nov) and eCorpIT, which cites OpenAI's API changelog. Official announcement: openai.com/index/introducing-gpt-6-2-astra-sol/ (could not be fetched from this session; resolved on two independent secondary reports).",
+      "resolved_at": "2026-11-23T21:48:56.093834Z",
+      "prev_hash": "9afe8fdd2568c2af6c6f1c7998283a8d16a585face69bbf157969b90c026c6d9",
+      "hash": "76c4335f0c8e05ce8419074a94a5f805b39e349b7b856b15f73edc6187fa8ba5"
     }
   ],
   "lessons": [
@@ -1153,6 +1356,39 @@
         35
       ],
       "supersedes": null
+    },
+    {
+      "id": 11,
+      "created_at": "2026-11-23T21:49:16.565654Z",
+      "topic": "process",
+      "lesson": "The one-trade-per-event check in the database keys on the event ticker, so it does not catch two Kalshi series that settle on the same number. On the 2026-11-23 21:37 UTC scan EDGES.md listed KXAAAGASW-26NOV30 \"Above 3.5600\" and \"Above 3.5800\" as tradeable while trade 44 (KXAAAGASM-26NOV30 \"Above 3.55\") was already open; both series settle on the AAA national average for Nov 30. They were skipped by hand under protocol rule 6 and one was logged with allow_trade false. The same scan also showed 27- and 31-point model-vs-market gaps on the neighbouring 3.52 and 3.54 strikes (lesson 10). Until the scanner or the database groups weekly and monthly gas events that share a settlement date, check open trades by settlement date, not ticker. The scanner and the database were not changed; this needs the owner's decision.",
+      "evidence_prediction_ids": [
+        56,
+        63
+      ],
+      "supersedes": null
+    },
+    {
+      "id": 12,
+      "created_at": "2026-11-23T21:49:16.565654Z",
+      "topic": "market:weather",
+      "lesson": "After the 2026-11-22 settlements the paper book is 1 win in 6 settled trades (-$454.60 after fees). Three of four settled weather trades were NO bets against the bracket the market priced highest, and that bracket hit each time (Chicago and Boston Nov 20, Miami Nov 22); the one win was NO on Philadelphia 65-66 (actual 67). Gas trade 23 (NO on above 3.63 at 44c) lost by 0.66 cents with AAA at 3.6366. Over 16 resolved weather calls the blend scores Brier 0.256 against 0.235 for the market price alone, the same direction as lesson 8. Six trades is still noise and no rule is changed, but the pattern of fading the market's favourite bracket has not paid so far; the 25-trade review should test it directly.",
+      "evidence_prediction_ids": [
+        35,
+        51,
+        52
+      ],
+      "supersedes": null
+    },
+    {
+      "id": 13,
+      "created_at": "2026-11-23T21:49:16.565654Z",
+      "topic": "openai",
+      "lesson": "Prediction 5 (OpenAI releases a model with \"Astra\" in its name by Dec 31, 2026) was given 10% and resolved TRUE: GPT-6.2 Astra shipped on 2026-11-17. It was resolved six days late, on 2026-11-23, because daily sessions only searched predictions whose deadline had passed. Check open non-market predictions for an already-known outcome at least weekly. The official OpenAI page could not be fetched from the session, so the resolution rests on two independent secondary reports.",
+      "evidence_prediction_ids": [
+        13
+      ],
+      "supersedes": null
     }
   ],
   "paper_trades": [
@@ -1204,8 +1440,8 @@
       "fee_cents": 392,
       "cost_cents": 10380,
       "created_at": "2026-11-19T15:41:13.147910Z",
-      "outcome": null,
-      "pnl_cents": null
+      "outcome": "true",
+      "pnl_cents": -10380
     },
     {
       "prediction_id": 37,
@@ -1255,8 +1491,8 @@
       "fee_cents": 357,
       "cost_cents": 10353,
       "created_at": "2026-11-21T23:00:57.793576Z",
-      "outcome": null,
-      "pnl_cents": null
+      "outcome": "true",
+      "pnl_cents": -10353
     },
     {
       "prediction_id": 52,
@@ -1272,8 +1508,8 @@
       "fee_cents": 266,
       "cost_cents": 10248,
       "created_at": "2026-11-21T23:00:57.805141Z",
-      "outcome": null,
-      "pnl_cents": null
+      "outcome": "false",
+      "pnl_cents": 5852
     },
     {
       "prediction_id": 53,
@@ -1342,6 +1578,40 @@
       "created_at": "2026-11-22T21:41:04.652157Z",
       "outcome": null,
       "pnl_cents": null
+    },
+    {
+      "prediction_id": 60,
+      "seq": 48,
+      "claim": "Kalshi KXHIGHTATL-26NOV24-T61 \"60° or below\" settles YES (official high for Atlanta on Nov 24, 2026 is 60F or below).",
+      "venue": "kalshi",
+      "event_ticker": "KXHIGHTATL-26NOV24",
+      "outcome_label": "60° or below",
+      "market_url": "https://kalshi.com/markets/kxhightatl",
+      "side": "yes",
+      "price_cents": 31,
+      "contracts": 322,
+      "fee_cents": 483,
+      "cost_cents": 10465,
+      "created_at": "2026-11-23T21:42:00.168897Z",
+      "outcome": null,
+      "pnl_cents": null
+    },
+    {
+      "prediction_id": 61,
+      "seq": 49,
+      "claim": "Kalshi KXHIGHNY-26NOV24-B51.5 \"51° to 52°\" settles YES (official high for New York City (Central Park) on Nov 24, 2026 is 51 or 52F).",
+      "venue": "kalshi",
+      "event_ticker": "KXHIGHNY-26NOV24",
+      "outcome_label": "51° to 52°",
+      "market_url": "https://kalshi.com/markets/kxhighny",
+      "side": "no",
+      "price_cents": 62,
+      "contracts": 161,
+      "fee_cents": 266,
+      "cost_cents": 10248,
+      "created_at": "2026-11-23T21:42:00.181537Z",
+      "outcome": null,
+      "pnl_cents": null
     }
   ],
   "scorecard_by_topic": [
@@ -1354,12 +1624,44 @@
       "baseline_brier": 0.1842
     },
     {
-      "topic": "policy",
+      "topic": "openai",
       "resolved": 1,
       "pct_true": 100.0,
-      "avg_confidence": 60.0,
-      "brier_score": 0.16,
+      "avg_confidence": 10.0,
+      "brier_score": 0.81,
+      "baseline_brier": 0.7225
+    },
+    {
+      "topic": "market:gas",
+      "resolved": 2,
+      "pct_true": 50.0,
+      "avg_confidence": 64.0,
+      "brier_score": 0.4685,
+      "baseline_brier": 0.3663
+    },
+    {
+      "topic": "anthropic",
+      "resolved": 1,
+      "pct_true": 100.0,
+      "avg_confidence": 70.0,
+      "brier_score": 0.09,
       "baseline_brier": 0.09
+    },
+    {
+      "topic": "market:weather",
+      "resolved": 16,
+      "pct_true": 50.0,
+      "avg_confidence": 33.3,
+      "brier_score": 0.2564,
+      "baseline_brier": 0.2345
+    },
+    {
+      "topic": "apple",
+      "resolved": 2,
+      "pct_true": 100.0,
+      "avg_confidence": 67.5,
+      "brier_score": 0.1363,
+      "baseline_brier": 0.085
     },
     {
       "topic": "google",
@@ -1378,52 +1680,28 @@
       "baseline_brier": 0.0625
     },
     {
-      "topic": "anthropic",
+      "topic": "policy",
       "resolved": 1,
       "pct_true": 100.0,
-      "avg_confidence": 70.0,
-      "brier_score": 0.09,
+      "avg_confidence": 60.0,
+      "brier_score": 0.16,
       "baseline_brier": 0.09
-    },
-    {
-      "topic": "market:gas",
-      "resolved": 1,
-      "pct_true": 0.0,
-      "avg_confidence": 81.0,
-      "brier_score": 0.6561,
-      "baseline_brier": 0.5476
-    },
-    {
-      "topic": "market:weather",
-      "resolved": 11,
-      "pct_true": 45.5,
-      "avg_confidence": 31.4,
-      "brier_score": 0.2577,
-      "baseline_brier": 0.2373
-    },
-    {
-      "topic": "apple",
-      "resolved": 2,
-      "pct_true": 100.0,
-      "avg_confidence": 67.5,
-      "brier_score": 0.1363,
-      "baseline_brier": 0.085
     }
   ],
   "scorecard_by_author": [
     {
       "made_by": "claude",
-      "resolved": 22,
-      "brier_score": 0.2201,
-      "baseline_brier": 0.2066
+      "resolved": 29,
+      "brier_score": 0.2484,
+      "baseline_brier": 0.2274
     }
   ],
   "calibration": [
     {
       "band_start": 10,
-      "n": 2,
-      "stated_pct": 15.0,
-      "actual_pct": 50.0
+      "n": 3,
+      "stated_pct": 13.3,
+      "actual_pct": 66.7
     },
     {
       "band_start": 20,
@@ -1433,15 +1711,15 @@
     },
     {
       "band_start": 30,
-      "n": 5,
-      "stated_pct": 35.4,
-      "actual_pct": 20.0
+      "n": 8,
+      "stated_pct": 35.0,
+      "actual_pct": 25.0
     },
     {
       "band_start": 40,
-      "n": 3,
-      "stated_pct": 41.3,
-      "actual_pct": 66.7
+      "n": 6,
+      "stated_pct": 42.5,
+      "actual_pct": 83.3
     },
     {
       "band_start": 50,
@@ -1471,13 +1749,13 @@
   "db_verify": [
     {
       "chain": "predictions",
-      "entries": 47,
+      "entries": 54,
       "valid": true,
       "first_bad_seq": null
     },
     {
       "chain": "resolutions",
-      "entries": 22,
+      "entries": 29,
       "valid": true,
       "first_bad_seq": null
     }
