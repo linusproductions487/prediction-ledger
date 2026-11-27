@@ -1709,6 +1709,66 @@
       "resolved_at": "2026-11-26T21:40:57.420569Z",
       "prev_hash": "4b1d8cad7ddc34afab16385a8cef5f67abf4adf262bc485a2f945f93d3dd154e",
       "hash": "8596e1a5b18f544833f351ca0c7b1bcec3c22d89ce79f2ccd60252dab7b54a82"
+    },
+    {
+      "id": 51,
+      "seq": 47,
+      "prediction_id": 72,
+      "prediction_hash": "aa96222f92960cff2802404dab8abbfe356767d975bc9525cb0bb81ff320c52b",
+      "outcome": "false",
+      "evidence_url": "https://kalshi.com/markets/kxhighden",
+      "notes": "Kalshi settled no; reported value 58.00",
+      "resolved_at": "2026-11-27T21:41:29.716635Z",
+      "prev_hash": "8596e1a5b18f544833f351ca0c7b1bcec3c22d89ce79f2ccd60252dab7b54a82",
+      "hash": "8aa4fec64e69c8f99692d8c37f99e78860e37cfb0e9cb80a0236878eb0f8ac36"
+    },
+    {
+      "id": 52,
+      "seq": 48,
+      "prediction_id": 76,
+      "prediction_hash": "4c7f34617d35b50dcc379616de92cd22ddf096dc8dfda163e20e7b383cbd3e70",
+      "outcome": "false",
+      "evidence_url": "https://kalshi.com/markets/kxhightdc",
+      "notes": "Kalshi settled no; reported value 57.00",
+      "resolved_at": "2026-11-27T21:41:29.734436Z",
+      "prev_hash": "8aa4fec64e69c8f99692d8c37f99e78860e37cfb0e9cb80a0236878eb0f8ac36",
+      "hash": "f2a1d9f8efd4fe1b5518c0bf68d04003186ef5e978b27edf7c69283f1dbe030c"
+    },
+    {
+      "id": 53,
+      "seq": 49,
+      "prediction_id": 75,
+      "prediction_hash": "faa2441fdf3a0d7cbcdedee06f3666d3e8eae749848cb5cb781b703035519bf4",
+      "outcome": "true",
+      "evidence_url": "https://kalshi.com/markets/kxhightbos",
+      "notes": "Kalshi settled yes; reported value 49.00",
+      "resolved_at": "2026-11-27T21:41:29.735266Z",
+      "prev_hash": "f2a1d9f8efd4fe1b5518c0bf68d04003186ef5e978b27edf7c69283f1dbe030c",
+      "hash": "37807e8cdb344ec0754b2f0688bb2d3317c69eca2ab0d94a9a0555a51072e69d"
+    },
+    {
+      "id": 54,
+      "seq": 50,
+      "prediction_id": 74,
+      "prediction_hash": "9ac344be220aceafc1b9f56dd863a5937905e17c908b5f1169ab26890a6242c9",
+      "outcome": "false",
+      "evidence_url": "https://kalshi.com/markets/kxhighaus",
+      "notes": "Kalshi settled no; reported value 60.00",
+      "resolved_at": "2026-11-27T21:41:29.735819Z",
+      "prev_hash": "37807e8cdb344ec0754b2f0688bb2d3317c69eca2ab0d94a9a0555a51072e69d",
+      "hash": "5c6fa15ccb070a2c328c7b3d974bc64a8bb65ce063ceaf9e13e8cd1fd66e5b39"
+    },
+    {
+      "id": 55,
+      "seq": 51,
+      "prediction_id": 73,
+      "prediction_hash": "f4d4a83dec2afafe5e0b794c39f57966a4e8f3a45883438dcbd52702204c6d05",
+      "outcome": "true",
+      "evidence_url": "https://kalshi.com/markets/kxhighlax",
+      "notes": "Kalshi settled yes; reported value 80.00",
+      "resolved_at": "2026-11-27T21:41:29.736328Z",
+      "prev_hash": "5c6fa15ccb070a2c328c7b3d974bc64a8bb65ce063ceaf9e13e8cd1fd66e5b39",
+      "hash": "41b697533141f353bc858553fa52b15eecab5152c8728e1ee8f74b273ef7e97a"
     }
   ],
   "lessons": [
@@ -2130,8 +2190,8 @@
       "fee_cents": 301,
       "cost_cents": 10276,
       "created_at": "2026-11-25T21:41:58.114990Z",
-      "outcome": null,
-      "pnl_cents": null
+      "outcome": "false",
+      "pnl_cents": 7224
     },
     {
       "prediction_id": 73,
@@ -2147,8 +2207,8 @@
       "fee_cents": 287,
       "cost_cents": 10258,
       "created_at": "2026-11-25T21:41:58.125409Z",
-      "outcome": null,
-      "pnl_cents": null
+      "outcome": "true",
+      "pnl_cents": -10258
     },
     {
       "prediction_id": 77,
@@ -2212,11 +2272,11 @@
     },
     {
       "topic": "market:weather",
-      "resolved": 33,
-      "pct_true": 39.4,
-      "avg_confidence": 30.6,
-      "brier_score": 0.2425,
-      "baseline_brier": 0.2286
+      "resolved": 38,
+      "pct_true": 39.5,
+      "avg_confidence": 30.4,
+      "brier_score": 0.243,
+      "baseline_brier": 0.2301
     },
     {
       "topic": "google",
@@ -2262,9 +2322,9 @@
   "scorecard_by_author": [
     {
       "made_by": "claude",
-      "resolved": 46,
-      "brier_score": 0.2414,
-      "baseline_brier": 0.2258
+      "resolved": 51,
+      "brier_score": 0.2418,
+      "baseline_brier": 0.2272
     }
   ],
   "calibration": [
@@ -2276,14 +2336,14 @@
     },
     {
       "band_start": 20,
-      "n": 11,
-      "stated_pct": 24.2,
-      "actual_pct": 36.4
+      "n": 13,
+      "stated_pct": 24.0,
+      "actual_pct": 38.5
     },
     {
       "band_start": 30,
-      "n": 12,
-      "stated_pct": 34.3,
+      "n": 15,
+      "stated_pct": 34.1,
       "actual_pct": 33.3
     },
     {
@@ -2326,7 +2386,7 @@
     },
     {
       "chain": "resolutions",
-      "entries": 46,
+      "entries": 51,
       "valid": true,
       "first_bad_seq": null
     }
