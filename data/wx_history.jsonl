@@ -1118,3 +1118,43 @@
 {"scan": "2026-11-27T21:11Z", "series": "KXHIGHTDC", "date": "2026-11-28", "lead": 1, "center": 57.35, "nws": 58, "models": {"ncep_nbm_conus": 55.9, "gfs_hrrr": 54.4, "ecmwf_ifs025": 55.5, "gfs_global": 58.2, "icon_seamless": 57.6, "gem_seamless": 57.1}, "ens_mean": 55.1, "ens_sd": 0.96, "obs": null, "lst_hour": 16.2}
 {"scan": "2026-11-27T21:11Z", "series": "KXHIGHTMIN", "date": "2026-11-27", "lead": 0, "center": 42.55, "nws": 43, "models": {"ncep_nbm_conus": 42.5, "gfs_hrrr": 44.6, "ecmwf_ifs025": 40.0, "gfs_global": 42.6, "icon_seamless": 40.3, "gem_seamless": 41.9}, "ens_mean": 40.72, "ens_sd": 1.07, "obs": 42.8, "lst_hour": 15.2}
 {"scan": "2026-11-27T21:11Z", "series": "KXHIGHTMIN", "date": "2026-11-28", "lead": 1, "center": 46.25, "nws": 46, "models": {"ncep_nbm_conus": 47.7, "gfs_hrrr": 49.0, "ecmwf_ifs025": 45.3, "gfs_global": 48.4, "icon_seamless": 45.9, "gem_seamless": 46.5}, "ens_mean": 44.88, "ens_sd": 1.97, "obs": null, "lst_hour": 15.2}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHNY", "date": "2026-11-27", "lead": 0, "center": 55.0, "nws": 55, "models": {}, "ens_mean": 55.66, "ens_sd": 1.05, "obs": 57.0, "lst_hour": 16.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHNY", "date": "2026-11-28", "lead": 1, "center": 51.0, "nws": 51, "models": {}, "ens_mean": 50.31, "ens_sd": 1.1, "obs": null, "lst_hour": 16.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHCHI", "date": "2026-11-27", "lead": 0, "center": 45.0, "nws": 45, "models": {}, "ens_mean": 45.16, "ens_sd": 1.5, "obs": 46.4, "lst_hour": 15.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHCHI", "date": "2026-11-28", "lead": 1, "center": 51.0, "nws": 51, "models": {}, "ens_mean": 49.18, "ens_sd": 0.87, "obs": null, "lst_hour": 15.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHMIA", "date": "2026-11-27", "lead": 0, "center": 74.0, "nws": 74, "models": {}, "ens_mean": 73.8, "ens_sd": 1.22, "obs": 73.4, "lst_hour": 16.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHMIA", "date": "2026-11-28", "lead": 1, "center": 73.0, "nws": 73, "models": {}, "ens_mean": 71.92, "ens_sd": 1.41, "obs": null, "lst_hour": 16.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHAUS", "date": "2026-11-27", "lead": 0, "center": 69.0, "nws": 69, "models": {}, "ens_mean": 66.67, "ens_sd": 0.81, "obs": 69.8, "lst_hour": 15.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHAUS", "date": "2026-11-28", "lead": 1, "center": 75.0, "nws": 75, "models": {}, "ens_mean": 71.5, "ens_sd": 1.57, "obs": null, "lst_hour": 15.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHLAX", "date": "2026-11-27", "lead": 0, "center": 82.0, "nws": 82, "models": {}, "ens_mean": 81.43, "ens_sd": 2.31, "obs": 82.4, "lst_hour": 13.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHLAX", "date": "2026-11-28", "lead": 1, "center": 76.0, "nws": 76, "models": {}, "ens_mean": 74.36, "ens_sd": 2.06, "obs": null, "lst_hour": 13.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHDEN", "date": "2026-11-27", "lead": 0, "center": 62.0, "nws": 62, "models": {}, "ens_mean": 60.93, "ens_sd": 1.29, "obs": 62.6, "lst_hour": 14.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHDEN", "date": "2026-11-28", "lead": 1, "center": 51.0, "nws": 51, "models": {}, "ens_mean": 56.45, "ens_sd": 1.91, "obs": null, "lst_hour": 14.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHPHIL", "date": "2026-11-27", "lead": 0, "center": 55.0, "nws": 55, "models": {}, "ens_mean": 58.39, "ens_sd": 1.27, "obs": 59.0, "lst_hour": 16.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHPHIL", "date": "2026-11-28", "lead": 1, "center": 52.0, "nws": 52, "models": {}, "ens_mean": 51.9, "ens_sd": 1.22, "obs": null, "lst_hour": 16.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTHOU", "date": "2026-11-27", "lead": 0, "center": 65.0, "nws": 65, "models": {}, "ens_mean": 63.07, "ens_sd": 2.09, "obs": 63.0, "lst_hour": 15.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTHOU", "date": "2026-11-28", "lead": 1, "center": 76.0, "nws": 76, "models": {}, "ens_mean": 72.8, "ens_sd": 1.37, "obs": null, "lst_hour": 15.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTATL", "date": "2026-11-27", "lead": 0, "center": 51.0, "nws": 51, "models": {}, "ens_mean": 51.2, "ens_sd": 1.32, "obs": 51.8, "lst_hour": 16.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTATL", "date": "2026-11-28", "lead": 1, "center": 61.0, "nws": 61, "models": {}, "ens_mean": 59.64, "ens_sd": 0.94, "obs": null, "lst_hour": 16.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTBOS", "date": "2026-11-27", "lead": 0, "center": 56.0, "nws": 56, "models": {}, "ens_mean": 58.53, "ens_sd": 1.05, "obs": 57.9, "lst_hour": 16.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTBOS", "date": "2026-11-28", "lead": 1, "center": 53.0, "nws": 53, "models": {}, "ens_mean": 50.9, "ens_sd": 0.99, "obs": null, "lst_hour": 16.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTSEA", "date": "2026-11-27", "lead": 0, "center": 49.0, "nws": 49, "models": {}, "ens_mean": 48.35, "ens_sd": 0.77, "obs": 48.9, "lst_hour": 13.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTSEA", "date": "2026-11-28", "lead": 1, "center": 49.0, "nws": 49, "models": {}, "ens_mean": 48.26, "ens_sd": 1.29, "obs": null, "lst_hour": 13.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTDAL", "date": "2026-11-27", "lead": 0, "center": 67.0, "nws": 67, "models": {}, "ens_mean": 64.63, "ens_sd": 1.13, "obs": 69.8, "lst_hour": 15.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTDAL", "date": "2026-11-28", "lead": 1, "center": 72.0, "nws": 72, "models": {}, "ens_mean": 69.14, "ens_sd": 1.44, "obs": null, "lst_hour": 15.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTOKC", "date": "2026-11-27", "lead": 0, "center": 60.0, "nws": 60, "models": {}, "ens_mean": 57.5, "ens_sd": 1.79, "obs": 64.4, "lst_hour": 15.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTOKC", "date": "2026-11-28", "lead": 1, "center": 62.0, "nws": 62, "models": {}, "ens_mean": 60.74, "ens_sd": 2.27, "obs": null, "lst_hour": 15.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTPHX", "date": "2026-11-27", "lead": 0, "center": 77.0, "nws": 77, "models": {}, "ens_mean": 74.4, "ens_sd": 1.71, "obs": 75.2, "lst_hour": 14.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTPHX", "date": "2026-11-28", "lead": 1, "center": 77.0, "nws": 77, "models": {}, "ens_mean": 74.2, "ens_sd": 1.49, "obs": null, "lst_hour": 14.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTLV", "date": "2026-11-27", "lead": 0, "center": 69.0, "nws": 69, "models": {}, "ens_mean": 68.39, "ens_sd": 1.16, "obs": 68.0, "lst_hour": 13.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTLV", "date": "2026-11-28", "lead": 1, "center": 70.0, "nws": 70, "models": {}, "ens_mean": 68.76, "ens_sd": 1.57, "obs": null, "lst_hour": 13.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTSATX", "date": "2026-11-27", "lead": 0, "center": 67.0, "nws": 67, "models": {}, "ens_mean": 63.74, "ens_sd": 0.87, "obs": 66.2, "lst_hour": 15.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTSATX", "date": "2026-11-28", "lead": 1, "center": 73.0, "nws": 73, "models": {}, "ens_mean": 69.96, "ens_sd": 1.48, "obs": null, "lst_hour": 15.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTNOLA", "date": "2026-11-27", "lead": 0, "center": 56.0, "nws": 56, "models": {}, "ens_mean": 56.07, "ens_sd": 2.37, "obs": 55.9, "lst_hour": 15.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTNOLA", "date": "2026-11-28", "lead": 1, "center": 66.0, "nws": 66, "models": {}, "ens_mean": 66.17, "ens_sd": 3.59, "obs": null, "lst_hour": 15.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTSFO", "date": "2026-11-27", "lead": 0, "center": 64.0, "nws": 64, "models": {}, "ens_mean": 64.26, "ens_sd": 1.7, "obs": 60.8, "lst_hour": 13.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTSFO", "date": "2026-11-28", "lead": 1, "center": 67.0, "nws": 67, "models": {}, "ens_mean": 65.38, "ens_sd": 3.43, "obs": null, "lst_hour": 13.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTDC", "date": "2026-11-27", "lead": 0, "center": 53.0, "nws": 53, "models": {}, "ens_mean": 55.34, "ens_sd": 1.27, "obs": 55.4, "lst_hour": 16.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTDC", "date": "2026-11-28", "lead": 1, "center": 58.0, "nws": 58, "models": {}, "ens_mean": 55.1, "ens_sd": 0.96, "obs": null, "lst_hour": 16.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTMIN", "date": "2026-11-27", "lead": 0, "center": 43.0, "nws": 43, "models": {}, "ens_mean": 40.72, "ens_sd": 1.07, "obs": 43.0, "lst_hour": 15.6}
+{"scan": "2026-11-27T21:38Z", "series": "KXHIGHTMIN", "date": "2026-11-28", "lead": 1, "center": 46.0, "nws": 46, "models": {}, "ens_mean": 44.88, "ens_sd": 1.97, "obs": null, "lst_hour": 15.6}
