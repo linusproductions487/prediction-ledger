@@ -2,8 +2,8 @@
 
 Generated automatically from the ledger. Every miss is included.
 
-- Predictions made: **68**
-- Resolved (scored): **51**  ·  Void: **0**  ·  Pending: **17**
+- Predictions made: **73**
+- Resolved (scored): **51**  ·  Void: **0**  ·  Pending: **22**
 - Leaned the right way: **32/50** (excluding exact 50% calls)
 - Brier score: **0.2418** (0 = perfect, 0.25 = coin flip, lower is better)
 - Dumb-baseline Brier: **0.2272** — NOT beating the naive rule
@@ -41,7 +41,7 @@ When I say X%, does it happen X% of the time?
 
 Simulated $100 trades at the real Kalshi ask price when the prediction was locked, including Kalshi's taker fee. No real money. Rules are in PROTOCOL.md.
 
-- Trades: **19**  ·  Settled: **15**  ·  Open: **4**
+- Trades: **21**  ·  Settled: **15**  ·  Open: **6**
 - Settled P&L: **-$521.09** on $1,539.09 risked (-33.9%)
 
 | # | Market | Side | Price | Contracts | Fee | Cost | Result | P&L |
@@ -65,6 +65,8 @@ Simulated $100 trades at the real Kalshi ask price when the prediction was locke
 | 61 | [KXHIGHLAX-26NOV26 80° to 81°](https://kalshi.com/markets/kxhighlax) | NO | 59¢ | 169 | $2.87 | $102.58 | true | -$102.58 |
 | 65 | [KXHIGHCHI-26NOV27 47° to 48°](https://kalshi.com/markets/kxhighchi) | NO | 51¢ | 196 | $3.43 | $103.39 | open | — |
 | 66 | [KXHIGHNY-26NOV27 56° or below](https://kalshi.com/markets/kxhighny) | NO | 33¢ | 303 | $4.69 | $104.68 | open | — |
+| 69 | [KXHIGHNY-26NOV28 52° to 53°](https://kalshi.com/markets/kxhighny) | NO | 64¢ | 156 | $2.52 | $102.36 | open | — |
+| 70 | [KXHIGHLAX-26NOV28 73° to 74°](https://kalshi.com/markets/kxhighlax) | NO | 57¢ | 175 | $3.01 | $102.76 | open | — |
 
 ## Resolved
 
@@ -130,6 +132,11 @@ Simulated $100 trades at the real Kalshi ask price when the prediction was locke
 | 66 | Kalshi KXHIGHNY-26NOV27-T57 "56° or below" settles YES (official high for New York City (Central Park) on Nov 27, 2026 is 56F or below). | claude | 62% | 2026-11-29 |
 | 67 | Kalshi KXHIGHTBOS-26NOV27-B58.5 "58° to 59°" settles YES (official high for Boston on Nov 27, 2026 is 58 or 59F). | claude | 32% | 2026-11-29 |
 | 68 | Kalshi KXHIGHTSATX-26NOV27-B65.5 "65° to 66°" settles YES (official high for San Antonio on Nov 27, 2026 is 65 or 66F). | claude | 33% | 2026-11-29 |
+| 69 | Kalshi KXHIGHNY-26NOV28-B52.5 "52° to 53°" settles YES (official high for New York City (Central Park) on Nov 28, 2026 is 52 or 53F). | claude | 28% | 2026-11-30 |
+| 70 | Kalshi KXHIGHLAX-26NOV28-B73.5 "73° to 74°" settles YES (official high for Los Angeles (LAX) on Nov 28, 2026 is 73 or 74F). | claude | 37% | 2026-11-30 |
+| 71 | Kalshi KXHIGHAUS-26NOV28-B73.5 "73° to 74°" settles YES (official high for Austin on Nov 28, 2026 is 73 or 74F). | claude | 35% | 2026-11-30 |
+| 72 | Kalshi KXHIGHTHOU-26NOV28-B77.5 "77° to 78°" settles YES (official high for Houston on Nov 28, 2026 is 77 or 78F). | claude | 28% | 2026-11-30 |
+| 73 | Kalshi KXHIGHTMIN-26NOV28-B48.5 "48° to 49°" settles YES (official high for Minneapolis on Nov 28, 2026 is 48 or 49F). | claude | 31% | 2026-11-30 |
 | 21 | Kalshi KXAAAGASM-26NOV30 "Above 3.50" settles YES (US average regular gas price at end of November 2026 is above $3.50). | claude | 45% | 2026-12-01 |
 | 2 | Apple holds a livestreamed product event (not press-release-only) between Oct 3 and Nov 30, 2026. | claude | 35% | 2026-12-01 |
 | 24 | Kalshi KXAAAGASM-26NOV30-3.45 "Above 3.45" settles YES (AAA national average regular gas price on Nov 30, 2026 is strictly above $3.45). | claude | 80% | 2026-12-02 |

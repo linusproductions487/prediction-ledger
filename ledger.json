@@ -1155,6 +1155,91 @@
       "baseline_confidence": 32,
       "prev_hash": "5f4038e9c79ba5754990b11c81d77355b06d690e47b27fd465ac0eae725ef90b",
       "hash": "59a49548dc1d87b7371e21b980705b136a5cfaf2abef3d218dfd05e66b52a0ba"
+    },
+    {
+      "id": 81,
+      "seq": 69,
+      "created_at": "2026-11-27T21:45:49.274310Z",
+      "topic": "market:weather",
+      "claim": "Kalshi KXHIGHNY-26NOV28-B52.5 \"52° to 53°\" settles YES (official high for New York City (Central Park) on Nov 28, 2026 is 52 or 53F).",
+      "resolution_criteria": "TRUE if Kalshi settles market KXHIGHNY-26NOV28-B52.5 as YES; FALSE if it settles NO.",
+      "source_of_truth": "Kalshi market KXHIGHNY-26NOV28-B52.5 (event KXHIGHNY-26NOV28): https://kalshi.com/markets/kxhighny",
+      "confidence": 28,
+      "deadline": "2026-11-30T17:00:00.000000Z",
+      "made_by": "claude",
+      "rationale": "Model 19% (center 49.95, median of 7 sources: NWS 51, NBM 49.8, HRRR 46.0, ECMWF 49.8, GFS 47.4, ICON 50.1, GEM 48.8; model spread 1.61; 82 ensemble members, mean 50.31, sd 1.1; kernel sd 2.01; city calibration n=7, bias 0.23), market mid 38% (market mean 51.5), blend 28.3% logged as 28%. Raw gap 19.4 pts, under the 25-pt limit; no bracket in this event exceeds it. Buying NO: blend NO 72% vs $100 order-book fill at 64c, edge about 8c. Largest edge in the event (the other candidate, YES on 51 or below at 63c, had 5c), so this is the one trade. This bet sides with the market favourite (51 or below, mid 61.5%). Hand checks pass: prob_sum 1.0, lo/hi 52-53 match label, 6 models + NWS, NWS updated 20:45Z, HRRR is lowest but models form a continuous 46-51 range. Locked on a rescan: the 21:38Z scan lost all deterministic models to HTTP 429 and was not used.",
+      "baseline_rule": "Kalshi ask at entry: YES 39c, NO 64c (scan 2026-11-27T21:41Z, $100 order-book fill). PAPER TRADE: BUY NO, $100 at 64c (edge 8c).",
+      "baseline_confidence": 38,
+      "prev_hash": "59a49548dc1d87b7371e21b980705b136a5cfaf2abef3d218dfd05e66b52a0ba",
+      "hash": "19fcb140c9d891f2e36358b08c32d963f5de5741377c39241fe03822123fad63"
+    },
+    {
+      "id": 82,
+      "seq": 70,
+      "created_at": "2026-11-27T21:45:49.299169Z",
+      "topic": "market:weather",
+      "claim": "Kalshi KXHIGHLAX-26NOV28-B73.5 \"73° to 74°\" settles YES (official high for Los Angeles (LAX) on Nov 28, 2026 is 73 or 74F).",
+      "resolution_criteria": "TRUE if Kalshi settles market KXHIGHLAX-26NOV28-B73.5 as YES; FALSE if it settles NO.",
+      "source_of_truth": "Kalshi market KXHIGHLAX-26NOV28-B73.5 (event KXHIGHLAX-26NOV28): https://kalshi.com/markets/kxhighlax",
+      "confidence": 37,
+      "deadline": "2026-11-30T17:00:00.000000Z",
+      "made_by": "claude",
+      "rationale": "Model 29% (center 75.2, median of 7 sources: NWS 76, NBM 74.9, HRRR 75.0, ECMWF 76.2, GFS 74.1, ICON 73.4, GEM 75.1; model spread 0.91; 82 ensemble members, mean 74.36, sd 2.06; kernel sd 1.0; city calibration n=7, bias 0.19), market mid 45.5% (market mean 74.51), blend 37.1% logged as 37%. Raw gap 16.9 pts, under the 25-pt limit; no bracket in this event exceeds it. Buying NO: blend NO 63% vs $100 order-book fill at 57c, edge about 6c. Hand checks pass: prob_sum 1.0, lo/hi 73-74 match label, 6 models + NWS all within 73.4-76.2, NWS updated 18:26Z. Caveat: this is again a NO against the bracket the market prices highest, the pattern lessons 12 and 16 flag as losing so far; taken because it passes the rules as written.",
+      "baseline_rule": "Kalshi ask at entry: YES 46c, NO 57c (scan 2026-11-27T21:41Z, $100 order-book fill). PAPER TRADE: BUY NO, $100 at 57c (edge 6c).",
+      "baseline_confidence": 45,
+      "prev_hash": "19fcb140c9d891f2e36358b08c32d963f5de5741377c39241fe03822123fad63",
+      "hash": "5b74a9c7bcad2f03943d046ae39999bc915c835ebd1ab9c5f9a5f348cf17ebc9"
+    },
+    {
+      "id": 83,
+      "seq": 71,
+      "created_at": "2026-11-27T21:45:49.302613Z",
+      "topic": "market:weather",
+      "claim": "Kalshi KXHIGHAUS-26NOV28-B73.5 \"73° to 74°\" settles YES (official high for Austin on Nov 28, 2026 is 73 or 74F).",
+      "resolution_criteria": "TRUE if Kalshi settles market KXHIGHAUS-26NOV28-B73.5 as YES; FALSE if it settles NO.",
+      "source_of_truth": "Kalshi market KXHIGHAUS-26NOV28-B73.5 (event KXHIGHAUS-26NOV28): https://kalshi.com/markets/kxhighaus",
+      "confidence": 35,
+      "deadline": "2026-11-30T17:00:00.000000Z",
+      "made_by": "claude",
+      "rationale": "No-edge calibration log. Model 34% (center 74.5, median of 7 sources: NWS 75, NBM 74.6, HRRR 74.1, ECMWF 71.9, GFS 73.9, ICON 71.7, GEM 75.4; model spread 1.35; 82 ensemble members, mean 71.5, sd 1.57; kernel sd 1.66), market mid 35.5%, blend 34.7% logged as 35%. Model and market agree; no trade.",
+      "baseline_rule": "Kalshi ask at entry: YES 37c, NO 66c (scan 2026-11-27T21:41Z, quoted asks). No trade (logged for calibration only).",
+      "baseline_confidence": 36,
+      "prev_hash": "5b74a9c7bcad2f03943d046ae39999bc915c835ebd1ab9c5f9a5f348cf17ebc9",
+      "hash": "db0e0ed52c71108399b7300ca3c80109a2aeb8ebc48d9c0cebfb36e7a75f05c9"
+    },
+    {
+      "id": 84,
+      "seq": 72,
+      "created_at": "2026-11-27T21:45:49.302812Z",
+      "topic": "market:weather",
+      "claim": "Kalshi KXHIGHTHOU-26NOV28-B77.5 \"77° to 78°\" settles YES (official high for Houston on Nov 28, 2026 is 77 or 78F).",
+      "resolution_criteria": "TRUE if Kalshi settles market KXHIGHTHOU-26NOV28-B77.5 as YES; FALSE if it settles NO.",
+      "source_of_truth": "Kalshi market KXHIGHTHOU-26NOV28-B77.5 (event KXHIGHTHOU-26NOV28): https://kalshi.com/markets/kxhighthou",
+      "confidence": 28,
+      "deadline": "2026-11-30T17:00:00.000000Z",
+      "made_by": "claude",
+      "rationale": "No-edge calibration log. Model 27% (center 75.9, median of 7 sources: NWS 76, NBM 75.5, HRRR 78.0, ECMWF 73.2, GFS 74.1, ICON 75.0, GEM 78.6; model spread 1.82; 82 ensemble members, mean 72.8, sd 1.37; kernel sd 1.84), market mid 28.5%, blend 28.0% logged as 28%. Model and market agree; no trade.",
+      "baseline_rule": "Kalshi ask at entry: YES 29c, NO 72c (scan 2026-11-27T21:41Z, quoted asks). No trade (logged for calibration only).",
+      "baseline_confidence": 29,
+      "prev_hash": "db0e0ed52c71108399b7300ca3c80109a2aeb8ebc48d9c0cebfb36e7a75f05c9",
+      "hash": "7ea66d51cad7699be85c7c254989c7fffa4c068837d50784e23ad532a9e7120b"
+    },
+    {
+      "id": 85,
+      "seq": 73,
+      "created_at": "2026-11-27T21:45:49.303140Z",
+      "topic": "market:weather",
+      "claim": "Kalshi KXHIGHTMIN-26NOV28-B48.5 \"48° to 49°\" settles YES (official high for Minneapolis on Nov 28, 2026 is 48 or 49F).",
+      "resolution_criteria": "TRUE if Kalshi settles market KXHIGHTMIN-26NOV28-B48.5 as YES; FALSE if it settles NO.",
+      "source_of_truth": "Kalshi market KXHIGHTMIN-26NOV28-B48.5 (event KXHIGHTMIN-26NOV28): https://kalshi.com/markets/kxhightmin",
+      "confidence": 31,
+      "deadline": "2026-11-30T17:00:00.000000Z",
+      "made_by": "claude",
+      "rationale": "No-edge calibration log. Model 32% (center 47.8, median of 7 sources: NWS 46, NBM 47.7, HRRR 49.0, ECMWF 45.3, GFS 48.4, ICON 49.0, GEM 47.6; model spread 1.33; 82 ensemble members, mean 44.88, sd 1.97; kernel sd 1.33), market mid 29.5%, blend 30.6% logged as 31%. Model and market agree; no trade.",
+      "baseline_rule": "Kalshi ask at entry: YES 30c, NO 71c (scan 2026-11-27T21:41Z, quoted asks). No trade (logged for calibration only).",
+      "baseline_confidence": 30,
+      "prev_hash": "7ea66d51cad7699be85c7c254989c7fffa4c068837d50784e23ad532a9e7120b",
+      "hash": "eba8348866cf9afa634a0372ca4cac79f023aa9e3d83da5d07230b62a2f1d36c"
     }
   ],
   "resolutions": [
@@ -1918,6 +2003,17 @@
       "lesson": "On the 2026-11-26 21:37 UTC scan EDGES.md listed KXHIGHTATL-26NOV27-B51.5 (Atlanta 51-52, NO at 64c, edge 6c) as tradeable, but the day-ahead inputs disagreed badly: HRRR 42.6 against NBM 51.2, ECMWF 48.3, GFS 53.0, ICON 49.0, GEM 45.5 and NWS 51 (model spread 3.33, kernel sd 3.33). It was skipped by hand under the RUNBOOK rule that one model far from the rest means skip. The scanner does not flag a wide model spread or a single outlier, so this check still has to be done by hand; the scanner was not changed. Same day, the two Nov 25 trades settled as wins (Seattle 57-58 NO, actual 60; Austin 60-61 NO, actual 58), +$108.90 after fees, bringing the book to 3 wins in 13 settled trades, -$490.75. Still short of the 25-trade review; no rule changed.",
       "evidence_prediction_ids": [],
       "supersedes": null
+    },
+    {
+      "id": 19,
+      "created_at": "2026-11-27T21:47:14.463845Z",
+      "topic": "process",
+      "lesson": "On 2026-11-27 the 21:38 UTC scan (requested by the daily session) lost the deterministic forecast models for all 20 cities: every Open-Meteo call returned HTTP 429 (60 error lines, models = {} everywhere, centers fell back to \"median of 1 sources\", NWS only). EDGES.md still listed 5 tradeable candidates built on those degraded inputs; the scanner does not withhold candidates when its own log shows failures. Under the missing-input rule that scan was not used. One rescan (requested 21:41 UTC) came back clean (1 log line, 6 models and 82 ensemble members per city) and the two trades of the day (seq 69, 70) were locked on it, consistent with lesson 7 (one rescan is worth doing when a failure looks transient). The scheduled 21:11 UTC scan and the session scan 27 minutes later ran close together, which may have tripped a rate limit, but the cause is not confirmed. scan.py was not changed. Same session, hand checks skipped three listed candidates where a neighbouring bracket in the same event had a raw gap over 25 points (Philadelphia 56-57 NO at 24.9, Boston 53-54 NO at 24.7, Atlanta 58-59 YES at 23.1; Atlanta also had GEM 55.2 against 58.1-62.3 for the rest): the 25-point limit is applied per contract, so a contract just under it can be listed while the same model distribution is rejected on its neighbours. The two Nov 30 gas candidates were skipped because trade seq 44 already rides on the same AAA number (lesson 11).",
+      "evidence_prediction_ids": [
+        81,
+        82
+      ],
+      "supersedes": null
     }
   ],
   "paper_trades": [
@@ -2243,6 +2339,40 @@
       "created_at": "2026-11-26T21:41:35.352580Z",
       "outcome": null,
       "pnl_cents": null
+    },
+    {
+      "prediction_id": 81,
+      "seq": 69,
+      "claim": "Kalshi KXHIGHNY-26NOV28-B52.5 \"52° to 53°\" settles YES (official high for New York City (Central Park) on Nov 28, 2026 is 52 or 53F).",
+      "venue": "kalshi",
+      "event_ticker": "KXHIGHNY-26NOV28",
+      "outcome_label": "52° to 53°",
+      "market_url": "https://kalshi.com/markets/kxhighny",
+      "side": "no",
+      "price_cents": 64,
+      "contracts": 156,
+      "fee_cents": 252,
+      "cost_cents": 10236,
+      "created_at": "2026-11-27T21:45:49.293515Z",
+      "outcome": null,
+      "pnl_cents": null
+    },
+    {
+      "prediction_id": 82,
+      "seq": 70,
+      "claim": "Kalshi KXHIGHLAX-26NOV28-B73.5 \"73° to 74°\" settles YES (official high for Los Angeles (LAX) on Nov 28, 2026 is 73 or 74F).",
+      "venue": "kalshi",
+      "event_ticker": "KXHIGHLAX-26NOV28",
+      "outcome_label": "73° to 74°",
+      "market_url": "https://kalshi.com/markets/kxhighlax",
+      "side": "no",
+      "price_cents": 57,
+      "contracts": 175,
+      "fee_cents": 301,
+      "cost_cents": 10276,
+      "created_at": "2026-11-27T21:45:49.302212Z",
+      "outcome": null,
+      "pnl_cents": null
     }
   ],
   "scorecard_by_topic": [
@@ -2380,7 +2510,7 @@
   "db_verify": [
     {
       "chain": "predictions",
-      "entries": 68,
+      "entries": 73,
       "valid": true,
       "first_bad_seq": null
     },
